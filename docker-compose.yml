@@ -1,0 +1,144 @@
+# Run: docker compose up --build
+
+services:
+
+  # Pipeline Orchestrator (calls all 4 modules in order)
+  pipeline-api:
+    build:
+      context: ./pipeline
+      dockerfile: Dockerfile
+    container_name: j26-pipeline
+    ports:
+      - "8000:8000"
+    environment:
+      - MEMBER1_URL=http://member1-retrieval:8001
+      - MEMBER2_URL=http://member2-entity:8002
+      - MEMBER3_URL=http://member3-kg:8003
+      - MEMBER4_URL=http://member4-reranking:8004
+      - PYTHONPATH=/app
+    volumes:
+      - ./pipeline:/app/pipeline
+      - ./shared:/app/shared
+    depends_on:
+      member1-retrieval:
+        condition: service_healthy
+      member2-entity:
+        condition: service_healthy
+      member3-kg:
+        condition: service_healthy
+      member4-reranking:
+        condition: service_healthy
+    networks:
+      - j26-net
+    restart: unless-stopped
+
+  # Member 1: Query Intent & Adaptive Retrieval
+  member1-retrieval:
+    build:
+      context: ./member1_retrieval
+      dockerfile: Dockerfile
+    container_name: j26-member1
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./member1_retrieval:/app/member1_retrieval
+      - ./shared:/app/shared
+      - ./member1_retrieval/data:/app/member1_retrieval/data
+      - ./member1_retrieval/models:/app/member1_retrieval/models
+    healthcheck:
+      test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8001/health')" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+    networks:
+      - j26-net
+    restart: unless-stopped
+
+  # Member 2: Entity Resolution & Schema Harmonization
+  member2-entity:
+    build:
+      context: ./member2_entity_resolution
+      dockerfile: Dockerfile
+    container_name: j26-member2
+    ports:
+      - "8002:8002"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./member2_entity_resolution:/app/member2_entity_resolution
+      - ./shared:/app/shared
+      - ./member2_entity_resolution/data:/app/member2_entity_resolution/data
+      - ./member2_entity_resolution/models:/app/member2_entity_resolution/models
+    healthcheck:
+      test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+    networks:
+      - j26-net
+    restart: unless-stopped
+
+  # Member 3: Knowledge Graph & Platform Routing 
+  member3-kg:
+    build:
+      context: ./member3_knowledge_graph
+      dockerfile: Dockerfile
+    container_name: j26-member3
+    ports:
+      - "8003:8003"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./member3_knowledge_graph:/app/member3_knowledge_graph
+      - ./shared:/app/shared
+      - ./member3_knowledge_graph/data:/app/member3_knowledge_graph/data
+    healthcheck:
+      test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8003/health')" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+    networks:
+      - j26-net
+    restart: unless-stopped
+
+  # Member 4: Re-ranking & PPP Price Normalization
+  member4-reranking:
+    build:
+      context: ./member4_reranking
+      dockerfile: Dockerfile
+    container_name: j26-member4
+    ports:
+      - "8004:8004"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./member4_reranking:/app/member4_reranking
+      - ./shared:/app/shared
+      - ./member4_reranking/data:/app/member4_reranking/data
+      - ./member4_reranking/models:/app/member4_reranking/models
+    healthcheck:
+      test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8004/health')" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+    networks:
+      - j26-net
+    restart: unless-stopped
+
+networks:
+  j26-net:
+    driver: bridge
