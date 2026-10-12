@@ -230,6 +230,161 @@
       },
       "batch_scoring_seconds": 0.0,
       "run_at": "2026-10-12T16:47:12+00:00"
+    },
+    "ft": {
+      "queries": 1276,
+      "mrr": 0.8331,
+      "ndcg@10": 0.7777,
+      "p@5": 0.6034,
+      "by_subcategory": {
+        "accessory": {
+          "queries": 367,
+          "mrr": 0.8459,
+          "ndcg@10": 0.7847,
+          "p@5": 0.6376
+        },
+        "audio": {
+          "queries": 150,
+          "mrr": 0.8131,
+          "ndcg@10": 0.7602,
+          "p@5": 0.592
+        },
+        "camera": {
+          "queries": 83,
+          "mrr": 0.8224,
+          "ndcg@10": 0.77,
+          "p@5": 0.5952
+        },
+        "laptop": {
+          "queries": 38,
+          "mrr": 0.8737,
+          "ndcg@10": 0.8201,
+          "p@5": 0.6368
+        },
+        "other_electronics": {
+          "queries": 313,
+          "mrr": 0.8301,
+          "ndcg@10": 0.7733,
+          "p@5": 0.5955
+        },
+        "power_charging": {
+          "queries": 68,
+          "mrr": 0.8137,
+          "ndcg@10": 0.7319,
+          "p@5": 0.5647
+        },
+        "smartphone": {
+          "queries": 115,
+          "mrr": 0.8282,
+          "ndcg@10": 0.7977,
+          "p@5": 0.593
+        },
+        "tablet": {
+          "queries": 35,
+          "mrr": 0.844,
+          "ndcg@10": 0.775,
+          "p@5": 0.5543
+        },
+        "tv_monitor": {
+          "queries": 88,
+          "mrr": 0.8398,
+          "ndcg@10": 0.7938,
+          "p@5": 0.5841
+        },
+        "wearable": {
+          "queries": 19,
+          "mrr": 0.8092,
+          "ndcg@10": 0.7748,
+          "p@5": 0.5158
+        }
+      },
+      "latency_per_query": {
+        "queries": 100,
+        "mean_ms": 522.31,
+        "p95_ms": 1114.79,
+        "avg_candidates": 18.2,
+        "device": "cpu"
+      },
+      "batch_scoring_seconds": 778.5,
+      "run_at": "2026-10-12T18:13:22+00:00",
+      "model": "E:\\Research_Project\\j26-ds-358\\member4_reranking\\models\\cross_encoder\\best"
+    },
+    "zeroshot": {
+      "queries": 1276,
+      "mrr": 0.7899,
+      "ndcg@10": 0.7298,
+      "p@5": 0.5661,
+      "by_subcategory": {
+        "accessory": {
+          "queries": 367,
+          "mrr": 0.8052,
+          "ndcg@10": 0.7427,
+          "p@5": 0.6098
+        },
+        "audio": {
+          "queries": 150,
+          "mrr": 0.7942,
+          "ndcg@10": 0.7216,
+          "p@5": 0.5613
+        },
+        "camera": {
+          "queries": 83,
+          "mrr": 0.778,
+          "ndcg@10": 0.7179,
+          "p@5": 0.5349
+        },
+        "laptop": {
+          "queries": 38,
+          "mrr": 0.7889,
+          "ndcg@10": 0.7414,
+          "p@5": 0.5789
+        },
+        "other_electronics": {
+          "queries": 313,
+          "mrr": 0.8002,
+          "ndcg@10": 0.7346,
+          "p@5": 0.5712
+        },
+        "power_charging": {
+          "queries": 68,
+          "mrr": 0.7908,
+          "ndcg@10": 0.7192,
+          "p@5": 0.5559
+        },
+        "smartphone": {
+          "queries": 115,
+          "mrr": 0.7473,
+          "ndcg@10": 0.7157,
+          "p@5": 0.5009
+        },
+        "tablet": {
+          "queries": 35,
+          "mrr": 0.6931,
+          "ndcg@10": 0.6501,
+          "p@5": 0.4857
+        },
+        "tv_monitor": {
+          "queries": 88,
+          "mrr": 0.8427,
+          "ndcg@10": 0.7584,
+          "p@5": 0.5568
+        },
+        "wearable": {
+          "queries": 19,
+          "mrr": 0.5292,
+          "ndcg@10": 0.6345,
+          "p@5": 0.4105
+        }
+      },
+      "latency_per_query": {
+        "queries": 100,
+        "mean_ms": 535.74,
+        "p95_ms": 1092.4,
+        "avg_candidates": 18.2,
+        "device": "cpu"
+      },
+      "batch_scoring_seconds": 762.2,
+      "run_at": "2026-10-12T18:27:59+00:00"
     }
   },
   "wilcoxon": {
@@ -277,6 +432,121 @@
         "wins": 251,
         "losses": 681,
         "ties": 344
+      }
+    },
+    "ft_vs_b1": {
+      "mrr": {
+        "mean_diff": 0.0803,
+        "p_value": 9.53e-17,
+        "wins": 359,
+        "losses": 193,
+        "ties": 724
+      },
+      "ndcg@10": {
+        "mean_diff": 0.0673,
+        "p_value": 1.19e-29,
+        "wins": 784,
+        "losses": 446,
+        "ties": 46
+      },
+      "p@5": {
+        "mean_diff": 0.0605,
+        "p_value": 3.17e-17,
+        "wins": 496,
+        "losses": 268,
+        "ties": 512
+      }
+    },
+    "zeroshot_vs_b1": {
+      "mrr": {
+        "mean_diff": 0.037,
+        "p_value": 3.42e-05,
+        "wins": 304,
+        "losses": 227,
+        "ties": 745
+      },
+      "ndcg@10": {
+        "mean_diff": 0.0194,
+        "p_value": 0.000313,
+        "wins": 654,
+        "losses": 572,
+        "ties": 50
+      },
+      "p@5": {
+        "mean_diff": 0.0232,
+        "p_value": 1.78e-05,
+        "wins": 374,
+        "losses": 297,
+        "ties": 605
+      }
+    },
+    "bm25_vs_ft": {
+      "mrr": {
+        "mean_diff": -0.1103,
+        "p_value": 1.83e-24,
+        "wins": 186,
+        "losses": 404,
+        "ties": 686
+      },
+      "ndcg@10": {
+        "mean_diff": -0.1036,
+        "p_value": 3.1e-48,
+        "wins": 393,
+        "losses": 849,
+        "ties": 34
+      },
+      "p@5": {
+        "mean_diff": -0.0895,
+        "p_value": 1.92e-30,
+        "wins": 250,
+        "losses": 559,
+        "ties": 467
+      }
+    },
+    "random_vs_ft": {
+      "mrr": {
+        "mean_diff": -0.2364,
+        "p_value": 7.42e-67,
+        "wins": 172,
+        "losses": 630,
+        "ties": 474
+      },
+      "ndcg@10": {
+        "mean_diff": -0.1995,
+        "p_value": 1.47e-113,
+        "wins": 260,
+        "losses": 995,
+        "ties": 21
+      },
+      "p@5": {
+        "mean_diff": -0.1782,
+        "p_value": 1.01e-78,
+        "wins": 181,
+        "losses": 790,
+        "ties": 305
+      }
+    },
+    "zeroshot_vs_ft": {
+      "mrr": {
+        "mean_diff": -0.0433,
+        "p_value": 1.75e-07,
+        "wins": 174,
+        "losses": 266,
+        "ties": 836
+      },
+      "ndcg@10": {
+        "mean_diff": -0.0479,
+        "p_value": 2.36e-22,
+        "wins": 442,
+        "losses": 770,
+        "ties": 64
+      },
+      "p@5": {
+        "mean_diff": -0.0373,
+        "p_value": 4.9e-08,
+        "wins": 249,
+        "losses": 397,
+        "ties": 630
       }
     }
   },

@@ -1,0 +1,84 @@
+{
+  "settings": {
+    "model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "data_dir": "/content/drive/MyDrive/m4/data/processed",
+    "out_dir": "/content/drive/MyDrive/m4/models/cross_encoder",
+    "epochs": "3",
+    "lr": "2e-05",
+    "batch_size": "32",
+    "eval_batch_size": "128",
+    "max_length": "256",
+    "warmup": "0.1",
+    "weight_decay": "0.01",
+    "seed": "42",
+    "limit": "0",
+    "no_fp16": "False"
+  },
+  "device": "cuda",
+  "fp16": true,
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.18.0"
+  },
+  "data": {
+    "train_rows": 49522,
+    "train_queries": 2742,
+    "dev_rows": 5306,
+    "dev_queries": 304
+  },
+  "started_at": "2026-10-12T17:46:04+00:00",
+  "epochs": [
+    {
+      "epoch": 0,
+      "dev": {
+        "queries": 304,
+        "mrr": 0.8012,
+        "ndcg@10": 0.7365,
+        "p@5": 0.5454
+      }
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.71701,
+      "dev": {
+        "queries": 304,
+        "mrr": 0.8231,
+        "ndcg@10": 0.7704,
+        "p@5": 0.5829
+      },
+      "minutes": 2.1,
+      "saved_as_best": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.558,
+      "dev": {
+        "queries": 304,
+        "mrr": 0.829,
+        "ndcg@10": 0.7742,
+        "p@5": 0.5862
+      },
+      "minutes": 2.1,
+      "saved_as_best": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.51983,
+      "dev": {
+        "queries": 304,
+        "mrr": 0.8202,
+        "ndcg@10": 0.7675,
+        "p@5": 0.5868
+      },
+      "minutes": 2.1
+    }
+  ],
+  "best_epoch": 2,
+  "best_dev": {
+    "queries": 304,
+    "mrr": 0.829,
+    "ndcg@10": 0.7742,
+    "p@5": 0.5862
+  },
+  "total_minutes": 6.4
+}
