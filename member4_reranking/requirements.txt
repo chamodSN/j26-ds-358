@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic-settings
+pandas
+pyarrow
+numpy
+scikit-learn
+sentence-transformers
+torch
+rank-bm25
+requests
