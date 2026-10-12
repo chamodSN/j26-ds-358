@@ -1,0 +1,85 @@
+{
+  "systems": {
+    "b1": {
+      "queries": 50,
+      "mrr": 0.7137,
+      "ndcg@10": 0.7177,
+      "p@5": 0.532,
+      "by_subcategory": {
+        "accessory": {
+          "queries": 14,
+          "mrr": 0.7024,
+          "ndcg@10": 0.7399,
+          "p@5": 0.5143
+        },
+        "audio": {
+          "queries": 8,
+          "mrr": 0.6906,
+          "ndcg@10": 0.6725,
+          "p@5": 0.525
+        },
+        "camera": {
+          "queries": 2,
+          "mrr": 0.625,
+          "ndcg@10": 0.71,
+          "p@5": 0.5
+        },
+        "laptop": {
+          "queries": 1,
+          "mrr": 1.0,
+          "ndcg@10": 0.9829,
+          "p@5": 1.0
+        },
+        "other_electronics": {
+          "queries": 13,
+          "mrr": 0.759,
+          "ndcg@10": 0.7816,
+          "p@5": 0.6615
+        },
+        "power_charging": {
+          "queries": 2,
+          "mrr": 1.0,
+          "ndcg@10": 0.5619,
+          "p@5": 0.4
+        },
+        "smartphone": {
+          "queries": 4,
+          "mrr": 0.875,
+          "ndcg@10": 0.7535,
+          "p@5": 0.6
+        },
+        "tablet": {
+          "queries": 1,
+          "mrr": 0.1667,
+          "ndcg@10": 0.3895,
+          "p@5": 0.0
+        },
+        "tv_monitor": {
+          "queries": 4,
+          "mrr": 0.5938,
+          "ndcg@10": 0.6693,
+          "p@5": 0.35
+        },
+        "wearable": {
+          "queries": 1,
+          "mrr": 0.1667,
+          "ndcg@10": 0.3755,
+          "p@5": 0.0
+        }
+      },
+      "latency_per_query": {
+        "queries": 50,
+        "mean_ms": 496.82,
+        "p95_ms": 1051.34,
+        "avg_candidates": 18.7,
+        "device": "cpu"
+      },
+      "batch_scoring_seconds": 26.3,
+      "run_at": "2026-10-12T16:34:49+00:00"
+    }
+  },
+  "wilcoxon": {},
+  "split": "test",
+  "data": "E:\\Research_Project\\j26-ds-358\\member4_reranking\\data\\processed\\esci_elec_test.parquet",
+  "metric_rules": "MRR/P@5: Exact only; NDCG@10 gains E1 S0.1 C0.01 I0; queries with >=1 Exact; random tie-break seed 42"
+}
