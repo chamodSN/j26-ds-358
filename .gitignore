@@ -91,3 +91,9 @@ desktop.ini
 # Logs
 logs/
 *.log
+
+# Track M3 knowledge graph and taxonomy files
+!member3_knowledge_graph/data/
+!member3_knowledge_graph/data/electronics_kg.json
+!member3_knowledge_graph/data/electronics_taxonomy.csv
+!member3_knowledge_graph/data/google_product_taxonomy.txt
