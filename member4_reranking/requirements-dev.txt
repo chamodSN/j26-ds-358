@@ -1,0 +1,8 @@
+# Local development only (VS Code). Training runs in Google Colab.
+-r requirements.txt
+pyarrow
+scikit-learn
+rank-bm25
+jupyter
+ipykernel
+pytest
