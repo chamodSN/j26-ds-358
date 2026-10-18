@@ -1,0 +1,5024 @@
+{
+  "metadata": {
+    "name": "Electronics Taxonomy Knowledge Graph",
+    "source": "Google Product Taxonomy",
+    "domain": "Electronics",
+    "total_categories": 418,
+    "total_relationships": 417
+  },
+  "nodes": [
+    {
+      "id": "222",
+      "name": "Electronics",
+      "path": "Electronics",
+      "depth": 1,
+      "type": "Category"
+    },
+    {
+      "id": "3356",
+      "name": "Arcade Equipment",
+      "path": "Electronics > Arcade Equipment",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "8085",
+      "name": "Basketball Arcade Games",
+      "path": "Electronics > Arcade Equipment > Basketball Arcade Games",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3946",
+      "name": "Pinball Machine Accessories",
+      "path": "Electronics > Arcade Equipment > Pinball Machine Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3140",
+      "name": "Pinball Machines",
+      "path": "Electronics > Arcade Equipment > Pinball Machines",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3681",
+      "name": "Skee-Ball Machines",
+      "path": "Electronics > Arcade Equipment > Skee-Ball Machines",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3676",
+      "name": "Video Game Arcade Cabinet Accessories",
+      "path": "Electronics > Arcade Equipment > Video Game Arcade Cabinet Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3117",
+      "name": "Video Game Arcade Cabinets",
+      "path": "Electronics > Arcade Equipment > Video Game Arcade Cabinets",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "223",
+      "name": "Audio",
+      "path": "Electronics > Audio",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "1420",
+      "name": "Audio Accessories",
+      "path": "Electronics > Audio > Audio Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "503008",
+      "name": "Audio & Video Receiver Accessories",
+      "path": "Electronics > Audio > Audio Accessories > Audio & Video Receiver Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "505797",
+      "name": "Headphone & Headset Accessories",
+      "path": "Electronics > Audio > Audio Accessories > Headphone & Headset Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "503004",
+      "name": "Headphone Cushions & Tips",
+      "path": "Electronics > Audio > Audio Accessories > Headphone & Headset Accessories > Headphone Cushions & Tips",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5395",
+      "name": "Karaoke System Accessories",
+      "path": "Electronics > Audio > Audio Accessories > Karaoke System Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5396",
+      "name": "Karaoke Chips",
+      "path": "Electronics > Audio > Audio Accessories > Karaoke System Accessories > Karaoke Chips",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "232",
+      "name": "MP3 Player Accessories",
+      "path": "Electronics > Audio > Audio Accessories > MP3 Player Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7566",
+      "name": "MP3 Player & Mobile Phone Accessory Sets",
+      "path": "Electronics > Audio > Audio Accessories > MP3 Player Accessories > MP3 Player & Mobile Phone Accessory Sets",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "3055",
+      "name": "MP3 Player Cases",
+      "path": "Electronics > Audio > Audio Accessories > MP3 Player Accessories > MP3 Player Cases",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "3306",
+      "name": "Microphone Accessories",
+      "path": "Electronics > Audio > Audio Accessories > Microphone Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3912",
+      "name": "Microphone Stands",
+      "path": "Electronics > Audio > Audio Accessories > Microphone Stands",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "239",
+      "name": "Satellite Radio Accessories",
+      "path": "Electronics > Audio > Audio Accessories > Satellite Radio Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7163",
+      "name": "Speaker Accessories",
+      "path": "Electronics > Audio > Audio Accessories > Speaker Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "500112",
+      "name": "Speaker Bags, Covers & Cases",
+      "path": "Electronics > Audio > Audio Accessories > Speaker Accessories > Speaker Bags, Covers & Cases",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "500120",
+      "name": "Speaker Components & Kits",
+      "path": "Electronics > Audio > Audio Accessories > Speaker Accessories > Speaker Components & Kits",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "8047",
+      "name": "Speaker Stand Bags",
+      "path": "Electronics > Audio > Audio Accessories > Speaker Accessories > Speaker Stand Bags",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "8049",
+      "name": "Speaker Stands & Mounts",
+      "path": "Electronics > Audio > Audio Accessories > Speaker Accessories > Speaker Stands & Mounts",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "500119",
+      "name": "Tactile Transducers",
+      "path": "Electronics > Audio > Audio Accessories > Speaker Accessories > Tactile Transducers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "2372",
+      "name": "Turntable Accessories",
+      "path": "Electronics > Audio > Audio Accessories > Turntable Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "2165",
+      "name": "Audio Components",
+      "path": "Electronics > Audio > Audio Components",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "241",
+      "name": "Audio & Video Receivers",
+      "path": "Electronics > Audio > Audio Components > Audio & Video Receivers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "224",
+      "name": "Audio Amplifiers",
+      "path": "Electronics > Audio > Audio Components > Audio Amplifiers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "4493",
+      "name": "Headphone Amplifiers",
+      "path": "Electronics > Audio > Audio Components > Audio Amplifiers > Headphone Amplifiers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5381",
+      "name": "Power Amplifiers",
+      "path": "Electronics > Audio > Audio Components > Audio Amplifiers > Power Amplifiers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "236",
+      "name": "Audio Mixers",
+      "path": "Electronics > Audio > Audio Components > Audio Mixers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5129",
+      "name": "Audio Transmitters",
+      "path": "Electronics > Audio > Audio Components > Audio Transmitters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5130",
+      "name": "Bluetooth Transmitters",
+      "path": "Electronics > Audio > Audio Components > Audio Transmitters > Bluetooth Transmitters",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4035",
+      "name": "FM Transmitters",
+      "path": "Electronics > Audio > Audio Components > Audio Transmitters > FM Transmitters",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "6545",
+      "name": "Channel Strips",
+      "path": "Electronics > Audio > Audio Components > Channel Strips",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6546",
+      "name": "Direct Boxes",
+      "path": "Electronics > Audio > Audio Components > Direct Boxes",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "505771",
+      "name": "Headphones & Headsets",
+      "path": "Electronics > Audio > Audio Components > Headphones & Headsets",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "543626",
+      "name": "Headphones",
+      "path": "Electronics > Audio > Audio Components > Headphones & Headsets > Headphones",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "543627",
+      "name": "Headsets",
+      "path": "Electronics > Audio > Audio Components > Headphones & Headsets > Headsets",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "234",
+      "name": "Microphones",
+      "path": "Electronics > Audio > Audio Components > Microphones",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "246",
+      "name": "Signal Processors",
+      "path": "Electronics > Audio > Audio Components > Signal Processors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5435",
+      "name": "Crossovers",
+      "path": "Electronics > Audio > Audio Components > Signal Processors > Crossovers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "247",
+      "name": "Effects Processors",
+      "path": "Electronics > Audio > Audio Components > Signal Processors > Effects Processors",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "248",
+      "name": "Equalizers",
+      "path": "Electronics > Audio > Audio Components > Signal Processors > Equalizers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5597",
+      "name": "Loudspeaker Management Systems",
+      "path": "Electronics > Audio > Audio Components > Signal Processors > Loudspeaker Management Systems",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "3945",
+      "name": "Microphone Preamps",
+      "path": "Electronics > Audio > Audio Components > Signal Processors > Microphone Preamps",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5596",
+      "name": "Noise Gates & Compressors",
+      "path": "Electronics > Audio > Audio Components > Signal Processors > Noise Gates & Compressors",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5369",
+      "name": "Phono Preamps",
+      "path": "Electronics > Audio > Audio Components > Signal Processors > Phono Preamps",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "249",
+      "name": "Speakers",
+      "path": "Electronics > Audio > Audio Components > Speakers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "505298",
+      "name": "Studio Recording Bundles",
+      "path": "Electronics > Audio > Audio Components > Studio Recording Bundles",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "242",
+      "name": "Audio Players & Recorders",
+      "path": "Electronics > Audio > Audio Players & Recorders",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "225",
+      "name": "Boomboxes",
+      "path": "Electronics > Audio > Audio Players & Recorders > Boomboxes",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "226",
+      "name": "CD Players & Recorders",
+      "path": "Electronics > Audio > Audio Players & Recorders > CD Players & Recorders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "243",
+      "name": "Cassette Players & Recorders",
+      "path": "Electronics > Audio > Audio Players & Recorders > Cassette Players & Recorders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "252",
+      "name": "Home Theater Systems",
+      "path": "Electronics > Audio > Audio Players & Recorders > Home Theater Systems",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "4652",
+      "name": "Jukeboxes",
+      "path": "Electronics > Audio > Audio Players & Recorders > Jukeboxes",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "230",
+      "name": "Karaoke Systems",
+      "path": "Electronics > Audio > Audio Players & Recorders > Karaoke Systems",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "233",
+      "name": "MP3 Players",
+      "path": "Electronics > Audio > Audio Players & Recorders > MP3 Players",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "235",
+      "name": "MiniDisc Players & Recorders",
+      "path": "Electronics > Audio > Audio Players & Recorders > MiniDisc Players & Recorders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5434",
+      "name": "Multitrack Recorders",
+      "path": "Electronics > Audio > Audio Players & Recorders > Multitrack Recorders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6886",
+      "name": "Radios",
+      "path": "Electronics > Audio > Audio Players & Recorders > Radios",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8271",
+      "name": "Reel-to-Reel Tape Players & Recorders",
+      "path": "Electronics > Audio > Audio Players & Recorders > Reel-to-Reel Tape Players & Recorders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "251",
+      "name": "Stereo Systems",
+      "path": "Electronics > Audio > Audio Players & Recorders > Stereo Systems",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "256",
+      "name": "Turntables & Record Players",
+      "path": "Electronics > Audio > Audio Players & Recorders > Turntables & Record Players",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "244",
+      "name": "Voice Recorders",
+      "path": "Electronics > Audio > Audio Players & Recorders > Voice Recorders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8159",
+      "name": "Bullhorns",
+      "path": "Electronics > Audio > Bullhorns",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "4921",
+      "name": "DJ & Specialty Audio",
+      "path": "Electronics > Audio > DJ & Specialty Audio",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "4922",
+      "name": "DJ CD Players",
+      "path": "Electronics > Audio > DJ & Specialty Audio > DJ CD Players",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "4923",
+      "name": "DJ Systems",
+      "path": "Electronics > Audio > DJ & Specialty Audio > DJ Systems",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "2154",
+      "name": "Public Address Systems",
+      "path": "Electronics > Audio > Public Address Systems",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3727",
+      "name": "Stage Equipment",
+      "path": "Electronics > Audio > Stage Equipment",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3242",
+      "name": "Wireless Transmitters",
+      "path": "Electronics > Audio > Stage Equipment > Wireless Transmitters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3702",
+      "name": "Circuit Boards & Components",
+      "path": "Electronics > Circuit Boards & Components",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "500027",
+      "name": "Circuit Board Accessories",
+      "path": "Electronics > Circuit Boards & Components > Circuit Board Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "7259",
+      "name": "Circuit Decoders & Encoders",
+      "path": "Electronics > Circuit Boards & Components > Circuit Decoders & Encoders",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3889",
+      "name": "Circuit Prototyping",
+      "path": "Electronics > Circuit Boards & Components > Circuit Prototyping",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "4010",
+      "name": "Breadboards",
+      "path": "Electronics > Circuit Boards & Components > Circuit Prototyping > Breadboards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7258",
+      "name": "Electronic Filters",
+      "path": "Electronics > Circuit Boards & Components > Electronic Filters",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3635",
+      "name": "Passive Circuit Components",
+      "path": "Electronics > Circuit Boards & Components > Passive Circuit Components",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3220",
+      "name": "Capacitors",
+      "path": "Electronics > Circuit Boards & Components > Passive Circuit Components > Capacitors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7260",
+      "name": "Electronic Oscillators",
+      "path": "Electronics > Circuit Boards & Components > Passive Circuit Components > Electronic Oscillators",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3121",
+      "name": "Inductors",
+      "path": "Electronics > Circuit Boards & Components > Passive Circuit Components > Inductors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3424",
+      "name": "Resistors",
+      "path": "Electronics > Circuit Boards & Components > Passive Circuit Components > Resistors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7264",
+      "name": "Printed Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "298419",
+      "name": "Camera Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Camera Circuit Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "499898",
+      "name": "Computer Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Computer Circuit Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "499899",
+      "name": "Computer Inverter Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Computer Circuit Boards > Computer Inverter Boards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "8546",
+      "name": "Hard Drive Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Computer Circuit Boards > Hard Drive Circuit Boards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "289",
+      "name": "Motherboards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Computer Circuit Boards > Motherboards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "3416",
+      "name": "Development Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Development Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "499889",
+      "name": "Exercise Machine Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Exercise Machine Circuit Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8545",
+      "name": "Household Appliance Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Household Appliance Circuit Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8549",
+      "name": "Pool & Spa Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Pool & Spa Circuit Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8544",
+      "name": "Printer, Copier, & Fax Machine Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Printer, Copier, & Fax Machine Circuit Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "499675",
+      "name": "Scanner Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Scanner Circuit Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8516",
+      "name": "Television Circuit Boards",
+      "path": "Electronics > Circuit Boards & Components > Printed Circuit Boards > Television Circuit Boards",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3991",
+      "name": "Semiconductors",
+      "path": "Electronics > Circuit Boards & Components > Semiconductors",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3632",
+      "name": "Diodes",
+      "path": "Electronics > Circuit Boards & Components > Semiconductors > Diodes",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7257",
+      "name": "Integrated Circuits & Chips",
+      "path": "Electronics > Circuit Boards & Components > Semiconductors > Integrated Circuits & Chips",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3949",
+      "name": "Microcontrollers",
+      "path": "Electronics > Circuit Boards & Components > Semiconductors > Microcontrollers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3094",
+      "name": "Transistors",
+      "path": "Electronics > Circuit Boards & Components > Semiconductors > Transistors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "262",
+      "name": "Communications",
+      "path": "Electronics > Communications",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "266",
+      "name": "Answering Machines",
+      "path": "Electronics > Communications > Answering Machines",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5275",
+      "name": "Caller IDs",
+      "path": "Electronics > Communications > Caller IDs",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "263",
+      "name": "Communication Radio Accessories",
+      "path": "Electronics > Communications > Communication Radio Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2471",
+      "name": "Communication Radios",
+      "path": "Electronics > Communications > Communication Radios",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2106",
+      "name": "CB Radios",
+      "path": "Electronics > Communications > Communication Radios > CB Radios",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "4415",
+      "name": "Radio Scanners",
+      "path": "Electronics > Communications > Communication Radios > Radio Scanners",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "273",
+      "name": "Two-Way Radios",
+      "path": "Electronics > Communications > Communication Radios > Two-Way Radios",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5404",
+      "name": "Intercom Accessories",
+      "path": "Electronics > Communications > Intercom Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "360",
+      "name": "Intercoms",
+      "path": "Electronics > Communications > Intercoms",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "268",
+      "name": "Pagers",
+      "path": "Electronics > Communications > Pagers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "270",
+      "name": "Telephony",
+      "path": "Electronics > Communications > Telephony",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "4666",
+      "name": "Conference Phones",
+      "path": "Electronics > Communications > Telephony > Conference Phones",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "271",
+      "name": "Corded Phones",
+      "path": "Electronics > Communications > Telephony > Corded Phones",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "272",
+      "name": "Cordless Phones",
+      "path": "Electronics > Communications > Telephony > Cordless Phones",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "264",
+      "name": "Mobile Phone Accessories",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8111",
+      "name": "Mobile Phone Camera Accessories",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Camera Accessories",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "2353",
+      "name": "Mobile Phone Cases",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Cases",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4550",
+      "name": "Mobile Phone Charms & Straps",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Charms & Straps",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "6030",
+      "name": "Mobile Phone Pre-Paid Cards & SIM Cards",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Pre-Paid Cards & SIM Cards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "543515",
+      "name": "Mobile Phone Pre-Paid Cards",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Pre-Paid Cards & SIM Cards > Mobile Phone Pre-Paid Cards",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "543516",
+      "name": "SIM Cards",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Pre-Paid Cards & SIM Cards > SIM Cards",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "7347",
+      "name": "Mobile Phone Replacement Parts",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Replacement Parts",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5566",
+      "name": "Mobile Phone Stands",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Stands",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "499916",
+      "name": "SIM Card Ejection Tools",
+      "path": "Electronics > Communications > Telephony > Mobile Phone Accessories > SIM Card Ejection Tools",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "267",
+      "name": "Mobile Phones",
+      "path": "Electronics > Communications > Telephony > Mobile Phones",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "543513",
+      "name": "Contract Mobile Phones",
+      "path": "Electronics > Communications > Telephony > Mobile Phones > Contract Mobile Phones",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "543512",
+      "name": "Pre-paid Mobile Phones",
+      "path": "Electronics > Communications > Telephony > Mobile Phones > Pre-paid Mobile Phones",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "543514",
+      "name": "Unlocked Mobile Phones",
+      "path": "Electronics > Communications > Telephony > Mobile Phones > Unlocked Mobile Phones",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1924",
+      "name": "Satellite Phones",
+      "path": "Electronics > Communications > Telephony > Satellite Phones",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "265",
+      "name": "Telephone Accessories",
+      "path": "Electronics > Communications > Telephony > Telephone Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "269",
+      "name": "Phone Cards",
+      "path": "Electronics > Communications > Telephony > Telephone Accessories > Phone Cards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "274",
+      "name": "Video Conferencing",
+      "path": "Electronics > Communications > Video Conferencing",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1801",
+      "name": "Components",
+      "path": "Electronics > Components",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "7395",
+      "name": "Accelerometers",
+      "path": "Electronics > Components > Accelerometers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2182",
+      "name": "Converters",
+      "path": "Electronics > Components > Converters",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "503001",
+      "name": "Audio Converters",
+      "path": "Electronics > Components > Converters > Audio Converters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "2205",
+      "name": "Scan Converters",
+      "path": "Electronics > Components > Converters > Scan Converters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1977",
+      "name": "Electronics Component Connectors",
+      "path": "Electronics > Components > Electronics Component Connectors",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1337",
+      "name": "Modulators",
+      "path": "Electronics > Components > Modulators",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1544",
+      "name": "Splitters",
+      "path": "Electronics > Components > Splitters",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "278",
+      "name": "Computers",
+      "path": "Electronics > Computers",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "5254",
+      "name": "Barebone Computers",
+      "path": "Electronics > Computers > Barebone Computers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "331",
+      "name": "Computer Servers",
+      "path": "Electronics > Computers > Computer Servers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "325",
+      "name": "Desktop Computers",
+      "path": "Electronics > Computers > Desktop Computers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "298",
+      "name": "Handheld Devices",
+      "path": "Electronics > Computers > Handheld Devices",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5256",
+      "name": "Data Collectors",
+      "path": "Electronics > Computers > Handheld Devices > Data Collectors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3539",
+      "name": "E-Book Readers",
+      "path": "Electronics > Computers > Handheld Devices > E-Book Readers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3769",
+      "name": "PDAs",
+      "path": "Electronics > Computers > Handheld Devices > PDAs",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5255",
+      "name": "Interactive Kiosks",
+      "path": "Electronics > Computers > Interactive Kiosks",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "328",
+      "name": "Laptops",
+      "path": "Electronics > Computers > Laptops",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "500002",
+      "name": "Smart Glasses",
+      "path": "Electronics > Computers > Smart Glasses",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "4745",
+      "name": "Tablet Computers",
+      "path": "Electronics > Computers > Tablet Computers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "8539",
+      "name": "Thin & Zero Clients",
+      "path": "Electronics > Computers > Thin & Zero Clients",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "543668",
+      "name": "Thin Client Computers",
+      "path": "Electronics > Computers > Thin & Zero Clients > Thin Client Computers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "543669",
+      "name": "Zero Client Computers",
+      "path": "Electronics > Computers > Thin & Zero Clients > Zero Client Computers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "502995",
+      "name": "Touch Table Computers",
+      "path": "Electronics > Computers > Touch Table Computers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2082",
+      "name": "Electronics Accessories",
+      "path": "Electronics > Electronics Accessories",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "258",
+      "name": "Adapters",
+      "path": "Electronics > Electronics Accessories > Adapters",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "4463",
+      "name": "Audio & Video Cable Adapters & Couplers",
+      "path": "Electronics > Electronics Accessories > Adapters > Audio & Video Cable Adapters & Couplers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "146",
+      "name": "Memory Card Adapters",
+      "path": "Electronics > Electronics Accessories > Adapters > Memory Card Adapters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7182",
+      "name": "USB Adapters",
+      "path": "Electronics > Electronics Accessories > Adapters > USB Adapters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5476",
+      "name": "Antenna Accessories",
+      "path": "Electronics > Electronics Accessories > Antenna Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5477",
+      "name": "Antenna Mounts & Brackets",
+      "path": "Electronics > Electronics Accessories > Antenna Accessories > Antenna Mounts & Brackets",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5478",
+      "name": "Antenna Rotators",
+      "path": "Electronics > Electronics Accessories > Antenna Accessories > Antenna Rotators",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6016",
+      "name": "Satellite LNBs",
+      "path": "Electronics > Electronics Accessories > Antenna Accessories > Satellite LNBs",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1718",
+      "name": "Antennas",
+      "path": "Electronics > Electronics Accessories > Antennas",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "8156",
+      "name": "Audio & Video Splitters & Switches",
+      "path": "Electronics > Electronics Accessories > Audio & Video Splitters & Switches",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "499944",
+      "name": "DVI Splitters & Switches",
+      "path": "Electronics > Electronics Accessories > Audio & Video Splitters & Switches > DVI Splitters & Switches",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8164",
+      "name": "HDMI Splitters & Switches",
+      "path": "Electronics > Electronics Accessories > Audio & Video Splitters & Switches > HDMI Splitters & Switches",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "499945",
+      "name": "VGA Splitters & Switches",
+      "path": "Electronics > Electronics Accessories > Audio & Video Splitters & Switches > VGA Splitters & Switches",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "367",
+      "name": "Blank Media",
+      "path": "Electronics > Electronics Accessories > Blank Media",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3328",
+      "name": "Cable Management",
+      "path": "Electronics > Electronics Accessories > Cable Management",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3764",
+      "name": "Cable Clips",
+      "path": "Electronics > Electronics Accessories > Cable Management > Cable Clips",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "500036",
+      "name": "Cable Tie Guns",
+      "path": "Electronics > Electronics Accessories > Cable Management > Cable Tie Guns",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6402",
+      "name": "Cable Trays",
+      "path": "Electronics > Electronics Accessories > Cable Management > Cable Trays",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5273",
+      "name": "Patch Panels",
+      "path": "Electronics > Electronics Accessories > Cable Management > Patch Panels",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "499686",
+      "name": "Wire & Cable Identification Markers",
+      "path": "Electronics > Electronics Accessories > Cable Management > Wire & Cable Identification Markers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6780",
+      "name": "Wire & Cable Sleeves",
+      "path": "Electronics > Electronics Accessories > Cable Management > Wire & Cable Sleeves",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "4016",
+      "name": "Wire & Cable Ties",
+      "path": "Electronics > Electronics Accessories > Cable Management > Wire & Cable Ties",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "259",
+      "name": "Cables",
+      "path": "Electronics > Electronics Accessories > Cables",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1867",
+      "name": "Audio & Video Cables",
+      "path": "Electronics > Electronics Accessories > Cables > Audio & Video Cables",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3461",
+      "name": "KVM Cables",
+      "path": "Electronics > Electronics Accessories > Cables > KVM Cables",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1480",
+      "name": "Network Cables",
+      "path": "Electronics > Electronics Accessories > Cables > Network Cables",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "500035",
+      "name": "Storage & Data Transfer Cables",
+      "path": "Electronics > Electronics Accessories > Cables > Storage & Data Transfer Cables",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1763",
+      "name": "System & Power Cables",
+      "path": "Electronics > Electronics Accessories > Cables > System & Power Cables",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3541",
+      "name": "Telephone Cables",
+      "path": "Electronics > Electronics Accessories > Cables > Telephone Cables",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "279",
+      "name": "Computer Accessories",
+      "path": "Electronics > Electronics Accessories > Computer Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "500040",
+      "name": "Computer Accessory Sets",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Computer Accessory Sets",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7530",
+      "name": "Computer Covers & Skins",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Computer Covers & Skins",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5489",
+      "name": "Computer Risers & Stands",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Computer Risers & Stands",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "280",
+      "name": "Handheld Device Accessories",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Handheld Device Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "4736",
+      "name": "E-Book Reader Accessories",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Handheld Device Accessories > E-Book Reader Accessories",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4738",
+      "name": "E-Book Reader Cases",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Handheld Device Accessories > E-Book Reader Accessories > E-Book Reader Cases",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "4737",
+      "name": "PDA Accessories",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Handheld Device Accessories > PDA Accessories",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4739",
+      "name": "PDA Cases",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Handheld Device Accessories > PDA Accessories > PDA Cases",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "6291",
+      "name": "Keyboard & Mouse Wrist Rests",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Keyboard & Mouse Wrist Rests",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6979",
+      "name": "Keyboard Trays & Platforms",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Keyboard Trays & Platforms",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "300",
+      "name": "Laptop Docking Stations",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Laptop Docking Stations",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1993",
+      "name": "Mouse Pads",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Mouse Pads",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5669",
+      "name": "Stylus Pen Nibs & Refills",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Stylus Pen Nibs & Refills",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5308",
+      "name": "Stylus Pens",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Stylus Pens",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "499956",
+      "name": "Tablet Computer Docks & Stands",
+      "path": "Electronics > Electronics Accessories > Computer Accessories > Tablet Computer Docks & Stands",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "285",
+      "name": "Computer Components",
+      "path": "Electronics > Electronics Accessories > Computer Components",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "6932",
+      "name": "Blade Server Enclosures",
+      "path": "Electronics > Electronics Accessories > Computer Components > Blade Server Enclosures",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8158",
+      "name": "Computer Backplates & I/O Shields",
+      "path": "Electronics > Electronics Accessories > Computer Components > Computer Backplates & I/O Shields",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "291",
+      "name": "Computer Power Supplies",
+      "path": "Electronics > Electronics Accessories > Computer Components > Computer Power Supplies",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "292",
+      "name": "Computer Processors",
+      "path": "Electronics > Electronics Accessories > Computer Components > Computer Processors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "293",
+      "name": "Computer Racks & Mounts",
+      "path": "Electronics > Electronics Accessories > Computer Components > Computer Racks & Mounts",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "294",
+      "name": "Computer Starter Kits",
+      "path": "Electronics > Electronics Accessories > Computer Components > Computer Starter Kits",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "295",
+      "name": "Computer System Cooling Parts",
+      "path": "Electronics > Electronics Accessories > Computer Components > Computer System Cooling Parts",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "296",
+      "name": "Desktop Computer & Server Cases",
+      "path": "Electronics > Electronics Accessories > Computer Components > Desktop Computer & Server Cases",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8162",
+      "name": "E-Book Reader Parts",
+      "path": "Electronics > Electronics Accessories > Computer Components > E-Book Reader Parts",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "8163",
+      "name": "E-Book Reader Screens & Screen Digitizers",
+      "path": "Electronics > Electronics Accessories > Computer Components > E-Book Reader Parts > E-Book Reader Screens & Screen Digitizers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "287",
+      "name": "I/O Cards & Adapters",
+      "path": "Electronics > Electronics Accessories > Computer Components > I/O Cards & Adapters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "286",
+      "name": "Audio Cards & Adapters",
+      "path": "Electronics > Electronics Accessories > Computer Components > I/O Cards & Adapters > Audio Cards & Adapters",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "505299",
+      "name": "Computer Interface Cards & Adapters",
+      "path": "Electronics > Electronics Accessories > Computer Components > I/O Cards & Adapters > Computer Interface Cards & Adapters",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "503755",
+      "name": "Riser Cards",
+      "path": "Electronics > Electronics Accessories > Computer Components > I/O Cards & Adapters > Riser Cards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1487",
+      "name": "TV Tuner Cards & Adapters",
+      "path": "Electronics > Electronics Accessories > Computer Components > I/O Cards & Adapters > TV Tuner Cards & Adapters",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "297",
+      "name": "Video Cards & Adapters",
+      "path": "Electronics > Electronics Accessories > Computer Components > I/O Cards & Adapters > Video Cards & Adapters",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "6475",
+      "name": "Input Device Accessories",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Device Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6476",
+      "name": "Barcode Scanner Stands",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Device Accessories > Barcode Scanner Stands",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "8008",
+      "name": "Game Controller Accessories",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Device Accessories > Game Controller Accessories",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "503003",
+      "name": "Keyboard Keys & Caps",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Device Accessories > Keyboard Keys & Caps",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "500052",
+      "name": "Mice & Trackball Accessories",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Device Accessories > Mice & Trackball Accessories",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1928",
+      "name": "Input Devices",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "139",
+      "name": "Barcode Scanners",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Barcode Scanners",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5309",
+      "name": "Digital Note Taking Pens",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Digital Note Taking Pens",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "505801",
+      "name": "Electronic Card Readers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Electronic Card Readers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5366",
+      "name": "Fingerprint Readers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Fingerprint Readers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "301",
+      "name": "Game Controllers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Game Controllers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "543591",
+      "name": "Game Racing Wheels",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Game Controllers > Game Racing Wheels",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "543590",
+      "name": "Game Remotes",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Game Controllers > Game Remotes",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "543589",
+      "name": "Gaming Pads",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Game Controllers > Gaming Pads",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "543588",
+      "name": "Joystick Controllers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Game Controllers > Joystick Controllers",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "543593",
+      "name": "Musical Instrument Game Controllers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Game Controllers > Musical Instrument Game Controllers",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "499950",
+      "name": "Gesture Control Input Devices",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Gesture Control Input Devices",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "302",
+      "name": "Graphics Tablets",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Graphics Tablets",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1562",
+      "name": "KVM Switches",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > KVM Switches",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "303",
+      "name": "Keyboards",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Keyboards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "3580",
+      "name": "Memory Card Readers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Memory Card Readers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "304",
+      "name": "Mice & Trackballs",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Mice & Trackballs",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4512",
+      "name": "Numeric Keypads",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Numeric Keypads",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "308",
+      "name": "Touchpads",
+      "path": "Electronics > Electronics Accessories > Computer Components > Input Devices > Touchpads",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4224",
+      "name": "Laptop Parts",
+      "path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6416",
+      "name": "Laptop Hinges",
+      "path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Hinges",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4270",
+      "name": "Laptop Housings & Trim",
+      "path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Housings & Trim",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "7501",
+      "name": "Laptop Replacement Cables",
+      "path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Replacement Cables",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4301",
+      "name": "Laptop Replacement Keyboards",
+      "path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Replacement Keyboards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4102",
+      "name": "Laptop Replacement Screens",
+      "path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Replacement Screens",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "43617",
+      "name": "Laptop Replacement Speakers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Replacement Speakers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "8160",
+      "name": "Laptop Screen Digitizers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Laptop Parts > Laptop Screen Digitizers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "2414",
+      "name": "Storage Devices",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5268",
+      "name": "Disk Duplicators",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Disk Duplicators",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "376",
+      "name": "CD/DVD Duplicators",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Disk Duplicators > CD/DVD Duplicators",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "5271",
+      "name": "Hard Drive Duplicators",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Disk Duplicators > Hard Drive Duplicators",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "5112",
+      "name": "USB Drive Duplicators",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Disk Duplicators > USB Drive Duplicators",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "1301",
+      "name": "Floppy Drives",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Floppy Drives",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1623",
+      "name": "Hard Drive Accessories",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Hard Drive Accessories",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "381",
+      "name": "Hard Drive Carrying Cases",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Hard Drive Accessories > Hard Drive Carrying Cases",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "4417",
+      "name": "Hard Drive Docks",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Hard Drive Accessories > Hard Drive Docks",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "505767",
+      "name": "Hard Drive Enclosures & Mounts",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Hard Drive Accessories > Hard Drive Enclosures & Mounts",
+      "depth": 6,
+      "type": "Category"
+    },
+    {
+      "id": "5272",
+      "name": "Hard Drive Arrays",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Hard Drive Arrays",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "380",
+      "name": "Hard Drives",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Hard Drives",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5269",
+      "name": "Network Storage Systems",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Network Storage Systems",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "377",
+      "name": "Optical Drives",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Optical Drives",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "385",
+      "name": "Tape Drives",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > Tape Drives",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "3712",
+      "name": "USB Flash Drives",
+      "path": "Electronics > Electronics Accessories > Computer Components > Storage Devices > USB Flash Drives",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "7349",
+      "name": "Tablet Computer Parts",
+      "path": "Electronics > Electronics Accessories > Computer Components > Tablet Computer Parts",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "503002",
+      "name": "Tablet Computer Housings & Trim",
+      "path": "Electronics > Electronics Accessories > Computer Components > Tablet Computer Parts > Tablet Computer Housings & Trim",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "45262",
+      "name": "Tablet Computer Replacement Speakers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Tablet Computer Parts > Tablet Computer Replacement Speakers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "500013",
+      "name": "Tablet Computer Screens & Screen Digitizers",
+      "path": "Electronics > Electronics Accessories > Computer Components > Tablet Computer Parts > Tablet Computer Screens & Screen Digitizers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "311",
+      "name": "USB & FireWire Hubs",
+      "path": "Electronics > Electronics Accessories > Computer Components > USB & FireWire Hubs",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "4617",
+      "name": "Electronics Cleaners",
+      "path": "Electronics > Electronics Accessories > Electronics Cleaners",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5466",
+      "name": "Electronics Films & Shields",
+      "path": "Electronics > Electronics Accessories > Electronics Films & Shields",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5523",
+      "name": "Electronics Stickers & Decals",
+      "path": "Electronics > Electronics Accessories > Electronics Films & Shields > Electronics Stickers & Decals",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5469",
+      "name": "Keyboard Protectors",
+      "path": "Electronics > Electronics Accessories > Electronics Films & Shields > Keyboard Protectors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5467",
+      "name": "Privacy Filters",
+      "path": "Electronics > Electronics Accessories > Electronics Films & Shields > Privacy Filters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5468",
+      "name": "Screen Protectors",
+      "path": "Electronics > Electronics Accessories > Electronics Films & Shields > Screen Protectors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "288",
+      "name": "Memory",
+      "path": "Electronics > Electronics Accessories > Memory",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1665",
+      "name": "Cache Memory",
+      "path": "Electronics > Electronics Accessories > Memory > Cache Memory",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "384",
+      "name": "Flash Memory",
+      "path": "Electronics > Electronics Accessories > Memory > Flash Memory",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3387",
+      "name": "Flash Memory Cards",
+      "path": "Electronics > Electronics Accessories > Memory > Flash Memory > Flash Memory Cards",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1733",
+      "name": "RAM",
+      "path": "Electronics > Electronics Accessories > Memory > RAM",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "2130",
+      "name": "ROM",
+      "path": "Electronics > Electronics Accessories > Memory > ROM",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1767",
+      "name": "Video Memory",
+      "path": "Electronics > Electronics Accessories > Memory > Video Memory",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3422",
+      "name": "Memory Accessories",
+      "path": "Electronics > Electronics Accessories > Memory Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3672",
+      "name": "Memory Cases",
+      "path": "Electronics > Electronics Accessories > Memory Accessories > Memory Cases",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "499878",
+      "name": "Mobile Phone & Tablet Tripods & Monopods",
+      "path": "Electronics > Electronics Accessories > Mobile Phone & Tablet Tripods & Monopods",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "275",
+      "name": "Power",
+      "path": "Electronics > Electronics Accessories > Power",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "276",
+      "name": "Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1722",
+      "name": "Camera Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > Camera Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1880",
+      "name": "Cordless Phone Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > Cordless Phone Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "7551",
+      "name": "E-Book Reader Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > E-Book Reader Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4928",
+      "name": "General Purpose Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > General Purpose Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1564",
+      "name": "Laptop Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > Laptop Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "499810",
+      "name": "MP3 Player Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > MP3 Player Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1745",
+      "name": "Mobile Phone Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > Mobile Phone Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5133",
+      "name": "PDA Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > PDA Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "7438",
+      "name": "Tablet Computer Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > Tablet Computer Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "6289",
+      "name": "UPS Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > UPS Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "2222",
+      "name": "Video Camera Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > Video Camera Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "500117",
+      "name": "Video Game Console & Controller Batteries",
+      "path": "Electronics > Electronics Accessories > Power > Batteries > Video Game Console & Controller Batteries",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "7166",
+      "name": "Battery Accessories",
+      "path": "Electronics > Electronics Accessories > Power > Battery Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6817",
+      "name": "Battery Charge Controllers",
+      "path": "Electronics > Electronics Accessories > Power > Battery Accessories > Battery Charge Controllers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "8243",
+      "name": "Battery Holders",
+      "path": "Electronics > Electronics Accessories > Power > Battery Accessories > Battery Holders",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "3130",
+      "name": "Camera Battery Chargers",
+      "path": "Electronics > Electronics Accessories > Power > Battery Accessories > Camera Battery Chargers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "7167",
+      "name": "General Purpose Battery Chargers",
+      "path": "Electronics > Electronics Accessories > Power > Battery Accessories > General Purpose Battery Chargers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "499928",
+      "name": "General Purpose Battery Testers",
+      "path": "Electronics > Electronics Accessories > Power > Battery Accessories > General Purpose Battery Testers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "2978",
+      "name": "Fuel Cells",
+      "path": "Electronics > Electronics Accessories > Power > Fuel Cells",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6933",
+      "name": "Power Adapter & Charger Accessories",
+      "path": "Electronics > Electronics Accessories > Power > Power Adapter & Charger Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "505295",
+      "name": "Power Adapters & Chargers",
+      "path": "Electronics > Electronics Accessories > Power > Power Adapters & Chargers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "6790",
+      "name": "Power Control Units",
+      "path": "Electronics > Electronics Accessories > Power > Power Control Units",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3160",
+      "name": "Power Strips & Surge Suppressors",
+      "path": "Electronics > Electronics Accessories > Power > Power Strips & Surge Suppressors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5274",
+      "name": "Power Supply Enclosures",
+      "path": "Electronics > Electronics Accessories > Power > Power Supply Enclosures",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5380",
+      "name": "Surge Protection Devices",
+      "path": "Electronics > Electronics Accessories > Power > Surge Protection Devices",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "7135",
+      "name": "Travel Converters & Adapters",
+      "path": "Electronics > Electronics Accessories > Power > Travel Converters & Adapters",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1348",
+      "name": "UPS",
+      "path": "Electronics > Electronics Accessories > Power > UPS",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1375",
+      "name": "UPS Accessories",
+      "path": "Electronics > Electronics Accessories > Power > UPS Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "341",
+      "name": "Remote Controls",
+      "path": "Electronics > Electronics Accessories > Remote Controls",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5473",
+      "name": "Signal Boosters",
+      "path": "Electronics > Electronics Accessories > Signal Boosters",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5695",
+      "name": "Signal Jammers",
+      "path": "Electronics > Electronics Accessories > Signal Jammers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5612",
+      "name": "GPS Jammers",
+      "path": "Electronics > Electronics Accessories > Signal Jammers > GPS Jammers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5696",
+      "name": "Mobile Phone Jammers",
+      "path": "Electronics > Electronics Accessories > Signal Jammers > Mobile Phone Jammers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5589",
+      "name": "Radar Jammers",
+      "path": "Electronics > Electronics Accessories > Signal Jammers > Radar Jammers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "3895",
+      "name": "GPS Accessories",
+      "path": "Electronics > GPS Accessories",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "3781",
+      "name": "GPS Cases",
+      "path": "Electronics > GPS Accessories > GPS Cases",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3213",
+      "name": "GPS Mounts",
+      "path": "Electronics > GPS Accessories > GPS Mounts",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "339",
+      "name": "GPS Navigation Systems",
+      "path": "Electronics > GPS Navigation Systems",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "6544",
+      "name": "GPS Tracking Devices",
+      "path": "Electronics > GPS Tracking Devices",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "340",
+      "name": "Marine Electronics",
+      "path": "Electronics > Marine Electronics",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "1550",
+      "name": "Fish Finders",
+      "path": "Electronics > Marine Electronics > Fish Finders",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "8134",
+      "name": "Marine Audio & Video Receivers",
+      "path": "Electronics > Marine Electronics > Marine Audio & Video Receivers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2178",
+      "name": "Marine Chartplotters & GPS",
+      "path": "Electronics > Marine Electronics > Marine Chartplotters & GPS",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1552",
+      "name": "Marine Radar",
+      "path": "Electronics > Marine Electronics > Marine Radar",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "4450",
+      "name": "Marine Radios",
+      "path": "Electronics > Marine Electronics > Marine Radios",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "8473",
+      "name": "Marine Speakers",
+      "path": "Electronics > Marine Electronics > Marine Speakers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "342",
+      "name": "Networking",
+      "path": "Electronics > Networking",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "1350",
+      "name": "Bridges & Routers",
+      "path": "Electronics > Networking > Bridges & Routers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5659",
+      "name": "Network Bridges",
+      "path": "Electronics > Networking > Bridges & Routers > Network Bridges",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "2358",
+      "name": "VoIP Gateways & Routers",
+      "path": "Electronics > Networking > Bridges & Routers > VoIP Gateways & Routers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5496",
+      "name": "Wireless Access Points",
+      "path": "Electronics > Networking > Bridges & Routers > Wireless Access Points",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5497",
+      "name": "Wireless Routers",
+      "path": "Electronics > Networking > Bridges & Routers > Wireless Routers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "2479",
+      "name": "Concentrators & Multiplexers",
+      "path": "Electronics > Networking > Concentrators & Multiplexers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2455",
+      "name": "Hubs & Switches",
+      "path": "Electronics > Networking > Hubs & Switches",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5576",
+      "name": "Modem Accessories",
+      "path": "Electronics > Networking > Modem Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "343",
+      "name": "Modems",
+      "path": "Electronics > Networking > Modems",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "290",
+      "name": "Network Cards & Adapters",
+      "path": "Electronics > Networking > Network Cards & Adapters",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3742",
+      "name": "Network Security & Firewall Devices",
+      "path": "Electronics > Networking > Network Security & Firewall Devices",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "6508",
+      "name": "Power Over Ethernet Adapters",
+      "path": "Electronics > Networking > Power Over Ethernet Adapters",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "3425",
+      "name": "Print Servers",
+      "path": "Electronics > Networking > Print Servers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2121",
+      "name": "Repeaters & Transceivers",
+      "path": "Electronics > Networking > Repeaters & Transceivers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "345",
+      "name": "Print, Copy, Scan & Fax",
+      "path": "Electronics > Print, Copy, Scan & Fax",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "499682",
+      "name": "3D Printer Accessories",
+      "path": "Electronics > Print, Copy, Scan & Fax > 3D Printer Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "6865",
+      "name": "3D Printers",
+      "path": "Electronics > Print, Copy, Scan & Fax > 3D Printers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "502990",
+      "name": "Printer, Copier & Fax Machine Accessories",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5258",
+      "name": "Printer Consumables",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Consumables",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5259",
+      "name": "Printer Drums & Drum Kits",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Consumables > Printer Drums & Drum Kits",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5266",
+      "name": "Printer Filters",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Consumables > Printer Filters",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5262",
+      "name": "Printer Maintenance Kits",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Consumables > Printer Maintenance Kits",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5260",
+      "name": "Printer Ribbons",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Consumables > Printer Ribbons",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5261",
+      "name": "Printheads",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Consumables > Printheads",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "7362",
+      "name": "Toner & Inkjet Cartridge Refills",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Consumables > Toner & Inkjet Cartridge Refills",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "356",
+      "name": "Toner & Inkjet Cartridges",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Consumables > Toner & Inkjet Cartridges",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5265",
+      "name": "Printer Duplexers",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Duplexers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "1683",
+      "name": "Printer Memory",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Memory",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5459",
+      "name": "Printer Stands",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer Stands",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "502991",
+      "name": "Printer, Copier & Fax Machine Replacement Parts",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories > Printer, Copier & Fax Machine Replacement Parts",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "500106",
+      "name": "Printers, Copiers & Fax Machines",
+      "path": "Electronics > Print, Copy, Scan & Fax > Printers, Copiers & Fax Machines",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "284",
+      "name": "Scanner Accessories",
+      "path": "Electronics > Print, Copy, Scan & Fax > Scanner Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "306",
+      "name": "Scanners",
+      "path": "Electronics > Print, Copy, Scan & Fax > Scanners",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "912",
+      "name": "Radar Detectors",
+      "path": "Electronics > Radar Detectors",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "500091",
+      "name": "Speed Radars",
+      "path": "Electronics > Speed Radars",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "4488",
+      "name": "Toll Collection Devices",
+      "path": "Electronics > Toll Collection Devices",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "386",
+      "name": "Video",
+      "path": "Electronics > Video",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "305",
+      "name": "Computer Monitors",
+      "path": "Electronics > Video > Computer Monitors",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "396",
+      "name": "Projectors",
+      "path": "Electronics > Video > Projectors",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "397",
+      "name": "Multimedia Projectors",
+      "path": "Electronics > Video > Projectors > Multimedia Projectors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "398",
+      "name": "Overhead Projectors",
+      "path": "Electronics > Video > Projectors > Overhead Projectors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "399",
+      "name": "Slide Projectors",
+      "path": "Electronics > Video > Projectors > Slide Projectors",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5561",
+      "name": "Satellite & Cable TV",
+      "path": "Electronics > Video > Satellite & Cable TV",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5562",
+      "name": "Cable TV Receivers",
+      "path": "Electronics > Video > Satellite & Cable TV > Cable TV Receivers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "401",
+      "name": "Satellite Receivers",
+      "path": "Electronics > Video > Satellite & Cable TV > Satellite Receivers",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "404",
+      "name": "Televisions",
+      "path": "Electronics > Video > Televisions",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2027",
+      "name": "Video Accessories",
+      "path": "Electronics > Video > Video Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "4760",
+      "name": "3D Glasses",
+      "path": "Electronics > Video > Video Accessories > 3D Glasses",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "283",
+      "name": "Computer Monitor Accessories",
+      "path": "Electronics > Video > Video Accessories > Computer Monitor Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5516",
+      "name": "Color Calibrators",
+      "path": "Electronics > Video > Video Accessories > Computer Monitor Accessories > Color Calibrators",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "393",
+      "name": "Projector Accessories",
+      "path": "Electronics > Video > Video Accessories > Projector Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5599",
+      "name": "Projection & Tripod Skirts",
+      "path": "Electronics > Video > Video Accessories > Projector Accessories > Projection & Tripod Skirts",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "4570",
+      "name": "Projection Screen Stands",
+      "path": "Electronics > Video > Video Accessories > Projector Accessories > Projection Screen Stands",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "395",
+      "name": "Projection Screens",
+      "path": "Electronics > Video > Video Accessories > Projector Accessories > Projection Screens",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5257",
+      "name": "Projector Mounts",
+      "path": "Electronics > Video > Video Accessories > Projector Accessories > Projector Mounts",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "394",
+      "name": "Projector Replacement Lamps",
+      "path": "Electronics > Video > Video Accessories > Projector Accessories > Projector Replacement Lamps",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "2145",
+      "name": "Rewinders",
+      "path": "Electronics > Video > Video Accessories > Rewinders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "403",
+      "name": "Television Parts & Accessories",
+      "path": "Electronics > Video > Video Accessories > Television Parts & Accessories",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "4458",
+      "name": "TV & Monitor Mounts",
+      "path": "Electronics > Video > Video Accessories > Television Parts & Accessories > TV & Monitor Mounts",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5503",
+      "name": "TV Converter Boxes",
+      "path": "Electronics > Video > Video Accessories > Television Parts & Accessories > TV Converter Boxes",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "5471",
+      "name": "TV Replacement Lamps",
+      "path": "Electronics > Video > Video Accessories > Television Parts & Accessories > TV Replacement Lamps",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "43616",
+      "name": "TV Replacement Speakers",
+      "path": "Electronics > Video > Video Accessories > Television Parts & Accessories > TV Replacement Speakers",
+      "depth": 5,
+      "type": "Category"
+    },
+    {
+      "id": "1368",
+      "name": "Video Editing Hardware & Production Equipment",
+      "path": "Electronics > Video > Video Editing Hardware & Production Equipment",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1634",
+      "name": "Video Multiplexers",
+      "path": "Electronics > Video > Video Multiplexers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "387",
+      "name": "Video Players & Recorders",
+      "path": "Electronics > Video > Video Players & Recorders",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "388",
+      "name": "DVD & Blu-ray Players",
+      "path": "Electronics > Video > Video Players & Recorders > DVD & Blu-ray Players",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "389",
+      "name": "DVD Recorders",
+      "path": "Electronics > Video > Video Players & Recorders > DVD Recorders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "390",
+      "name": "Digital Video Recorders",
+      "path": "Electronics > Video > Video Players & Recorders > Digital Video Recorders",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5276",
+      "name": "Streaming & Home Media Players",
+      "path": "Electronics > Video > Video Players & Recorders > Streaming & Home Media Players",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "391",
+      "name": "VCRs",
+      "path": "Electronics > Video > Video Players & Recorders > VCRs",
+      "depth": 4,
+      "type": "Category"
+    },
+    {
+      "id": "5278",
+      "name": "Video Servers",
+      "path": "Electronics > Video > Video Servers",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "5450",
+      "name": "Video Transmitters",
+      "path": "Electronics > Video > Video Transmitters",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1270",
+      "name": "Video Game Console Accessories",
+      "path": "Electronics > Video Game Console Accessories",
+      "depth": 2,
+      "type": "Category"
+    },
+    {
+      "id": "1505",
+      "name": "Home Game Console Accessories",
+      "path": "Electronics > Video Game Console Accessories > Home Game Console Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "2070",
+      "name": "Portable Game Console Accessories",
+      "path": "Electronics > Video Game Console Accessories > Portable Game Console Accessories",
+      "depth": 3,
+      "type": "Category"
+    },
+    {
+      "id": "1294",
+      "name": "Video Game Consoles",
+      "path": "Electronics > Video Game Consoles",
+      "depth": 2,
+      "type": "Category"
+    }
+  ],
+  "edges": [
+    {
+      "source": "222",
+      "target": "3356",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3356",
+      "target": "8085",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3356",
+      "target": "3946",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3356",
+      "target": "3140",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3356",
+      "target": "3681",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3356",
+      "target": "3676",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3356",
+      "target": "3117",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "223",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "223",
+      "target": "1420",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "503008",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "505797",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "505797",
+      "target": "503004",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "5395",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5395",
+      "target": "5396",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "232",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "232",
+      "target": "7566",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "232",
+      "target": "3055",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "3306",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "3912",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "239",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "7163",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7163",
+      "target": "500112",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7163",
+      "target": "500120",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7163",
+      "target": "8047",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7163",
+      "target": "8049",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7163",
+      "target": "500119",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1420",
+      "target": "2372",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "223",
+      "target": "2165",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "241",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "224",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "224",
+      "target": "4493",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "224",
+      "target": "5381",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "236",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "5129",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5129",
+      "target": "5130",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5129",
+      "target": "4035",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "6545",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "6546",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "505771",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "505771",
+      "target": "543626",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "505771",
+      "target": "543627",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "234",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "246",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "246",
+      "target": "5435",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "246",
+      "target": "247",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "246",
+      "target": "248",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "246",
+      "target": "5597",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "246",
+      "target": "3945",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "246",
+      "target": "5596",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "246",
+      "target": "5369",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "249",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2165",
+      "target": "505298",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "223",
+      "target": "242",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "225",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "226",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "243",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "252",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "4652",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "230",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "233",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "235",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "5434",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "6886",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "8271",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "251",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "256",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "242",
+      "target": "244",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "223",
+      "target": "8159",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "223",
+      "target": "4921",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4921",
+      "target": "4922",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4921",
+      "target": "4923",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "223",
+      "target": "2154",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "223",
+      "target": "3727",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3727",
+      "target": "3242",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "3702",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3702",
+      "target": "500027",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3702",
+      "target": "7259",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3702",
+      "target": "3889",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3889",
+      "target": "4010",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3702",
+      "target": "7258",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3702",
+      "target": "3635",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3635",
+      "target": "3220",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3635",
+      "target": "7260",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3635",
+      "target": "3121",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3635",
+      "target": "3424",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3702",
+      "target": "7264",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "298419",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "499898",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "499898",
+      "target": "499899",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "499898",
+      "target": "8546",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "499898",
+      "target": "289",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "3416",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "499889",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "8545",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "8549",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "8544",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "499675",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7264",
+      "target": "8516",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3702",
+      "target": "3991",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3991",
+      "target": "3632",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3991",
+      "target": "7257",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3991",
+      "target": "3949",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3991",
+      "target": "3094",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "262",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "266",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "5275",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "263",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "2471",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2471",
+      "target": "2106",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2471",
+      "target": "4415",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2471",
+      "target": "273",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "5404",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "360",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "268",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "270",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "270",
+      "target": "4666",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "270",
+      "target": "271",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "270",
+      "target": "272",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "270",
+      "target": "264",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "264",
+      "target": "8111",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "264",
+      "target": "2353",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "264",
+      "target": "4550",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "264",
+      "target": "6030",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "6030",
+      "target": "543515",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "6030",
+      "target": "543516",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "264",
+      "target": "7347",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "264",
+      "target": "5566",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "264",
+      "target": "499916",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "270",
+      "target": "267",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "267",
+      "target": "543513",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "267",
+      "target": "543512",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "267",
+      "target": "543514",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "270",
+      "target": "1924",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "270",
+      "target": "265",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "265",
+      "target": "269",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "262",
+      "target": "274",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "1801",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1801",
+      "target": "7395",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1801",
+      "target": "2182",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2182",
+      "target": "503001",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2182",
+      "target": "2205",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1801",
+      "target": "1977",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1801",
+      "target": "1337",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1801",
+      "target": "1544",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "278",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "5254",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "331",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "325",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "298",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "298",
+      "target": "5256",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "298",
+      "target": "3539",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "298",
+      "target": "3769",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "5255",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "328",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "500002",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "4745",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "8539",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "8539",
+      "target": "543668",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "8539",
+      "target": "543669",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "278",
+      "target": "502995",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "2082",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "258",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "258",
+      "target": "4463",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "258",
+      "target": "146",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "258",
+      "target": "7182",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "5476",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5476",
+      "target": "5477",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5476",
+      "target": "5478",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5476",
+      "target": "6016",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "1718",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "8156",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "8156",
+      "target": "499944",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "8156",
+      "target": "8164",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "8156",
+      "target": "499945",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "367",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "3328",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3328",
+      "target": "3764",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3328",
+      "target": "500036",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3328",
+      "target": "6402",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3328",
+      "target": "5273",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3328",
+      "target": "499686",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3328",
+      "target": "6780",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3328",
+      "target": "4016",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "259",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "259",
+      "target": "1867",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "259",
+      "target": "3461",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "259",
+      "target": "1480",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "259",
+      "target": "500035",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "259",
+      "target": "1763",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "259",
+      "target": "3541",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "279",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "500040",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "7530",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "5489",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "280",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "280",
+      "target": "4736",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4736",
+      "target": "4738",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "280",
+      "target": "4737",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4737",
+      "target": "4739",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "6291",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "6979",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "300",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "1993",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "5669",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "5308",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "279",
+      "target": "499956",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "285",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "6932",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "8158",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "291",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "292",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "293",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "294",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "295",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "296",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "8162",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "8162",
+      "target": "8163",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "287",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "287",
+      "target": "286",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "287",
+      "target": "505299",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "287",
+      "target": "503755",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "287",
+      "target": "1487",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "287",
+      "target": "297",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "6475",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "6475",
+      "target": "6476",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "6475",
+      "target": "8008",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "6475",
+      "target": "503003",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "6475",
+      "target": "500052",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "1928",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "139",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "5309",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "505801",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "5366",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "301",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "301",
+      "target": "543591",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "301",
+      "target": "543590",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "301",
+      "target": "543589",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "301",
+      "target": "543588",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "301",
+      "target": "543593",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "499950",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "302",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "1562",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "303",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "3580",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "304",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "4512",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1928",
+      "target": "308",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "4224",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4224",
+      "target": "6416",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4224",
+      "target": "4270",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4224",
+      "target": "7501",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4224",
+      "target": "4301",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4224",
+      "target": "4102",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4224",
+      "target": "43617",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "4224",
+      "target": "8160",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "2414",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "5268",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5268",
+      "target": "376",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5268",
+      "target": "5271",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5268",
+      "target": "5112",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "1301",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "1623",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1623",
+      "target": "381",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1623",
+      "target": "4417",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1623",
+      "target": "505767",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "5272",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "380",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "5269",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "377",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "385",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2414",
+      "target": "3712",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "7349",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7349",
+      "target": "503002",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7349",
+      "target": "45262",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7349",
+      "target": "500013",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "285",
+      "target": "311",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "4617",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "5466",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5466",
+      "target": "5523",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5466",
+      "target": "5469",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5466",
+      "target": "5467",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5466",
+      "target": "5468",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "288",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "288",
+      "target": "1665",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "288",
+      "target": "384",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "384",
+      "target": "3387",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "288",
+      "target": "1733",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "288",
+      "target": "2130",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "288",
+      "target": "1767",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "3422",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3422",
+      "target": "3672",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "499878",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "275",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "276",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "1722",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "1880",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "7551",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "4928",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "1564",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "499810",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "1745",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "5133",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "7438",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "6289",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "2222",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "276",
+      "target": "500117",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "7166",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7166",
+      "target": "6817",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7166",
+      "target": "8243",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7166",
+      "target": "3130",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7166",
+      "target": "7167",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "7166",
+      "target": "499928",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "2978",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "6933",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "505295",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "6790",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "3160",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "5274",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "5380",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "7135",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "1348",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "275",
+      "target": "1375",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "341",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "5473",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2082",
+      "target": "5695",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5695",
+      "target": "5612",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5695",
+      "target": "5696",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5695",
+      "target": "5589",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "3895",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3895",
+      "target": "3781",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "3895",
+      "target": "3213",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "339",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "6544",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "340",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "340",
+      "target": "1550",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "340",
+      "target": "8134",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "340",
+      "target": "2178",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "340",
+      "target": "1552",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "340",
+      "target": "4450",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "340",
+      "target": "8473",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "342",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "1350",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1350",
+      "target": "5659",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1350",
+      "target": "2358",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1350",
+      "target": "5496",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1350",
+      "target": "5497",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "2479",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "2455",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "5576",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "343",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "290",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "3742",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "6508",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "3425",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "342",
+      "target": "2121",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "345",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "345",
+      "target": "499682",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "345",
+      "target": "6865",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "345",
+      "target": "502990",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "502990",
+      "target": "5258",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5258",
+      "target": "5259",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5258",
+      "target": "5266",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5258",
+      "target": "5262",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5258",
+      "target": "5260",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5258",
+      "target": "5261",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5258",
+      "target": "7362",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5258",
+      "target": "356",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "502990",
+      "target": "5265",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "502990",
+      "target": "1683",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "502990",
+      "target": "5459",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "502990",
+      "target": "502991",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "345",
+      "target": "500106",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "345",
+      "target": "284",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "345",
+      "target": "306",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "912",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "500091",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "4488",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "386",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "305",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "396",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "396",
+      "target": "397",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "396",
+      "target": "398",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "396",
+      "target": "399",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "5561",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5561",
+      "target": "5562",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "5561",
+      "target": "401",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "404",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "2027",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2027",
+      "target": "4760",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2027",
+      "target": "283",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "283",
+      "target": "5516",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2027",
+      "target": "393",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "393",
+      "target": "5599",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "393",
+      "target": "4570",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "393",
+      "target": "395",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "393",
+      "target": "5257",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "393",
+      "target": "394",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2027",
+      "target": "2145",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "2027",
+      "target": "403",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "403",
+      "target": "4458",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "403",
+      "target": "5503",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "403",
+      "target": "5471",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "403",
+      "target": "43616",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "1368",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "1634",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "387",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "387",
+      "target": "388",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "387",
+      "target": "389",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "387",
+      "target": "390",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "387",
+      "target": "5276",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "387",
+      "target": "391",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "5278",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "386",
+      "target": "5450",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "1270",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1270",
+      "target": "1505",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "1270",
+      "target": "2070",
+      "relationship": "HAS_SUBCATEGORY"
+    },
+    {
+      "source": "222",
+      "target": "1294",
+      "relationship": "HAS_SUBCATEGORY"
+    }
+  ]
+}

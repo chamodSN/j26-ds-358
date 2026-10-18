@@ -91,3 +91,20 @@ desktop.ini
 # Logs
 logs/
 *.log
+
+# Track M3 knowledge graph and taxonomy files
+!member3_knowledge_graph/data/
+!member3_knowledge_graph/data/electronics_kg.json
+!member3_knowledge_graph/data/electronics_taxonomy.csv
+!member3_knowledge_graph/data/google_product_taxonomy.txt
+
+# Node dependencies and generated files
+node_modules/
+frontend/node_modules/
+frontend/package.json.save
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv-ui/
+.env
