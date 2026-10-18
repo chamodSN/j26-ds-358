@@ -1,0 +1,12 @@
+model,format,ndcg@10,mrr,p@5,time_s
+random,-,0.7682,0.7759,0.6838,
+BM25,full,0.8722,0.8832,0.7924,
+SBERT all-MiniLM-L6-v2 (bi-encoder),full,0.883,0.9025,0.8012,17.8
+ms-marco-MiniLM-L-6-v2 (zero-shot),title,0.9096,0.9338,0.828,12.8
+ms-marco-MiniLM-L-6-v2 (zero-shot),title_brand,0.9117,0.9323,0.8271,9.3
+ms-marco-MiniLM-L-6-v2 (zero-shot),full,0.9121,0.9348,0.8302,9.8
+ms-marco-MiniLM-L-6-v2 (zero-shot),full_bullets,0.9128,0.9305,0.8299,17.6
+ms-marco-MiniLM-L-12-v2 (zero-shot),title,0.9134,0.9384,0.8293,21.1
+ms-marco-MiniLM-L-12-v2 (zero-shot),title_brand,0.9139,0.9379,0.8302,18.2
+ms-marco-MiniLM-L-12-v2 (zero-shot),full,0.9134,0.9346,0.8299,19.3
+ms-marco-MiniLM-L-12-v2 (zero-shot),full_bullets,0.9144,0.932,0.8284,39.7
