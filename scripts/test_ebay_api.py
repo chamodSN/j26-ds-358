@@ -1,119 +1,270 @@
 
 import os
+import sys
+import csv
 from pathlib import Path
+from datetime import datetime, timezone
 
 import requests
 from dotenv import load_dotenv
 
-# =====================================
-# 1. Load Production API credentials
-# =====================================
+# -------------------------------------
+# 1. Project setup
+# -------------------------------------
 
-project_dir = Path(__file__).resolve().parent.parent
-load_dotenv(project_dir / ".env")
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+M3_SRC_DIR = PROJECT_DIR / "member3_knowledge_graph" / "src"
 
-client_id = os.getenv("EBAY_CLIENT_ID")
-client_secret = os.getenv("EBAY_CLIENT_SECRET")
-environment = os.getenv("EBAY_ENVIRONMENT", "").upper()
+if str(M3_SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(M3_SRC_DIR))
 
-if not client_id or not client_secret:
-    raise ValueError("Missing eBay credentials in .env")
-
-if environment != "PRODUCTION":
-    raise ValueError(
-        "Set EBAY_ENVIRONMENT=PRODUCTION in .env"
-    )
-
-print("Production credentials loaded successfully.")
-
-# =====================================
-# 2. Request OAuth application token
-# =====================================
-
-token_url = (
-    "https://api.ebay.com/identity/v1/oauth2/token"
+from freshness_model import calculate_freshness
+from platform_router import (
+    load_graph_categories,
+    load_crosswalk,
+    route_query,
 )
 
-response = requests.post(
-    token_url,
-    auth=(client_id, client_secret),
+load_dotenv(PROJECT_DIR / ".env")
+
+CLIENT_ID = os.getenv("EBAY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("EBAY_CLIENT_SECRET")
+ENVIRONMENT = os.getenv("EBAY_ENVIRONMENT", "").upper()
+
+if not CLIENT_ID or not CLIENT_SECRET:
+    raise ValueError("Missing eBay credentials in root .env")
+
+if ENVIRONMENT != "PRODUCTION":
+    raise ValueError("Set EBAY_ENVIRONMENT=PRODUCTION in .env")
+
+TOKEN_URL = "https://api.ebay.com/identity/v1/oauth2/token"
+BROWSE_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
+
+HEADERS_BASE = {
+    "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+    "Accept": "application/json",
+}
+
+QUERIES = [
+    "wireless headphones",
+    "gaming keyboards",
+    "wifi routers",
+    "digital cameras",
+    "phone chargers",
+]
+
+OUTPUT_DIR = PROJECT_DIR / "member3_knowledge_graph" / "tests"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+timestamp_label = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+OUTPUT_CSV = OUTPUT_DIR / f"ebay_observations_{timestamp_label}.csv"
+
+
+# -------------------------------------
+# 2. Authenticate with eBay
+# -------------------------------------
+
+print("Requesting eBay OAuth token...")
+
+token_response = requests.post(
+    TOKEN_URL,
+    auth=(CLIENT_ID, CLIENT_SECRET),
     data={
         "grant_type": "client_credentials",
-        "scope": (
-            "https://api.ebay.com/oauth/api_scope"
-        )
+        "scope": "https://api.ebay.com/oauth/api_scope",
     },
-    timeout=30
+    timeout=30,
 )
 
-if response.status_code != 200:
-    print("Authentication failed.")
-    print("HTTP status:", response.status_code)
-    print("Check your Production keys and API access.")
+if token_response.status_code != 200:
+    print("OAuth failed. HTTP status:", token_response.status_code)
+    print("Response:", token_response.text[:500])
     raise SystemExit(1)
 
-access_token = response.json()["access_token"]
-
-print("OAuth authentication successful!")
-print("Access token obtained (not displayed).")
-
-# =====================================
-# 3. Test eBay Browse API
-# =====================================
-
-browse_url = (
-    "https://api.ebay.com/buy/browse/v1/item_summary/search"
-)
+access_token = token_response.json()["access_token"]
 
 headers = {
+    **HEADERS_BASE,
     "Authorization": f"Bearer {access_token}",
-    "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
-    "Accept": "application/json"
 }
 
-params = {
-    "q": "wireless headphones",
-    "limit": 5
-}
+print("OAuth authentication successful.")
 
-print("\nSearching eBay for wireless headphones...")
 
-browse_response = requests.get(
-    browse_url,
-    headers=headers,
-    params=params,
-    timeout=30
-)
+# -------------------------------------
+# 3. Load M3 resources once
+# -------------------------------------
 
-print("Browse API HTTP status:", browse_response.status_code)
+print("Loading M3 taxonomy and crosswalk...")
 
-if browse_response.status_code == 200:
-    data = browse_response.json()
+categories = load_graph_categories()
+crosswalk = load_crosswalk()
+
+rows = []
+summary = []
+
+
+# -------------------------------------
+# 4. Search, route, and record
+# -------------------------------------
+
+for query in QUERIES:
+    print(f"\n{'=' * 60}")
+    print("QUERY:", query)
+    print("=" * 60)
+
+
+
+    try:
+        response = requests.get(
+            BROWSE_URL,
+            headers=headers,
+            params={"q": query, "limit": 10},
+            timeout=30,
+        )
+    except requests.RequestException as exc:
+        print("Request failed:", str(exc))
+        summary.append({
+            "query": query,
+            "http_status": "REQUEST_ERROR",
+            "products_returned": 0,
+            "routing_platforms": "",
+        })
+        continue
+
+    print("eBay HTTP status:", response.status_code)
+    observed_at = datetime.now(timezone.utc)
+
+    if response.status_code != 200:
+        print("Search failed:", response.text[:300])
+        summary.append({
+            "query": query,
+            "http_status": response.status_code,
+            "products_returned": 0,
+            "routing_platforms": "",
+        })
+        continue
+
+    data = response.json()
     items = data.get("itemSummaries", [])
 
-    print(f"Products returned: {len(items)}")
+    freshness = calculate_freshness(
+        last_observed_at=observed_at,
+        half_life_hours=24.0,
+        now=datetime.now(timezone.utc),
+    )
 
-    for index, item in enumerate(items, start=1):
-        title = item.get("title", "Unknown")
-        price = item.get("price", {})
-        amount = price.get("value", "N/A")
-        currency = price.get("currency", "")
+    routing = route_query(
+        query=query,
+        categories=categories,
+        crosswalk=crosswalk,
+        observation_times={"ebay": observed_at},
+        min_routing_score=0.75,
+        platform_relevance_scores={
+            "ebay": 1.0,
+            "amazon": 0.5,
+        },
+    )
 
-        print(f"\n{index}. {title}")
-        print(f"   Price: {amount} {currency}")
-        print(f"   Category ID: {item.get('leafCategoryIds', [])}")
+    best_category = routing.get("matched_category") or {}
 
-    print("\nAPI test completed successfully.")
+    category_name = best_category.get("category_name", "")
+    category_path = best_category.get("category_path", "")
+    category_source = best_category.get("source", "")
+    category_score = best_category.get("score")
 
-else:
-    print("Browse API request was not successful.")
-    print("HTTP status:", browse_response.status_code)
+    selected_platforms = routing.get("selected_platforms", [])
+    ready_platforms = routing.get("retrieval_ready_platforms", [])
 
-    # Avoid displaying response bodies that might
-    # contain sensitive diagnostic information.
-    if browse_response.status_code in (401, 403):
-        print("Possible authentication or API permission issue.")
-    elif browse_response.status_code == 429:
-        print("API rate limit reached.")
-    else:
-        print("Check marketplace access and request parameters.")
+    routing_scores = routing.get("platform_routing_scores", {})
+    ebay_scores = routing_scores.get("ebay", {})
+
+    print("Best category:", category_name or "Not available")
+    print("Selected platforms:", selected_platforms)
+    print("Retrieval-ready platforms:", ready_platforms)
+    print("Freshness score:", freshness["freshness_score"])
+    print("Products returned:", len(items))
+
+    for item in items:
+        price = item.get("price") or {}
+
+        rows.append({
+            "query": query,
+            "platform": "ebay",
+            "observed_at_utc": observed_at.isoformat(),
+            "observation_freshness_score": freshness["freshness_score"],
+            "category_name": category_name,
+            "category_path": category_path,
+            "category_source": category_source,
+            "category_score": category_score,
+            "routing_score": ebay_scores.get("routing_score"),
+            "selected_platforms": "|".join(selected_platforms),
+            "retrieval_ready_platforms": "|".join(ready_platforms),
+            "product_id": item.get("itemId", ""),
+            "title": item.get("title", ""),
+            "price": price.get("value", ""),
+            "currency": price.get("currency", ""),
+            "category_ids": "|".join(item.get("leafCategoryIds", [])),
+            "product_url": item.get("itemWebUrl", ""),
+        })
+
+    summary.append({
+        "query": query,
+        "http_status": response.status_code,
+        "products_returned": len(items),
+        "routing_platforms": "|".join(ready_platforms),
+    })
+
+
+# -------------------------------------
+# 5. Save observations and summary
+# -------------------------------------
+
+product_fields = [
+    "query",
+    "platform",
+    "observed_at_utc",
+    "observation_freshness_score",
+    "category_name",
+    "category_path",
+    "category_source",
+    "category_score",
+    "routing_score",
+    "selected_platforms",
+    "retrieval_ready_platforms",
+    "product_id",
+    "title",
+    "price",
+    "currency",
+    "category_ids",
+    "product_url",
+]
+
+with OUTPUT_CSV.open("w", newline="", encoding="utf-8-sig") as file:
+    writer = csv.DictWriter(file, fieldnames=product_fields)
+    writer.writeheader()
+    writer.writerows(rows)
+
+summary_csv = OUTPUT_DIR / f"ebay_query_summary_{timestamp_label}.csv"
+
+with summary_csv.open("w", newline="", encoding="utf-8-sig") as file:
+    fields = [
+        "query",
+        "http_status",
+        "products_returned",
+        "routing_platforms",
+    ]
+    writer = csv.DictWriter(file, fieldnames=fields)
+    writer.writeheader()
+    writer.writerows(summary)
+
+print("\n" + "=" * 60)
+print("EVALUATION COLLECTION COMPLETE")
+print("=" * 60)
+print("Queries attempted:", len(QUERIES))
+print("Product observations saved:", len(rows))
+print("Successful product CSV:", OUTPUT_CSV)
+print("Query summary CSV:", summary_csv)
+print("\nNote: observation freshness measures collection recency,")
+print("not the seller's actual listing update time.")
+print("Product relevance has not yet been manually judged.")
