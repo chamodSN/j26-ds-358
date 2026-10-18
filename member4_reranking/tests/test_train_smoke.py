@@ -40,5 +40,5 @@ def test_train_and_resume(tmp_path):
     cfg["epochs"] = 2
     train_run(str(tmp_path / "tiny"), "r", tr, va, evaluate, str(base), cfg=cfg, device="cpu")
     log = pd.read_csv(base / "results" / "finetune_val_log.csv")
-    assert sorted(log["epoch"].unique()) == [1, 2] and len(log) == 8
+    assert sorted(log["epoch"].unique()) == [1, 2] and len(log) == 2 * len(STYLES)
     assert (base / "models" / "r" / "epoch_2").exists()
