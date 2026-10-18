@@ -95,3 +95,4 @@ desktop.ini
 # Logs
 logs/
 *.log
+/member1_retrieval/notebooks
