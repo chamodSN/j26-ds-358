@@ -1,0 +1,13 @@
+run,model,epoch,style,ndcg@10,mrr,p@5,train_loss,epoch_train_time_s,cum_train_time_s,batch,accum,resumed_from_epoch
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,1,title,0.9254,0.942,0.846,0.46793,97.5,97.5,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,1,title_brand,0.9248,0.9408,0.8466,0.46793,97.5,97.5,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,1,full,0.9252,0.9412,0.846,0.46793,97.5,97.5,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,1,full_bullets,0.928,0.9407,0.8503,0.46793,97.5,97.5,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,2,title,0.9253,0.9415,0.8485,0.33349,99.3,196.8,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,2,title_brand,0.9261,0.9443,0.8473,0.33349,99.3,196.8,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,2,full,0.9264,0.942,0.8476,0.33349,99.3,196.8,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,2,full_bullets,0.9305,0.948,0.8476,0.33349,99.3,196.8,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,3,title,0.9253,0.9415,0.846,0.30154,99.2,296.0,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,3,title_brand,0.9271,0.9443,0.847,0.30154,99.2,296.0,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,3,full,0.9268,0.9423,0.8482,0.30154,99.2,296.0,32,1,0
+minilm_l6_ft,cross-encoder/ms-marco-MiniLM-L-6-v2,3,full_bullets,0.9278,0.9441,0.8479,0.30154,99.2,296.0,32,1,0
