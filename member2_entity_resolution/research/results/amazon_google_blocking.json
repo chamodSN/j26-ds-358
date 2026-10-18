@@ -1,0 +1,25 @@
+{
+  "n_true": 1300,
+  "metrics": {
+    "1": {
+      "pair_completeness": 0.53,
+      "reduction_ratio": 0.9997
+    },
+    "5": {
+      "pair_completeness": 0.83,
+      "reduction_ratio": 0.9985
+    },
+    "10": {
+      "pair_completeness": 0.9092,
+      "reduction_ratio": 0.9969
+    },
+    "20": {
+      "pair_completeness": 0.9469,
+      "reduction_ratio": 0.9938
+    },
+    "50": {
+      "pair_completeness": 0.9785,
+      "reduction_ratio": 0.9845
+    }
+  }
+}

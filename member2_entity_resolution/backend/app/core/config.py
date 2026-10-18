@@ -47,5 +47,9 @@ class Settings:
     DATA_PROCESSED_DIR: Path = ROOT_DIR / "data" / "processed"
     CANONICAL_SCHEMA_PATH: Path = ROOT_DIR / "schemas" / "canonical_schema.json"
 
+    BLOCKING_TOP_K: int = 10
+    RANDOM_SEED: int = 42
+    RESULTS_DIR: Path = ROOT_DIR / "research" / "results"
+
 
 settings = Settings()
