@@ -1,0 +1,170 @@
+{
+  "abt_buy": {
+    "A": {
+      "lo": 0.88,
+      "hi": 0.92,
+      "val_best_oracle_f1": 0.9817073170731708,
+      "val": {
+        "strategy": "A",
+        "lo": 0.88,
+        "hi": 0.92,
+        "llm_calls": 1613,
+        "llm_rate": 0.995679012345679,
+        "auto_f1": 0.03529411764705882,
+        "oracle_precision": 1.0,
+        "oracle_recall": 0.9640718562874252,
+        "oracle_f1": 0.9817073170731708
+      },
+      "test": {
+        "strategy": "A",
+        "lo": 0.88,
+        "hi": 0.92,
+        "llm_calls": 1626,
+        "llm_rate": 0.9975460122699387,
+        "auto_f1": 0.011976047904191616,
+        "oracle_precision": 1.0,
+        "oracle_recall": 0.9397590361445783,
+        "oracle_f1": 0.9689440993788819
+      }
+    },
+    "B": {
+      "lo": 0.58,
+      "hi": 0.92,
+      "val_best_oracle_f1": 0.9627329192546584,
+      "val": {
+        "strategy": "B",
+        "lo": 0.58,
+        "hi": 0.92,
+        "llm_calls": 274,
+        "llm_rate": 0.16913580246913582,
+        "auto_f1": 0.7348484848484849,
+        "oracle_precision": 1.0,
+        "oracle_recall": 0.9161676646706587,
+        "oracle_f1": 0.95625
+      },
+      "test": {
+        "strategy": "B",
+        "lo": 0.58,
+        "hi": 0.92,
+        "llm_calls": 239,
+        "llm_rate": 0.14662576687116563,
+        "auto_f1": 0.6612903225806451,
+        "oracle_precision": 1.0,
+        "oracle_recall": 0.891566265060241,
+        "oracle_f1": 0.9426751592356688
+      }
+    }
+  },
+  "amazon_google": {
+    "A": {
+      "lo": 0.88,
+      "hi": 0.94,
+      "val_best_oracle_f1": 0.9375,
+      "val": {
+        "strategy": "A",
+        "lo": 0.88,
+        "hi": 0.94,
+        "llm_calls": 2030,
+        "llm_rate": 0.9950980392156863,
+        "auto_f1": 0.04784688995215312,
+        "oracle_precision": 1.0,
+        "oracle_recall": 0.8823529411764706,
+        "oracle_f1": 0.9375
+      },
+      "test": {
+        "strategy": "A",
+        "lo": 0.88,
+        "hi": 0.94,
+        "llm_calls": 2039,
+        "llm_rate": 0.9946341463414634,
+        "auto_f1": 0.009950248756218907,
+        "oracle_precision": 0.9887005649717514,
+        "oracle_recall": 0.8838383838383839,
+        "oracle_f1": 0.9333333333333332
+      }
+    },
+    "B": {
+      "lo": 0.48,
+      "hi": 0.94,
+      "val_best_oracle_f1": 0.9289340101522843,
+      "val": {
+        "strategy": "B",
+        "lo": 0.48,
+        "hi": 0.94,
+        "llm_calls": 1391,
+        "llm_rate": 0.6818627450980392,
+        "auto_f1": 0.05529953917050691,
+        "oracle_precision": 0.9625668449197861,
+        "oracle_recall": 0.8823529411764706,
+        "oracle_f1": 0.9207161125319694
+      },
+      "test": {
+        "strategy": "B",
+        "lo": 0.48,
+        "hi": 0.94,
+        "llm_calls": 1363,
+        "llm_rate": 0.6648780487804878,
+        "auto_f1": 0.05741626794258374,
+        "oracle_precision": 0.9728260869565217,
+        "oracle_recall": 0.9040404040404041,
+        "oracle_f1": 0.9371727748691099
+      }
+    }
+  },
+  "wdc": {
+    "A": {
+      "lo": 0.86,
+      "hi": 0.94,
+      "val_best_oracle_f1": 0.962457337883959,
+      "val": {
+        "strategy": "A",
+        "lo": 0.86,
+        "hi": 0.94,
+        "llm_calls": 497,
+        "llm_rate": 0.8765432098765432,
+        "auto_f1": 0.39999999999999997,
+        "oracle_precision": 0.9459459459459459,
+        "oracle_recall": 0.9722222222222222,
+        "oracle_f1": 0.9589041095890412
+      },
+      "test": {
+        "strategy": "A",
+        "lo": 0.86,
+        "hi": 0.94,
+        "llm_calls": 824,
+        "llm_rate": 0.7490909090909091,
+        "auto_f1": 0.31157894736842107,
+        "oracle_precision": 0.7376623376623377,
+        "oracle_recall": 0.9466666666666667,
+        "oracle_f1": 0.8291970802919709
+      }
+    },
+    "B": {
+      "lo": 0.4,
+      "hi": 0.94,
+      "val_best_oracle_f1": 0.9577464788732395,
+      "val": {
+        "strategy": "B",
+        "lo": 0.4,
+        "hi": 0.94,
+        "llm_calls": 176,
+        "llm_rate": 0.31040564373897706,
+        "auto_f1": 0.6666666666666666,
+        "oracle_precision": 0.9710144927536232,
+        "oracle_recall": 0.9305555555555556,
+        "oracle_f1": 0.9503546099290779
+      },
+      "test": {
+        "strategy": "B",
+        "lo": 0.4,
+        "hi": 0.94,
+        "llm_calls": 325,
+        "llm_rate": 0.29545454545454547,
+        "auto_f1": 0.715953307392996,
+        "oracle_precision": 0.9047619047619048,
+        "oracle_recall": 0.95,
+        "oracle_f1": 0.9268292682926829
+      }
+    }
+  }
+}
