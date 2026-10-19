@@ -49,19 +49,19 @@ def esci_row_to_product(r) -> dict:
 
 
 # --------------------------------------------------------------------- query side
-_CUR = r"(?:(?<![a-z])(?:rs\.?|lkr|inr|usd)(?![a-z])|us\$|\$|£|€|₹)"   # "rs" only as a word (not "chargeRS")
-_NUM = r"\d[\d,]*(?:\.\d+)?(?:\s?k)?\b"   # \b: never stop in the middle of a number
+_CUR = r"(?:(?<![a-z])(?:rs\.?|lkr|lrk|inr|usd)(?![a-z])|us\$|\$|£|€|₹)"   # "rs" only as a word (not "chargeRS")
+_NUM = r"\d[\d,]*(?:\.\d+)?(?:\s?k)?(?:\b|(?=(?:lkr|lrk|rs|inr|usd)\b))"   # \b: never stop mid-number; also "30000LKR"
 # a number followed by a unit is a SPEC, not a price ("under 50 inch", "up to 2tb")
 _UNIT = r"(?!\s?(?:inch(?:es)?|in\b|\"|ft|feet|cm|mm|m\b|gb|tb|mb|mah|hz|ghz|mhz|w\b|watts?|v\b|volts?|mp\b|lbs?|oz|ml|ah\b|ports?|pack|pcs|pieces|x\b|%))"
 _PRICE_LIMIT = re.compile(
     rf"\b(?:under|below|less than|lower than|cheaper than|up ?to|upto|within|max(?:imum)?|around|about|budget of)\s*"
     rf"(?:{_CUR}\s?)?{_NUM}{_UNIT}(?:\s?(?:{_CUR}|dollars?|bucks|rupees?))?", re.I)
-_PRICE_ALONE = re.compile(rf"(?:{_CUR}\s?{_NUM}|\b{_NUM}\s?(?:dollars?|bucks|rupees?|lkr|usd|inr)\b)", re.I)
+_PRICE_ALONE = re.compile(rf"(?:{_CUR}\s?{_NUM}|\b{_NUM}\s?(?:dollars?|bucks|rupees?|lkr|lrk|usd|inr)\b)", re.I)
 _PRICE_WORDS = re.compile(r"\b(?:cheap(?:est)?|budget|affordable|inexpensive|low[- ]cost|low price|best price|on sale|discount(?:ed)?)\b", re.I)
-_PLATFORM = re.compile(r"\b(?:on|from|at|in)\s+(?:daraz|ebay|aliexpress|alibaba|amazon|walmart)\b", re.I)
+_PLATFORM = re.compile(r"\b(?:(?:on|from|at|in|via)\s+(?:daraz(?:\.lk)?|ebay|aliexpress|alibaba|amazon|walmart)"
+                       r"|(?:daraz(?:\.lk)?|ebay|aliexpress|alibaba))\b", re.I)   # bare "amazon"/"walmart" kept: they are also brands
 _DELIVERY = re.compile(r"\b(?:free (?:shipping|delivery)|fast (?:shipping|delivery)|cash on delivery|cod)\b", re.I)
-_DANGLING = re.compile(r"(?:\s+\b(?:with|for|on|at|in|from|and|the)\b)+\s*$", re.I)   # left over after a removal
-
+_DANGLING = re.compile(r"(?:\s+\b(?:with|for|at|from|and|the)\b)+\s*$", re.I)   # left over after a removal
 
 def query_to_text(query: str, price_span: str | None = None, category: str | None = None,
                   use_rules: bool = True) -> str:

@@ -45,3 +45,14 @@ def test_found_in_esci_check():
     assert query_to_text("headphones with microphone with free shipping") == "headphones with microphone"
     assert query_to_text("glorious model o-") == "glorious model o-"                       # unchanged query stays as typed
     assert query_to_text("rs 5000 earbuds") == "earbuds"
+
+def test_found_in_s9c_noise_check():
+    # "built in" / "plug in" / "add on" are part of the product, not left-over words
+    assert query_to_text("laptop with camera and microphone built in under 60000") == "laptop with camera and microphone built in"
+    assert query_to_text("add on camera lens on daraz") == "add on camera lens"
+    # currency glued to the number (and the common LRK typo)
+    assert query_to_text("phone under 30000LKR") == "phone"
+    assert query_to_text("phone under 30000LRK") == "phone"
+    # platform without "on/from": removed for marketplaces, kept for brands (amazon)
+    assert query_to_text("daraz samsung phone") == "samsung phone"
+    assert query_to_text("amazon fire tv stick") == "amazon fire tv stick"
