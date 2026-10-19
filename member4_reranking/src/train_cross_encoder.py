@@ -6,6 +6,7 @@ Loss    : BCEWithLogitsLoss, one logit per (query, product) pair, soft target = 
 Formats : every train row, every epoch, gets one of the product_to_text styles at random
           (equal chance, seed 42 + epoch). Validation is scored separately in each style.
 Query   : cfg['query_col'] picks the query input column (raw or focused query).
+Eval    : cfg['eval_styles'] (optional) = formats scored on validation; default = training formats.
 Saving  : <base>/models/<run>/epoch_<n>/ after each epoch (model + tokenizer, no optimizer);
           metrics appended to <base>/results/finetune_val_log.csv. Re-running resumes
           from the last saved epoch.
@@ -50,7 +51,7 @@ def score_pairs(model, tok, queries, texts, max_len, bs, device="cuda"):
 def eval_styles(model, tok, val, evaluate, cfg, device="cuda"):
     rows, perq = [], []
     q = val[cfg.get("query_col", "query")].tolist()
-    for s in cfg.get("styles", STYLES):
+    for s in (cfg.get("eval_styles") or cfg.get("styles", STYLES)):   # eval_styles: score formats not used in training
         v = val[["query_id", "gain"]].copy()
         v["score"] = score_pairs(model, tok, q, val[f"text_{s}"].tolist(), cfg["max_len"], cfg["eval_batch"], device)
         m, pq = evaluate(v)
@@ -120,5 +121,6 @@ def train_run(model_name, run_name, train, val, evaluate, base, cfg=CFG, device=
         print(pd.DataFrame(rows).to_string(index=False))
     json.dump({**cfg, "model_name": model_name, "loss": "BCEWithLogitsLoss, soft targets = ESCI gain",
                "formats": f"random, equal chance per row per epoch, seed 42+epoch: {cfg.get('styles', STYLES)}",
-               "query_input": cfg.get("query_col", "query")}, open(f"{run_dir}/train_config.json", "w"), indent=2)
+               "query_input": cfg.get("query_col", "query"),
+               "eval_formats": list(cfg.get("eval_styles") or cfg.get("styles", STYLES))}, open(f"{run_dir}/train_config.json", "w"), indent=2)
     del model; torch.cuda.empty_cache()
