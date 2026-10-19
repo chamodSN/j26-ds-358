@@ -1,0 +1,5 @@
+model,params_M,val_ndcg,gpu_ms_median,gpu_ms_p95,cpu_ms_median,cpu_ms_p95
+minilm_l6,22.7,0.9267,22.0,30.2,1218.6,2639.0
+minilm_l12,33.4,0.9301,29.9,41.7,2397.5,3348.1
+distilbert,67.0,0.9209,35.9,45.8,3806.5,5316.5
+bert_base,109.5,0.9251,63.7,85.0,7641.6,10755.3
