@@ -1,0 +1,54 @@
+{
+  "lo": 0.52,
+  "hi": 0.94,
+  "val_best_oracle_f1": 0.9603960396039604,
+  "pooled_val": {
+    "strategy": "B",
+    "lo": 0.52,
+    "hi": 0.94,
+    "llm_calls": 480,
+    "llm_rate": 0.2194787379972565,
+    "auto_f1": 0.7010309278350515,
+    "oracle_precision": 0.9862068965517241,
+    "oracle_recall": 0.9196141479099679,
+    "oracle_f1": 0.951747088186356
+  },
+  "test": [
+    {
+      "strategy": "B",
+      "lo": 0.52,
+      "hi": 0.94,
+      "llm_calls": 310,
+      "llm_rate": 0.1901840490797546,
+      "auto_f1": 0.6719999999999999,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.9156626506024096,
+      "oracle_f1": 0.9559748427672956,
+      "dataset": "abt_buy"
+    },
+    {
+      "strategy": "B",
+      "lo": 0.52,
+      "hi": 0.94,
+      "llm_calls": 308,
+      "llm_rate": 0.28,
+      "auto_f1": 0.7098039215686274,
+      "oracle_precision": 0.9064516129032258,
+      "oracle_recall": 0.9366666666666666,
+      "oracle_f1": 0.921311475409836,
+      "dataset": "wdc"
+    },
+    {
+      "strategy": "B",
+      "lo": 0.52,
+      "hi": 0.94,
+      "llm_calls": 1091,
+      "llm_rate": 0.5321951219512195,
+      "auto_f1": 0.05741626794258374,
+      "oracle_precision": 0.9722222222222222,
+      "oracle_recall": 0.8838383838383839,
+      "oracle_f1": 0.925925925925926,
+      "dataset": "amazon_google"
+    }
+  ]
+}
