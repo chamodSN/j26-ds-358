@@ -1,54 +1,110 @@
 {
-  "lo": 0.52,
-  "hi": 0.94,
-  "val_best_oracle_f1": 0.9603960396039604,
-  "pooled_val": {
-    "strategy": "B",
-    "lo": 0.52,
+  "B": {
+    "lo": 0.3,
     "hi": 0.94,
-    "llm_calls": 480,
-    "llm_rate": 0.2194787379972565,
-    "auto_f1": 0.7010309278350515,
-    "oracle_precision": 0.9862068965517241,
-    "oracle_recall": 0.9196141479099679,
-    "oracle_f1": 0.951747088186356
+    "budget": 0.3,
+    "pooled_val": {
+      "strategy": "B",
+      "lo": 0.3,
+      "hi": 0.94,
+      "llm_calls": 586,
+      "llm_rate": 0.267946959304984,
+      "auto_f1": 0.7090163934426229,
+      "oracle_precision": 0.9864406779661017,
+      "oracle_recall": 0.9356913183279743,
+      "oracle_f1": 0.9603960396039604
+    },
+    "test": [
+      {
+        "strategy": "B",
+        "lo": 0.3,
+        "hi": 0.94,
+        "llm_calls": 377,
+        "llm_rate": 0.2312883435582822,
+        "auto_f1": 0.6719999999999999,
+        "oracle_precision": 1.0,
+        "oracle_recall": 0.9216867469879518,
+        "oracle_f1": 0.9592476489028214,
+        "dataset": "abt_buy"
+      },
+      {
+        "strategy": "B",
+        "lo": 0.3,
+        "hi": 0.94,
+        "llm_calls": 352,
+        "llm_rate": 0.32,
+        "auto_f1": 0.7209302325581396,
+        "oracle_precision": 0.9053627760252366,
+        "oracle_recall": 0.9566666666666667,
+        "oracle_f1": 0.9303079416531606,
+        "dataset": "wdc"
+      },
+      {
+        "strategy": "B",
+        "lo": 0.3,
+        "hi": 0.94,
+        "llm_calls": 1938,
+        "llm_rate": 0.9453658536585365,
+        "auto_f1": 0.05741626794258374,
+        "oracle_precision": 0.9732620320855615,
+        "oracle_recall": 0.9191919191919192,
+        "oracle_f1": 0.9454545454545455,
+        "dataset": "amazon_google"
+      }
+    ]
   },
-  "test": [
-    {
-      "strategy": "B",
-      "lo": 0.52,
-      "hi": 0.94,
-      "llm_calls": 310,
-      "llm_rate": 0.1901840490797546,
-      "auto_f1": 0.6719999999999999,
-      "oracle_precision": 1.0,
-      "oracle_recall": 0.9156626506024096,
-      "oracle_f1": 0.9559748427672956,
-      "dataset": "abt_buy"
+  "C": {
+    "lo": 0.4,
+    "hi": 0.88,
+    "budget": 0.3,
+    "pooled_val": {
+      "strategy": "C",
+      "lo": 0.4,
+      "hi": 0.88,
+      "llm_calls": 597,
+      "llm_rate": 0.2729766803840878,
+      "auto_f1": 0.6863157894736841,
+      "oracle_precision": 0.9965870307167235,
+      "oracle_recall": 0.9389067524115756,
+      "oracle_f1": 0.966887417218543
     },
-    {
-      "strategy": "B",
-      "lo": 0.52,
-      "hi": 0.94,
-      "llm_calls": 308,
-      "llm_rate": 0.28,
-      "auto_f1": 0.7098039215686274,
-      "oracle_precision": 0.9064516129032258,
-      "oracle_recall": 0.9366666666666666,
-      "oracle_f1": 0.921311475409836,
-      "dataset": "wdc"
-    },
-    {
-      "strategy": "B",
-      "lo": 0.52,
-      "hi": 0.94,
-      "llm_calls": 1091,
-      "llm_rate": 0.5321951219512195,
-      "auto_f1": 0.05741626794258374,
-      "oracle_precision": 0.9722222222222222,
-      "oracle_recall": 0.8838383838383839,
-      "oracle_f1": 0.925925925925926,
-      "dataset": "amazon_google"
-    }
-  ]
+    "test": [
+      {
+        "strategy": "C",
+        "lo": 0.4,
+        "hi": 0.88,
+        "llm_calls": 367,
+        "llm_rate": 0.22515337423312884,
+        "auto_f1": 0.6719999999999999,
+        "oracle_precision": 1.0,
+        "oracle_recall": 0.9216867469879518,
+        "oracle_f1": 0.9592476489028214,
+        "dataset": "abt_buy"
+      },
+      {
+        "strategy": "C",
+        "lo": 0.4,
+        "hi": 0.88,
+        "llm_calls": 408,
+        "llm_rate": 0.3709090909090909,
+        "auto_f1": 0.7318087318087318,
+        "oracle_precision": 0.9829351535836177,
+        "oracle_recall": 0.96,
+        "oracle_f1": 0.9713322091062394,
+        "dataset": "wdc"
+      },
+      {
+        "strategy": "C",
+        "lo": 0.4,
+        "hi": 0.88,
+        "llm_calls": 1782,
+        "llm_rate": 0.8692682926829268,
+        "auto_f1": 0.04854368932038835,
+        "oracle_precision": 0.9837837837837838,
+        "oracle_recall": 0.9191919191919192,
+        "oracle_f1": 0.9503916449086162,
+        "dataset": "amazon_google"
+      }
+    ]
+  }
 }

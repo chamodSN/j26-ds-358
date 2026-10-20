@@ -51,5 +51,12 @@ class Settings:
     RANDOM_SEED: int = 42
     RESULTS_DIR: Path = ROOT_DIR / "research" / "results"
 
+    LLM_PROVIDER: str = "openai"
+    LLM_MODEL: str = ""
+    LLM_API_KEY: str = ""
+    LLM_BASE_URL: str = "https://api.openai.com/v1"
+    LLM_MAX_OUTPUT_TOKENS: int = 16
+    LLM_MAX_CALLS: int = 1200
+
 
 settings = Settings()

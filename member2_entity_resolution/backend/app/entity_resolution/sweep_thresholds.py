@@ -10,7 +10,8 @@ import numpy as np
 import pandas as pd
 
 from app.entity_resolution.datasets import load_pairs, load_records
-from app.entity_resolution.router import cascade, prf
+from app.entity_resolution.router import prf
+from app.entity_resolution.router_v2 import cascade_any as cascade
 from app.entity_resolution.router_eval import calculate_cosine
 from app.entity_resolution.rules import apply_rules
 
