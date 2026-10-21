@@ -25,10 +25,14 @@ env/
 ENV/
 .env.bak
 
-# Environment Files
+# Environment Files (secrets!)
 .env
 *.env
 !.env.example
+
+# Node
+node_modules/
+vero-app/dist/
 
 # Data Files (too large for git)
 **/data/**
@@ -91,3 +95,4 @@ desktop.ini
 # Logs
 logs/
 *.log
+/member1_retrieval/notebooks
