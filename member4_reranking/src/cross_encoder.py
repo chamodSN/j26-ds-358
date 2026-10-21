@@ -7,7 +7,7 @@ query_to_text()   : the ONLY place that turns the user query into model text.
                     Keeps the product need; removes the parts M1/M3 already used
                     (price limit, price words, "on <platform>", delivery words);
                     adds M3's category as context.
-rerank()          : filled in later (S12).
+rerank()          : see reranker.py (S12).
 """
 import math
 import re
@@ -83,6 +83,3 @@ def query_to_text(query: str, price_span: str | None = None, category: str | Non
     return f"[{_clean(category)}] {q}" if _clean(category) else q
 
 
-def rerank(query: str, products: list[dict]) -> list[dict]:
-    """TODO (S12): score each (query, product) pair and return products sorted by score."""
-    raise NotImplementedError
