@@ -1,0 +1,7 @@
+{
+  "tau_new": 0.55,
+  "tau_known": 0.7,
+  "review_budget": 0.25,
+  "n_dev": 48,
+  "n_test": 49
+}
