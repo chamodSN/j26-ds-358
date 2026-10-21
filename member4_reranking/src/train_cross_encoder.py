@@ -3,8 +3,10 @@ Member 4 - Step 5: fine-tune a cross-encoder on ESCI electronics v2.3.
 
 Loss    : BCEWithLogitsLoss, one logit per (query, product) pair, soft target = ESCI gain
           (E 1.0, S 0.1, C 0.01, I 0.0).
-Formats : every train row, every epoch, gets one of 4 product_to_text styles at random
-          (25% each, seed 42 + epoch). Validation is scored separately in each style.
+Formats : every train row, every epoch, gets one of the product_to_text styles at random
+          (equal chance, seed 42 + epoch). Validation is scored separately in each style.
+Query   : cfg['query_col'] picks the query input column (raw or focused query).
+Eval    : cfg['eval_styles'] (optional) = formats scored on validation; default = training formats.
 Saving  : <base>/models/<run>/epoch_<n>/ after each epoch (model + tokenizer, no optimizer);
           metrics appended to <base>/results/finetune_val_log.csv. Re-running resumes
           from the last saved epoch.
@@ -13,22 +15,23 @@ import os, time, json, random, numpy as np, pandas as pd, torch
 from torch.nn import BCEWithLogitsLoss
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, get_linear_schedule_with_warmup
 
-STYLES = ["title", "title_brand", "full", "full_bullets"]
-CFG = dict(epochs=3, lr=2e-5, warmup=0.10, weight_decay=0.01, batch=32, accum=1,
+STYLES = ["title", "title_brand", "full", "full_bullets", "key_value"]
+CFG = dict(styles=STYLES, query_col="query", epochs=3, lr=2e-5, warmup=0.10, weight_decay=0.01, batch=32, accum=1,
            max_len=256, eval_batch=128, seed=42)
 
 def set_seed(s):
     random.seed(s); np.random.seed(s); torch.manual_seed(s); torch.cuda.manual_seed_all(s)
 
-def epoch_pairs(train, epoch, seed=42):
-    """One epoch: every train row once, shuffled, each with a random format (25% each)."""
+def epoch_pairs(train, epoch, seed=42, styles=STYLES, query_col="query"):
+    """One epoch: every train row once, shuffled, each with a random format (equal chance)."""
     rng = np.random.default_rng(seed + epoch)
-    style = rng.choice(STYLES, size=len(train))
-    text = np.where(style == "title", train["text_title"],
-           np.where(style == "title_brand", train["text_title_brand"],
-           np.where(style == "full", train["text_full"], train["text_full_bullets"])))
+    style = rng.choice(list(styles), size=len(train))
+    text = np.empty(len(train), dtype=object)
+    for s in styles:
+        m = style == s
+        text[m] = train[f"text_{s}"].values[m]
     order = rng.permutation(len(train))
-    return (train["query"].values[order], text[order],
+    return (train[query_col].values[order], text[order],
             train["gain"].values[order].astype(np.float32), style[order])
 
 @torch.no_grad()
@@ -47,8 +50,8 @@ def score_pairs(model, tok, queries, texts, max_len, bs, device="cuda"):
 
 def eval_styles(model, tok, val, evaluate, cfg, device="cuda"):
     rows, perq = [], []
-    q = val["query"].tolist()
-    for s in STYLES:
+    q = val[cfg.get("query_col", "query")].tolist()
+    for s in (cfg.get("eval_styles") or cfg.get("styles", STYLES)):   # eval_styles: score formats not used in training
         v = val[["query_id", "gain"]].copy()
         v["score"] = score_pairs(model, tok, q, val[f"text_{s}"].tolist(), cfg["max_len"], cfg["eval_batch"], device)
         m, pq = evaluate(v)
@@ -89,7 +92,7 @@ def train_run(model_name, run_name, train, val, evaluate, base, cfg=CFG, device=
 
     for ep in range(start + 1, cfg["epochs"] + 1):
         model.train(); t0 = time.time()
-        qs, ts, ys, _ = epoch_pairs(train, ep, cfg["seed"])
+        qs, ts, ys, _ = epoch_pairs(train, ep, cfg["seed"], cfg.get("styles", STYLES), cfg.get("query_col", "query"))
         run_loss, n = 0.0, 0
         for b in range(0, len(qs), cfg["batch"]):
             bq, bt, by = qs[b:b + cfg["batch"]], ts[b:b + cfg["batch"]], ys[b:b + cfg["batch"]]
@@ -117,5 +120,7 @@ def train_run(model_name, run_name, train, val, evaluate, base, cfg=CFG, device=
         print(f"epoch {ep} done: loss {run_loss / n:.4f}, {train_time / 60:.1f} min")
         print(pd.DataFrame(rows).to_string(index=False))
     json.dump({**cfg, "model_name": model_name, "loss": "BCEWithLogitsLoss, soft targets = ESCI gain",
-               "formats": "random 25% each per row per epoch, seed 42+epoch"}, open(f"{run_dir}/train_config.json", "w"), indent=2)
+               "formats": f"random, equal chance per row per epoch, seed 42+epoch: {cfg.get('styles', STYLES)}",
+               "query_input": cfg.get("query_col", "query"),
+               "eval_formats": list(cfg.get("eval_styles") or cfg.get("styles", STYLES))}, open(f"{run_dir}/train_config.json", "w"), indent=2)
     del model; torch.cuda.empty_cache()

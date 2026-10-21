@@ -40,5 +40,21 @@ def test_train_and_resume(tmp_path):
     cfg["epochs"] = 2
     train_run(str(tmp_path / "tiny"), "r", tr, va, evaluate, str(base), cfg=cfg, device="cpu")
     log = pd.read_csv(base / "results" / "finetune_val_log.csv")
-    assert sorted(log["epoch"].unique()) == [1, 2] and len(log) == 8
+    assert sorted(log["epoch"].unique()) == [1, 2] and len(log) == 2 * len(STYLES)
     assert (base / "models" / "r" / "epoch_2").exists()
+
+
+def test_train_one_format_eval_all(tmp_path):
+    words = "[PAD] [UNK] [CLS] [SEP] [MASK] phone samsung red case title brand full bullets _ key value".split()
+    vocab = words + list("abcdefghijklmnopqrstuvwxyz0123456789")
+    (tmp_path / "tiny").mkdir(); (tmp_path / "tiny" / "vocab.txt").write_text("\n".join(vocab))
+    BertTokenizerFast(str(tmp_path / "tiny" / "vocab.txt")).save_pretrained(tmp_path / "tiny")
+    BertForSequenceClassification(BertConfig(vocab_size=len(vocab), hidden_size=16, num_hidden_layers=1,
+                                             num_attention_heads=2, intermediate_size=32)).save_pretrained(tmp_path / "tiny")
+    rng = np.random.default_rng(1)
+    tr, va = _data(64, 0, rng), _data(32, 100, rng)
+    base = tmp_path / "out"; (base / "results").mkdir(parents=True)
+    cfg = {**CFG, "epochs": 1, "batch": 16, "styles": ["full"], "eval_styles": STYLES}
+    train_run(str(tmp_path / "tiny"), "fo", tr, va, evaluate, str(base), cfg=cfg, device="cpu")
+    log = pd.read_csv(base / "results" / "finetune_val_log.csv")
+    assert sorted(log["style"]) == sorted(STYLES)          # trained on 1 format, scored on all
