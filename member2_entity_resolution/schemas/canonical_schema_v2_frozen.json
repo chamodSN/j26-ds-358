@@ -1,0 +1,6635 @@
+{
+  "version": 2,
+  "attributes": {
+    "brand": {
+      "aliases": [
+        "brand",
+        "manufacturer",
+        "make",
+        "vendor",
+        "merk"
+      ],
+      "examples": [
+        "Kingston",
+        "Corsair",
+        "Seagate"
+      ],
+      "origin": "seed",
+      "support": 598,
+      "added_in_version": 1
+    },
+    "model": {
+      "aliases": [
+        "model",
+        "model number",
+        "model no",
+        "part number",
+        "mpn",
+        "mfg part",
+        "manufacturer part",
+        "part"
+      ],
+      "examples": [
+        "CMK16GX4M2B3200C16",
+        "ST2000DM001",
+        "HX424C15FB2/8"
+      ],
+      "origin": "seed",
+      "support": 790,
+      "added_in_version": 1
+    },
+    "capacity": {
+      "aliases": [
+        "capacity",
+        "storage capacity",
+        "total capacity",
+        "drive capacity",
+        "disk capacity",
+        "size",
+        "compressed capacity",
+        "native capacity",
+        "hard drive capacity",
+        "hard drive size",
+        "formatted capacity",
+        "storage",
+        "total storage capacity",
+        "max capacity",
+        "storage size"
+      ],
+      "examples": [
+        "8 GB",
+        "1 TB",
+        "256GB"
+      ],
+      "origin": "seed",
+      "support": 558,
+      "added_in_version": 1
+    },
+    "memory_type": {
+      "aliases": [
+        "memory type",
+        "ram type",
+        "memory technology",
+        "technology",
+        "memory",
+        "ram technology",
+        "memory types",
+        "internal memory type",
+        "tipos de memoria que admite el procesador"
+      ],
+      "examples": [
+        "DDR4",
+        "DDR3",
+        "SDRAM"
+      ],
+      "origin": "seed",
+      "support": 226,
+      "added_in_version": 1
+    },
+    "speed": {
+      "aliases": [
+        "speed",
+        "memory speed",
+        "clock speed",
+        "data rate",
+        "bus speed",
+        "tested speed",
+        "processor speed",
+        "supported ram speeds",
+        "fr quence de la m moire",
+        "memory clock",
+        "memory clock speed"
+      ],
+      "examples": [
+        "2400 MHz",
+        "3200 MHz",
+        "1600MHz"
+      ],
+      "origin": "seed",
+      "support": 388,
+      "added_in_version": 1
+    },
+    "form_factor": {
+      "aliases": [
+        "form factor",
+        "form",
+        "drive form factor",
+        "dimm type",
+        "form factor width"
+      ],
+      "examples": [
+        "DIMM",
+        "SO-DIMM",
+        "3.5 inch",
+        "ATX"
+      ],
+      "origin": "seed",
+      "support": 300,
+      "added_in_version": 1
+    },
+    "interface": {
+      "aliases": [
+        "interface",
+        "connectivity",
+        "host interface",
+        "connection"
+      ],
+      "examples": [
+        "SATA III",
+        "USB 3.0",
+        "PCIe"
+      ],
+      "origin": "seed",
+      "support": 183,
+      "added_in_version": 1
+    },
+    "color": {
+      "aliases": [
+        "color",
+        "colour"
+      ],
+      "examples": [
+        "Black",
+        "Red",
+        "Silver"
+      ],
+      "origin": "seed",
+      "support": 21,
+      "added_in_version": 1
+    },
+    "weight": {
+      "aliases": [
+        "weight",
+        "item weight",
+        "product weight",
+        "weight kg"
+      ],
+      "examples": [
+        "1.2 kg",
+        "450 g"
+      ],
+      "origin": "seed",
+      "support": 81,
+      "added_in_version": 1
+    },
+    "warranty": {
+      "aliases": [
+        "warranty",
+        "warranty period",
+        "manufacturer warranty",
+        "limited warranty"
+      ],
+      "examples": [
+        "3 years",
+        "Lifetime",
+        "5 Year Limited"
+      ],
+      "origin": "seed",
+      "support": 58,
+      "added_in_version": 1
+    },
+    "category": {
+      "aliases": [
+        "category"
+      ],
+      "examples": [
+        "Proliant HardDrive",
+        "Proliant Processor",
+        "Proliant Memory"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 687,
+      "added_in_version": 2
+    },
+    "sub_category": {
+      "aliases": [
+        "sub category"
+      ],
+      "examples": [
+        "10K",
+        "Genuine HP Memory",
+        "7.2K"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 685,
+      "added_in_version": 2
+    },
+    "generation": {
+      "aliases": [
+        "generation"
+      ],
+      "examples": [
+        "SAS",
+        "Fibre Channel",
+        "SATA"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 668,
+      "added_in_version": 2
+    },
+    "products_id": {
+      "aliases": [
+        "products id"
+      ],
+      "examples": [
+        "1264",
+        "455561",
+        "455536"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 643,
+      "added_in_version": 2
+    },
+    "interface_type": {
+      "aliases": [
+        "interface type"
+      ],
+      "examples": [
+        "Serial Attached SCSI",
+        "FC-AL",
+        "Serial ATA"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 229,
+      "added_in_version": 2
+    },
+    "ean": {
+      "aliases": [
+        "ean"
+      ],
+      "examples": [
+        "0763649089217, 7636490076534",
+        "4719692003195",
+        "0190198446480"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 223,
+      "added_in_version": 2
+    },
+    "spindle_speed": {
+      "aliases": [
+        "rotational speed",
+        "spindle speed"
+      ],
+      "examples": [
+        "7200RPM",
+        "15000RPM",
+        "10000RPM",
+        "10000RPM",
+        "7200RPM"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 289,
+      "added_in_version": 2
+    },
+    "type": {
+      "aliases": [
+        "type"
+      ],
+      "examples": [
+        "Hard Drive - Hot-Swap",
+        "Hard Drive Hot-Swap",
+        "Solid State Drive"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 212,
+      "added_in_version": 2
+    },
+    "categorie": {
+      "aliases": [
+        "categorie"
+      ],
+      "examples": [
+        "Processors",
+        "Geheugen intern",
+        "Videokaarten"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 205,
+      "added_in_version": 2
+    },
+    "product": {
+      "aliases": [
+        "product"
+      ],
+      "examples": [
+        "Seagate IronWolf Pro",
+        "G.Skill Ripjaws V F4-2400C15D",
+        "Apple Smart Cover iPad Pro 2017 10.5"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 205,
+      "added_in_version": 2
+    },
+    "sku": {
+      "aliases": [
+        "sku"
+      ],
+      "examples": [
+        "ST10000NE0004",
+        "F4-2400C15D-16GVR",
+        "MQ4U2ZM/A"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 205,
+      "added_in_version": 2
+    },
+    "tweakers_id": {
+      "aliases": [
+        "tweakers id"
+      ],
+      "examples": [
+        "663697",
+        "458093",
+        "861827"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 205,
+      "added_in_version": 2
+    },
+    "uitvoering": {
+      "aliases": [
+        "uitvoering"
+      ],
+      "examples": [
+        "Boxed",
+        "+Rescue, 10TB",
+        "G.Skill Ripjaws V F4-2400C15D-16GVR"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 205,
+      "added_in_version": 2
+    },
+    "data_transfer_rate": {
+      "aliases": [
+        "data transfer rate"
+      ],
+      "examples": [
+        "2GB/s",
+        "300MB/s",
+        "6G = 6Gb/sec (750 MB/s)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 203,
+      "added_in_version": 2
+    },
+    "pre_failure_warranty": {
+      "aliases": [
+        "pre failure warranty"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 158,
+      "added_in_version": 2
+    },
+    "product_type": {
+      "aliases": [
+        "product type"
+      ],
+      "examples": [
+        "Processor",
+        "Processor Upgrade",
+        "Processor Kit"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 132,
+      "added_in_version": 2
+    },
+    "compatibility": {
+      "aliases": [
+        "compatibility"
+      ],
+      "examples": [
+        "HP Proliant Servers",
+        "PC",
+        "Desktop"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 120,
+      "added_in_version": 2
+    },
+    "processor_type": {
+      "aliases": [
+        "processor type"
+      ],
+      "examples": [
+        "Intel Xeon",
+        "Xeon 2.8 GHz",
+        "Xeon Intel"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 114,
+      "added_in_version": 2
+    },
+    "process_technology": {
+      "aliases": [
+        "process technology"
+      ],
+      "examples": [
+        "45nm",
+        "32nm",
+        "65nm"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 112,
+      "added_in_version": 2
+    },
+    "thermal_design_power": {
+      "aliases": [
+        "thermal design power"
+      ],
+      "examples": [
+        "80W",
+        "105W",
+        "120W"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 112,
+      "added_in_version": 2
+    },
+    "processor_core": {
+      "aliases": [
+        "processor core"
+      ],
+      "examples": [
+        "Quad-Core",
+        "Octa-Core",
+        "Dual-Core"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 110,
+      "added_in_version": 2
+    },
+    "processor_socket": {
+      "aliases": [
+        "processor socket"
+      ],
+      "examples": [
+        "Socket J LGA-771",
+        "Socket B LGA-1366",
+        "Socket LGA-1567"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 110,
+      "added_in_version": 2
+    },
+    "productserie": {
+      "aliases": [
+        "productserie"
+      ],
+      "examples": [
+        "Core i7",
+        "Vengeance LPX",
+        "Vengeance LED"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 108,
+      "added_in_version": 2
+    },
+    "l2_cache": {
+      "aliases": [
+        "cache l2",
+        "l2 cache"
+      ],
+      "examples": [
+        "1MB",
+        "2MB",
+        "12MB",
+        "2MB",
+        "4MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 111,
+      "added_in_version": 2
+    },
+    "64_bit_processing": {
+      "aliases": [
+        "64 bit processing"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 102,
+      "added_in_version": 2
+    },
+    "processor_qty": {
+      "aliases": [
+        "processor qty",
+        "processors qty"
+      ],
+      "examples": [
+        "1",
+        "2",
+        "1",
+        "2"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 113,
+      "added_in_version": 2
+    },
+    "application": {
+      "aliases": [
+        "application"
+      ],
+      "examples": [
+        "Server Memory",
+        "Server Storage"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 98,
+      "added_in_version": 2
+    },
+    "hot_swap_tray": {
+      "aliases": [
+        "hot swap tray"
+      ],
+      "examples": [
+        "Not Included",
+        "Included/Attached",
+        "Included"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 94,
+      "added_in_version": 2
+    },
+    "guaranteed_genuine_hp": {
+      "aliases": [
+        "guaranteed genuine hp"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 92,
+      "added_in_version": 2
+    },
+    "hp_logo": {
+      "aliases": [
+        "hp logo"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 92,
+      "added_in_version": 2
+    },
+    "hp_serial_number": {
+      "aliases": [
+        "hp serial number"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 92,
+      "added_in_version": 2
+    },
+    "server_model": {
+      "aliases": [
+        "server model"
+      ],
+      "examples": [
+        "HP Proliant"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 92,
+      "added_in_version": 2
+    },
+    "enclosure": {
+      "aliases": [
+        "enclosure",
+        "enclosure type"
+      ],
+      "examples": [
+        "Internal",
+        "Internal",
+        "External",
+        "Proprietary"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 119,
+      "added_in_version": 2
+    },
+    "pins": {
+      "aliases": [
+        "number of pins",
+        "pin configuration",
+        "pins"
+      ],
+      "examples": [
+        "40",
+        "288",
+        "240",
+        "240-pin",
+        "204"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 97,
+      "added_in_version": 2
+    },
+    "seek_time": {
+      "aliases": [
+        "seek time"
+      ],
+      "examples": [
+        "3.5ms",
+        "4ms",
+        "4.9ms"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 74,
+      "added_in_version": 2
+    },
+    "drive_dimensions": {
+      "aliases": [
+        "drive dimensions"
+      ],
+      "examples": [
+        "3.5 inches x 1/3H (Low Profile)",
+        "2.5 inches x 1/3H (Low Profile)",
+        "3.5 inches"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 65,
+      "added_in_version": 2
+    },
+    "l3_cache": {
+      "aliases": [
+        "cache l3",
+        "l3 cache"
+      ],
+      "examples": [
+        "4MB",
+        "24MB",
+        "20MB",
+        "16MB",
+        "8MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 71,
+      "added_in_version": 2
+    },
+    "hotswap": {
+      "aliases": [
+        "hot swap",
+        "hotswap"
+      ],
+      "examples": [
+        "Yes",
+        "No",
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 71,
+      "added_in_version": 2
+    },
+    "cache": {
+      "aliases": [
+        "cache",
+        "cache size"
+      ],
+      "examples": [
+        "32MB",
+        "64MB",
+        "8MB",
+        "1 MB",
+        "4MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 61,
+      "added_in_version": 2
+    },
+    "ports": {
+      "aliases": [
+        "ports"
+      ],
+      "examples": [
+        "Dual Port",
+        "Single",
+        "4"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 54,
+      "added_in_version": 2
+    },
+    "external_data_transfer": {
+      "aliases": [
+        "external data transfer",
+        "external data transfer rate"
+      ],
+      "examples": [
+        "3072MB/s",
+        "300MB/s",
+        "3GB/s",
+        "600MB/s",
+        "320MB/s"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 61,
+      "added_in_version": 2
+    },
+    "average_seek_time": {
+      "aliases": [
+        "average seek time"
+      ],
+      "examples": [
+        "8.5ms",
+        "9ms",
+        "15ms"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 49,
+      "added_in_version": 2
+    },
+    "quickpath_interconnect": {
+      "aliases": [
+        "quickpath interconnect"
+      ],
+      "examples": [
+        "6.40GT/s",
+        "4.8GT/s",
+        "8GT/s"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 48,
+      "added_in_version": 2
+    },
+    "connector": {
+      "aliases": [
+        "connector"
+      ],
+      "examples": [
+        "22-Position Serial ATA (SATA) Plug",
+        "22-position Serial ATA (ATA) plug",
+        "40 pin IDC"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 47,
+      "added_in_version": 2
+    },
+    "product_id": {
+      "aliases": [
+        "product id"
+      ],
+      "examples": [
+        "459587_DL165_HardDrives",
+        "455387_BL685c_HardDrives",
+        "141941_DL320_HardDrives"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 45,
+      "added_in_version": 2
+    },
+    "height": {
+      "aliases": [
+        "height"
+      ],
+      "examples": [
+        "1\"",
+        "1 inch",
+        "0.9\""
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 43,
+      "added_in_version": 2
+    },
+    "cas_latency": {
+      "aliases": [
+        "cas latency"
+      ],
+      "examples": [
+        "15-17-17-35",
+        "9-9-9-24",
+        "16-18-18-35"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 37,
+      "added_in_version": 2
+    },
+    "platform": {
+      "aliases": [
+        "platform"
+      ],
+      "examples": [
+        "PC",
+        "PC, Unix",
+        "PC Unix"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 36,
+      "added_in_version": 2
+    },
+    "productid": {
+      "aliases": [
+        "productid"
+      ],
+      "examples": [
+        "1023016280",
+        "1021038853",
+        "1018406199"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 35,
+      "added_in_version": 2
+    },
+    "upc": {
+      "aliases": [
+        "upc",
+        "upc list"
+      ],
+      "examples": [
+        "841667103037",
+        "848719062854",
+        "735858325837",
+        "841667103037",
+        "848719062854"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 38,
+      "added_in_version": 2
+    },
+    "voltage": {
+      "aliases": [
+        "voltage"
+      ],
+      "examples": [
+        "1.2 V",
+        "1.5 V",
+        "1.35 V"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 32,
+      "added_in_version": 2
+    },
+    "width": {
+      "aliases": [
+        "width",
+        "width us"
+      ],
+      "examples": [
+        "4\"",
+        "4.7\"",
+        "1.6\"",
+        "0.78in",
+        "0.87in"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 38,
+      "added_in_version": 2
+    },
+    "processor_number": {
+      "aliases": [
+        "processor number"
+      ],
+      "examples": [
+        "Amd Ryzen™",
+        "7700K",
+        "6350"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 30,
+      "added_in_version": 2
+    },
+    "dimensions_hxwxd": {
+      "aliases": [
+        "dimensions hxwxd"
+      ],
+      "examples": [
+        "3.23 in x 5.83 in x 9.61 in",
+        "1.62 in x 5.75 in x 6.11 in",
+        "3.39 in x 5.83 in x 8.35 in"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 29,
+      "added_in_version": 2
+    },
+    "error_checking": {
+      "aliases": [
+        "error checking"
+      ],
+      "examples": [
+        "Non-ECC",
+        "ECC"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 29,
+      "added_in_version": 2
+    },
+    "memory_model": {
+      "aliases": [
+        "memory model"
+      ],
+      "examples": [
+        "Vengeance LPX Black",
+        "Vengeance LED",
+        "Vengeance Jet Black"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 28,
+      "added_in_version": 2
+    },
+    "memory_type_ecc": {
+      "aliases": [
+        "memory type ecc"
+      ],
+      "examples": [
+        "Non-ECC",
+        "ECC"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 28,
+      "added_in_version": 2
+    },
+    "memory_type_r_u": {
+      "aliases": [
+        "memory type r u"
+      ],
+      "examples": [
+        "UDIMM (Unbuffered)",
+        "RDIMM"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 28,
+      "added_in_version": 2
+    },
+    "package_qty": {
+      "aliases": [
+        "package qty"
+      ],
+      "examples": [
+        "1",
+        "10",
+        "2"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 28,
+      "added_in_version": 2
+    },
+    "architecture": {
+      "aliases": [
+        "architecture"
+      ],
+      "examples": [
+        "14nm technology",
+        "32 nm technology",
+        "14 nm technology"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 27,
+      "added_in_version": 2
+    },
+    "device_type": {
+      "aliases": [
+        "device type"
+      ],
+      "examples": [
+        "Power Supply",
+        "DVD-ROM drive",
+        "Hard drive - internal"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 27,
+      "added_in_version": 2
+    },
+    "large_form_factor": {
+      "aliases": [
+        "large form factor"
+      ],
+      "examples": [
+        "3.5 inches"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 27,
+      "added_in_version": 2
+    },
+    "bus_clock": {
+      "aliases": [
+        "bus clock"
+      ],
+      "examples": [
+        "667MHz",
+        "200 MHz",
+        "677MHz"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 26,
+      "added_in_version": 2
+    },
+    "depth": {
+      "aliases": [
+        "depth"
+      ],
+      "examples": [
+        "5.8\"",
+        "80mm",
+        "1.6\""
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 26,
+      "added_in_version": 2
+    },
+    "drive_interface_standard": {
+      "aliases": [
+        "drive interface standard"
+      ],
+      "examples": [
+        "SATA/600",
+        "6Gb/s SAS",
+        "6GB/s SAS"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 26,
+      "added_in_version": 2
+    },
+    "tape_type": {
+      "aliases": [
+        "tape type"
+      ],
+      "examples": [
+        "DLT",
+        "AIT",
+        "Super DLT"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 26,
+      "added_in_version": 2
+    },
+    "item_code": {
+      "aliases": [
+        "item code"
+      ],
+      "examples": [
+        "HPS-120S840",
+        "4712900476088",
+        "0730143304962"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 25,
+      "added_in_version": 2
+    },
+    "processor": {
+      "aliases": [
+        "processor"
+      ],
+      "examples": [
+        "1 x Intel Xeon MP 2.2 GHz",
+        "4 x Intel Xeon MP 1.5 GHz",
+        "Intel Xeon 3.2GHz"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 25,
+      "added_in_version": 2
+    },
+    "bytes_sector": {
+      "aliases": [
+        "bytes sector"
+      ],
+      "examples": [
+        "512"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 24,
+      "added_in_version": 2
+    },
+    "features": {
+      "aliases": [
+        "features"
+      ],
+      "examples": [
+        "XMP 2.0",
+        "Black PCB XMP 2.0",
+        "XMP"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 24,
+      "added_in_version": 2
+    },
+    "native_command_queuing": {
+      "aliases": [
+        "native command queuing"
+      ],
+      "examples": [
+        "Supported"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 24,
+      "added_in_version": 2
+    },
+    "max_memory_channels_provided_by_kit": {
+      "aliases": [
+        "max memory channels provided by kit"
+      ],
+      "examples": [
+        "Dual (2)",
+        "Quad (4)",
+        "Single (1)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 23,
+      "added_in_version": 2
+    },
+    "memory_features": {
+      "aliases": [
+        "memory features"
+      ],
+      "examples": [
+        "XMP 2.0, Vengeance LPX Heatsink",
+        "N/A",
+        "XMP 2.0, Anodized Aluminium Heatspreader"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 23,
+      "added_in_version": 2
+    },
+    "registered_unbuffered": {
+      "aliases": [
+        "registered unbuffered"
+      ],
+      "examples": [
+        "Unbuffered",
+        "Registered"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 23,
+      "added_in_version": 2
+    },
+    "tested_latency": {
+      "aliases": [
+        "tested latency"
+      ],
+      "examples": [
+        "15-17-17-35",
+        "16-18-18-35",
+        "9-9-9-24"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 23,
+      "added_in_version": 2
+    },
+    "tested_voltage": {
+      "aliases": [
+        "tested voltage"
+      ],
+      "examples": [
+        "1.2V",
+        "1.35V",
+        "1.20v"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 23,
+      "added_in_version": 2
+    },
+    "cooler": {
+      "aliases": [
+        "cooler"
+      ],
+      "examples": [
+        "Anodised Aluminium Heatspreader",
+        "Heat Spreader",
+        "Heat Sink Heat Spreader"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 22,
+      "added_in_version": 2
+    },
+    "cache_memory": {
+      "aliases": [
+        "cache memory"
+      ],
+      "examples": [
+        "2 MB L2 cache",
+        "4 MB L3 cache - Adcanced Transfer Cache",
+        "Integrated 2MB Level 2 cache"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 21,
+      "added_in_version": 2
+    },
+    "installed_memory": {
+      "aliases": [
+        "installed memory",
+        "installed ram",
+        "ram installed"
+      ],
+      "examples": [
+        "512 MB",
+        "1024 MB",
+        "3GB",
+        "1 GB",
+        "512 MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 41,
+      "added_in_version": 2
+    },
+    "upgrade_type": {
+      "aliases": [
+        "upgrade type"
+      ],
+      "examples": [
+        "System Specific",
+        "System specific"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 21,
+      "added_in_version": 2
+    },
+    "l1_cache": {
+      "aliases": [
+        "l1 cache"
+      ],
+      "examples": [
+        "256KB",
+        "512KB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 20,
+      "added_in_version": 2
+    },
+    "network_controller": {
+      "aliases": [
+        "network controller"
+      ],
+      "examples": [
+        "Broadcom BCM5719",
+        "Embedded NC7761 Gigabit Server Adapter",
+        "Two NC7781 PCI-X Gigabit NICs"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 20,
+      "added_in_version": 2
+    },
+    "network_technology": {
+      "aliases": [
+        "network technology"
+      ],
+      "examples": [
+        "10/100/1000Base-T",
+        "10GBase-X",
+        "10/100Base-TX"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 20,
+      "added_in_version": 2
+    },
+    "native_data_transfer_rate": {
+      "aliases": [
+        "native data transfer rate"
+      ],
+      "examples": [
+        "3Mbps",
+        "1.5MB/s",
+        "5MB/s"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 19,
+      "added_in_version": 2
+    },
+    "weight_approximate": {
+      "aliases": [
+        "weight approximate"
+      ],
+      "examples": [
+        "15.84 oz",
+        "3 lb",
+        "1 lb"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 19,
+      "added_in_version": 2
+    },
+    "buffer_size": {
+      "aliases": [
+        "buffer",
+        "buffer size"
+      ],
+      "examples": [
+        "256MB",
+        "2GB",
+        "64MB (Installed) / 64MB (Max)",
+        "64 MB",
+        "512 MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 27,
+      "added_in_version": 2
+    },
+    "cache_memory_installed": {
+      "aliases": [
+        "cache memory installed",
+        "installed cache memory"
+      ],
+      "examples": [
+        "1 MB",
+        "512 KB",
+        "512 MB",
+        "32MB",
+        "64MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 22,
+      "added_in_version": 2
+    },
+    "dimensions": {
+      "aliases": [
+        "dimension",
+        "dimensiones",
+        "dimensions",
+        "item size"
+      ],
+      "examples": [
+        "4.0 x 5.79 x 0.78\" (10.16 x 14.7 x 2.02 cm)",
+        "12.5\" x 8\" x 2.4\"",
+        "1\" x 4\" x 5.8\"",
+        "1.18 x 0.08 x 0.08 inches",
+        "4 x 1 x 1 inches"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 40,
+      "added_in_version": 2
+    },
+    "networking_protocol": {
+      "aliases": [
+        "data link protocol",
+        "networking protocol"
+      ],
+      "examples": [
+        "Ethernet, Fast Ethernet, Gigabit Etherne",
+        "Ethernet",
+        "Ethernet Fast Ethernet Gigabit Ethernet",
+        "Ethernet, Fast Ethernet, Gigabit Etherne",
+        "Gigabit Ethernet"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 33,
+      "added_in_version": 2
+    },
+    "ram_maximum": {
+      "aliases": [
+        "maximum ram",
+        "ram maximum"
+      ],
+      "examples": [
+        "8 GB",
+        "4 GB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 22,
+      "added_in_version": 2
+    },
+    "socket": {
+      "aliases": [
+        "socket",
+        "socket de procesador"
+      ],
+      "examples": [
+        "AM4",
+        "AM3+",
+        "FM2",
+        "Socket AM4",
+        "Socket FM2+"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 20,
+      "added_in_version": 2
+    },
+    "description": {
+      "aliases": [
+        "description"
+      ],
+      "examples": [
+        "2pk Air Series Af120 120mm Performance Ed High Airflow Fan",
+        "GEFORCE GTX 1060 SC GAMING ACX 2.0 + COPPER CORE / HEATPIPE",
+        "32GB 4X8GB DDR4 3200MHZ FOR INTEL 100 SERIES VENGEANCE LPX D"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 17,
+      "added_in_version": 2
+    },
+    "raid_level": {
+      "aliases": [
+        "raid level"
+      ],
+      "examples": [
+        "0 1 5 10 50 1+0 5+0",
+        "0 1 1+0 5 5+0",
+        "RAID 0, RAID 1, RAID 4, RAID 5"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 17,
+      "added_in_version": 2
+    },
+    "tdp": {
+      "aliases": [
+        "tdp"
+      ],
+      "examples": [
+        "65W",
+        "95W",
+        "125W"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 17,
+      "added_in_version": 2
+    },
+    "raid_support": {
+      "aliases": [
+        "drive array support",
+        "raid support"
+      ],
+      "examples": [
+        "RAID 0, RAID 1, RAID 10, RAID 5",
+        "0, 1",
+        "RAID 0 , RAID 10 , RAID 5",
+        "RAID 0 RAID 1 RAID 10 RAID 5",
+        "RAID 0 1 5 10"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 20,
+      "added_in_version": 2
+    },
+    "rank": {
+      "aliases": [
+        "rank"
+      ],
+      "examples": [
+        "Single",
+        "Single Rank",
+        "Dual Rank"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 16,
+      "added_in_version": 2
+    },
+    "catalog_no": {
+      "aliases": [
+        "catalog no"
+      ],
+      "examples": [
+        "DUAL-GTX1060-O6G",
+        "AD7300OKHLBOX",
+        "MZ-75E-1T0BW"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 15,
+      "added_in_version": 2
+    },
+    "controller_interface_type": {
+      "aliases": [
+        "controller interface type"
+      ],
+      "examples": [
+        "2 x 32-pin SFF-8484",
+        "Serial Attached SCSI",
+        "Ultra2 Wide SCSI"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 15,
+      "added_in_version": 2
+    },
+    "cores": {
+      "aliases": [
+        "cores",
+        "number of cores",
+        "of cores"
+      ],
+      "examples": [
+        "6",
+        "4",
+        "2",
+        "4",
+        "2"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 33,
+      "added_in_version": 2
+    },
+    "official_release_date": {
+      "aliases": [
+        "official release date"
+      ],
+      "examples": [
+        "Jul 19, 2016",
+        "Aug 13, 2014",
+        "Nov 10, 2014"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 15,
+      "added_in_version": 2
+    },
+    "package_size": {
+      "aliases": [
+        "package size"
+      ],
+      "examples": [
+        "1.61 x 0.51 x 0.51 inches",
+        "37.5 x 37.5mm",
+        "3.5 x 2.4 x 2.4 inches"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 15,
+      "added_in_version": 2
+    },
+    "pax_code": {
+      "aliases": [
+        "pax code"
+      ],
+      "examples": [
+        "PAX0008227830",
+        "PAX0006611164",
+        "PAX0006686916"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 15,
+      "added_in_version": 2
+    },
+    "ecc_registered": {
+      "aliases": [
+        "ecc registered"
+      ],
+      "examples": [
+        "Unbuffered"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 14,
+      "added_in_version": 2
+    },
+    "heatsink_included": {
+      "aliases": [
+        "heatsink included"
+      ],
+      "examples": [
+        "Yes",
+        "No",
+        "Wraith Spire 95W (no LED)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 14,
+      "added_in_version": 2
+    },
+    "max_turbo_frequency": {
+      "aliases": [
+        "max turbo frequency",
+        "turbo clock speed"
+      ],
+      "examples": [
+        "3.9GHz",
+        "4.0GHz",
+        "4.2GHz",
+        "3.9GHz",
+        "4.0GHz"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 17,
+      "added_in_version": 2
+    },
+    "memory_size": {
+      "aliases": [
+        "memory size"
+      ],
+      "examples": [
+        "8 GB",
+        "4 GB",
+        "4096MB (1 module(s) x 4096MB)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 14,
+      "added_in_version": 2
+    },
+    "average_latency": {
+      "aliases": [
+        "average latency",
+        "average latency ms"
+      ],
+      "examples": [
+        "4.17ms",
+        "4.16ms",
+        "2ms",
+        "4.16 ms"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 15,
+      "added_in_version": 2
+    },
+    "controller_type": {
+      "aliases": [
+        "controller type"
+      ],
+      "examples": [
+        "SCSI Drive Array (RAID)",
+        "SCSI Controller",
+        "General I/O"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 13,
+      "added_in_version": 2
+    },
+    "data_storage_device_type": {
+      "aliases": [
+        "data storage device type"
+      ],
+      "examples": [
+        "SAS (Server Attached Storage)",
+        "SAS (Server attached storage)",
+        "SAS (Server attached Storage)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 13,
+      "added_in_version": 2
+    },
+    "data_transfer_rate_compressed": {
+      "aliases": [
+        "data transfer rate compressed"
+      ],
+      "examples": [
+        "6Mbps",
+        "3MB/s",
+        "10MB/s"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 13,
+      "added_in_version": 2
+    },
+    "hard_drive_device_type": {
+      "aliases": [
+        "hard drive device type"
+      ],
+      "examples": [
+        "Hard drive for server/storage unit (HP)",
+        "Hard drive for server/storage unit (Sun)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 13,
+      "added_in_version": 2
+    },
+    "lithography": {
+      "aliases": [
+        "lithography"
+      ],
+      "examples": [
+        "14nm",
+        "14 nm",
+        "22nm"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 13,
+      "added_in_version": 2
+    },
+    "number_of_threads": {
+      "aliases": [
+        "number of threads",
+        "of threads"
+      ],
+      "examples": [
+        "4",
+        "8",
+        "12",
+        "8",
+        "4"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 18,
+      "added_in_version": 2
+    },
+    "storage_controller": {
+      "aliases": [
+        "storage controller"
+      ],
+      "examples": [
+        "RAID (Ultra160 SCSI)",
+        "Integrated two port SATA",
+        "Smart Array 5i Plus Controller (Ultra3)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 13,
+      "added_in_version": 2
+    },
+    "system_type": {
+      "aliases": [
+        "system type"
+      ],
+      "examples": [
+        "Sun Sparc, PC (Intel x86 Compatible)",
+        "Linux, PC",
+        "PC (Intel x86 Compatible)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 13,
+      "added_in_version": 2
+    },
+    "dimensions_wxdxh": {
+      "aliases": [
+        "dimensions wxdxh"
+      ],
+      "examples": [
+        "8.75 in x 16.75 in x 3.25 in",
+        "7 in x 28.9 in x 10.5 in",
+        "15.5 in x 28.7 in x 7 in"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "drive_interface": {
+      "aliases": [
+        "drive interface"
+      ],
+      "examples": [
+        "SATA"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "drive_type": {
+      "aliases": [
+        "drive type"
+      ],
+      "examples": [
+        "Internal"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "graphics_base_frequency": {
+      "aliases": [
+        "graphics base frequency"
+      ],
+      "examples": [
+        "350 MHz",
+        "350.00 MHz",
+        "350 Mhz"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "graphics_max_dynamic_frequency": {
+      "aliases": [
+        "graphics max dynamic frequency"
+      ],
+      "examples": [
+        "1.15 GHz",
+        "1.15Ghz",
+        "1.1 GHz"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "intel_intru_3d_technology": {
+      "aliases": [
+        "intel intru 3d technology"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "intel_quick_sync_video": {
+      "aliases": [
+        "intel quick sync video"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "networking": {
+      "aliases": [
+        "netoworking",
+        "networking"
+      ],
+      "examples": [
+        "Ethernet, Fast Ethernet, Gigabit Etherne",
+        "Integrated HP NC7781 PCI-X Gigabit",
+        "NC77892 Dual Prot Gigabit Server Adaptor",
+        "NC7782 Dual Prot Gigabit Server Adaptor"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 14,
+      "added_in_version": 2
+    },
+    "package_weight": {
+      "aliases": [
+        "package weight"
+      ],
+      "examples": [
+        "0.2 pounds",
+        "0.6 pounds",
+        "0.3 pounds"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "processor_graphics": {
+      "aliases": [
+        "processor graphics"
+      ],
+      "examples": [
+        "Intel HD 530",
+        "Intel HD Graphics 630",
+        "Intel HD 630"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "product_measures": {
+      "aliases": [
+        "product measures"
+      ],
+      "examples": [
+        "3.7cm x 3.7cm x 1cm",
+        "24.2cm x 13cm x 4.3cm",
+        "10cm x 7cm x 0.7cm"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "units_in_package": {
+      "aliases": [
+        "units in package"
+      ],
+      "examples": [
+        "1"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 12,
+      "added_in_version": 2
+    },
+    "chassis_form_factor": {
+      "aliases": [
+        "chassis form",
+        "chassis form factor"
+      ],
+      "examples": [
+        "Blade",
+        "Blade"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 18,
+      "added_in_version": 2
+    },
+    "controller_raid_level": {
+      "aliases": [
+        "controller raid level",
+        "storage controller raid",
+        "storage controller raid level"
+      ],
+      "examples": [
+        "RAID 0, RAID 1, RAID 10, RAID 5",
+        "RAID 1, RAID 10, RAID 5",
+        "RAID 0, RAID 1, RAID 10, RAID 5",
+        "RAID 0, RAID 1, RAID 10, RAID 5"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 18,
+      "added_in_version": 2
+    },
+    "drive_support": {
+      "aliases": [
+        "drive support"
+      ],
+      "examples": [
+        "64 x Logical",
+        "12",
+        "38"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 11,
+      "added_in_version": 2
+    },
+    "drive_width": {
+      "aliases": [
+        "drive width"
+      ],
+      "examples": [
+        "3.5\"",
+        "2.5\""
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 11,
+      "added_in_version": 2
+    },
+    "ecc_memory_supported": {
+      "aliases": [
+        "ecc memory supported"
+      ],
+      "examples": [
+        "No"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 11,
+      "added_in_version": 2
+    },
+    "intel_clear_video_hd_technology": {
+      "aliases": [
+        "intel clear video hd technology",
+        "intel clear video technology"
+      ],
+      "examples": [
+        "Yes",
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 19,
+      "added_in_version": 2
+    },
+    "max_tdp": {
+      "aliases": [
+        "max tdp"
+      ],
+      "examples": [
+        "65 W",
+        "95 W",
+        "84 W"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 11,
+      "added_in_version": 2
+    },
+    "device_supported": {
+      "aliases": [
+        "device supported"
+      ],
+      "examples": [
+        "Server",
+        "Desktop PC Notebook",
+        "Desktop Computer"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "embedded_options_available": {
+      "aliases": [
+        "embedded options available"
+      ],
+      "examples": [
+        "No"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "expansion_slots": {
+      "aliases": [
+        "expansion slots"
+      ],
+      "examples": [
+        "7",
+        "2",
+        "1 x M.2 slot (2280_storage) PCIe /SATA 1 x PCIe M.2 NGFF 223"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "genre": {
+      "aliases": [
+        "genre"
+      ],
+      "examples": [
+        "CPU",
+        "Solid-State Drive (Internal)",
+        "Powerline Adapter"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "instruction_set": {
+      "aliases": [
+        "instruction set"
+      ],
+      "examples": [
+        "64-bit"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "instruction_set_extensions": {
+      "aliases": [
+        "instruction set extensions"
+      ],
+      "examples": [
+        "SSE4.1/4.2, AVX 2.0"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "item": {
+      "aliases": [
+        "item"
+      ],
+      "examples": [
+        "120Gb Samsung 840 Series S-ATA Solid State 2.5In Drive",
+        "AMD FX-6350, 3.9GHz, 6-Core, Vishera, 125W, AM3+ CPU, Retail",
+        "AMD FX-8350, 4.0GHz, 8-Core, Vishera, 125W, AM3+ CPU, Retail"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "number_of_modules": {
+      "aliases": [
+        "number of modules"
+      ],
+      "examples": [
+        "2 x 4 GB",
+        "2 x 2 GB",
+        "1 x 8 GB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "cabling_type": {
+      "aliases": [
+        "cabling type"
+      ],
+      "examples": [
+        "Ethernet 10/1000Base-T / 100Base-TX",
+        "4X Infiniband SFF-8470",
+        "Ethernet 100Base-TX - Ethernet 10Base-T"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "cache_per_processor": {
+      "aliases": [
+        "cache per processor"
+      ],
+      "examples": [
+        "1 MB",
+        "2 MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "intel_insider": {
+      "aliases": [
+        "intel insider"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "intel_smart_cache": {
+      "aliases": [
+        "intel smart cache"
+      ],
+      "examples": [
+        "6MB",
+        "8MB",
+        "3MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "intel_wireless_display": {
+      "aliases": [
+        "intel wireless display"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "max_memory_bandwidth": {
+      "aliases": [
+        "max memory bandwidth"
+      ],
+      "examples": [
+        "34.1 GB/s",
+        "25.6 GB/s"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "max_memory_size_dependant_on_memory_type": {
+      "aliases": [
+        "max memory size",
+        "max memory size dependant on memory type"
+      ],
+      "examples": [
+        "64 GB",
+        "32 GB",
+        "64 GB (dependent on memory type)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 11,
+      "added_in_version": 2
+    },
+    "networking_type": {
+      "aliases": [
+        "networking type"
+      ],
+      "examples": [
+        "Network Adapter"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "number_of_memory_channels": {
+      "aliases": [
+        "max of memory channels",
+        "number of memory channels"
+      ],
+      "examples": [
+        "2",
+        "2"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 11,
+      "added_in_version": 2
+    },
+    "ram": {
+      "aliases": [
+        "ram"
+      ],
+      "examples": [
+        "Memory Controller: Internal Memory Channels: 2 Memory Standa",
+        "92KB",
+        "Memory Controler: Internal Memory Channels: 2 Memory Standar"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "4k_support": {
+      "aliases": [
+        "4k support"
+      ],
+      "examples": [
+        "Yes, at 60Hz",
+        "Yes, at 60 Hz"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "air_flow": {
+      "aliases": [
+        "air flow"
+      ],
+      "examples": [
+        "66.40 CFM",
+        "62.74 CFM",
+        "37.85 CFM"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "blt_item": {
+      "aliases": [
+        "blt item"
+      ],
+      "examples": [
+        "B4P0822",
+        "B2U1918",
+        "BYW4030"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "bus_type": {
+      "aliases": [
+        "bus type"
+      ],
+      "examples": [
+        "PCI",
+        "x4 PCI Express 2.1",
+        "PC-12800"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "condition": {
+      "aliases": [
+        "condition",
+        "item condition"
+      ],
+      "examples": [
+        "New",
+        "Refurbished",
+        "new",
+        "Refurbished"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "directx_support": {
+      "aliases": [
+        "directx",
+        "directx support"
+      ],
+      "examples": [
+        "12",
+        "12"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "diskette_drive": {
+      "aliases": [
+        "diskette drive"
+      ],
+      "examples": [
+        "1.44 MB Diskette Drive",
+        "1.44MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "graphics": {
+      "aliases": [
+        "graphics"
+      ],
+      "examples": [
+        "AMD Radeon HD 8470D Graphics",
+        "Intel® HD Graphics 620",
+        "Intel® HD Graphics"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "green_compliance_certificate_authority": {
+      "aliases": [
+        "green compliance certificate authority"
+      ],
+      "examples": [
+        "RoHS China RoHS WEEE",
+        "RoHS",
+        "RoHS WEEE"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "green_compliant": {
+      "aliases": [
+        "green compliant"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "manufacturer_s_website": {
+      "aliases": [
+        "manufacturer s website"
+      ],
+      "examples": [
+        "http://www.corsair.com/",
+        "http://www.amd.com/",
+        "http://www.evga.com/"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "memory_controller": {
+      "aliases": [
+        "memory controller"
+      ],
+      "examples": [
+        "Dual channel DDR3 800/1066/1333/1600MHz",
+        "Dual channel DDR3 800/1066/1333/1600MHz/1866MHz"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "memory_standard": {
+      "aliases": [
+        "memory standard"
+      ],
+      "examples": [
+        "DDR3-1600/PC3-12800",
+        "DDR3-1866/PC3-15000",
+        "DDR3-1333/PC3-10600"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "of_displays_supported": {
+      "aliases": [
+        "number of displays supported",
+        "number of monitors supported",
+        "of displays supported"
+      ],
+      "examples": [
+        "3",
+        "3",
+        "3"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 13,
+      "added_in_version": 2
+    },
+    "opengl_support": {
+      "aliases": [
+        "opengl",
+        "opengl support"
+      ],
+      "examples": [
+        "4.4",
+        "4.5",
+        "4.5"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "operating_system": {
+      "aliases": [
+        "operating system"
+      ],
+      "examples": [
+        "Operating System Not Included",
+        "OS X Lion 10.7.4"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "optical_drive": {
+      "aliases": [
+        "optical drive"
+      ],
+      "examples": [
+        "48x IDE (ATAPI) CD-ROM Drive",
+        "24x IDE slimline CD-ROM Drive",
+        "CD-ROM Drive"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "access_time": {
+      "aliases": [
+        "access time"
+      ],
+      "examples": [
+        "5.0ms",
+        "Read: 530Mb / s / Write: 130Mb / s",
+        "12 ms"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "graphics_video_max_memory": {
+      "aliases": [
+        "graphics video max memory",
+        "max video memory"
+      ],
+      "examples": [
+        "1.7GB",
+        "64 GB",
+        "64 GB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "hard_drive": {
+      "aliases": [
+        "hard drive"
+      ],
+      "examples": [
+        "1 x 40GB Ultra ATA",
+        "4x 36.4GB 10K Hot Pluggable",
+        "128GB SSD"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "hdd_form_factor": {
+      "aliases": [
+        "hdd form factor"
+      ],
+      "examples": [
+        "3.5 inches",
+        "3.5 inches x 1/3H (Low Profile)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "max_memory": {
+      "aliases": [
+        "max memory"
+      ],
+      "examples": [
+        "16 GB",
+        "32GB with 16 x 2 GB DIMMs",
+        "32GB with 16 x 2GB DIMMs"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "other": {
+      "aliases": [
+        "other"
+      ],
+      "examples": [
+        "125W",
+        "Vengeance PCB",
+        "Cerulean Blue heatsink"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "package_contents": {
+      "aliases": [
+        "package contents"
+      ],
+      "examples": [
+        "ST1000BT32 Ethernet Network Adapter Card 1 x Driver disk 1 x",
+        "5-Port 10/100Mbps Desktop Switch 1 x Power Adapter User Guid",
+        "AF120 Performance Edition Airflow Fan 2 x Three Colored Ring"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "power_supply": {
+      "aliases": [
+        "power supply"
+      ],
+      "examples": [
+        "1 x 550W Hot Plug Redundant",
+        "Input: AC 100-240V Output: DC 19V 3.42A",
+        "Input: AC 100-240V Output: DC 19V 2.1A"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "signal_processing": {
+      "aliases": [
+        "signal processing"
+      ],
+      "examples": [
+        "Unbuffered"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "storage_controller_type": {
+      "aliases": [
+        "storage controller type"
+      ],
+      "examples": [
+        "Ultra160 SCSI",
+        "DMA/ATA (Ultra) x 1"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "video_ram_installed": {
+      "aliases": [
+        "video ram installed"
+      ],
+      "examples": [
+        "0 MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "backward_compatability": {
+      "aliases": [
+        "backward compatability"
+      ],
+      "examples": [
+        "U2 and U3 Speeds",
+        "U2 and U3 speeds"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "binding": {
+      "aliases": [
+        "binding"
+      ],
+      "examples": [
+        "Electronics"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "boost_clock_speed": {
+      "aliases": [
+        "boost clock speed"
+      ],
+      "examples": [
+        "4.0GHz max. 4,0 GHz (Precision Boost) OC: 4,0+ GHz (XFR auto",
+        "3.4GHz max. 4,0 GHz (Precision Boost) OC: 4,0+ GHz (XFR auto",
+        "3.7GHz max. 4,0 GHz (Precision Boost) OC: 4,0+ GHz (XFR auto"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "bytes_sec": {
+      "aliases": [
+        "bytes sec"
+      ],
+      "examples": [
+        "512"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "chipset": {
+      "aliases": [
+        "chipset"
+      ],
+      "examples": [
+        "ServerWorks Grand Chamption LE",
+        "Intel HM77",
+        "G550"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "composant_pour": {
+      "aliases": [
+        "composant pour"
+      ],
+      "examples": [
+        "PC/server",
+        "PC",
+        "Ordinateur portable"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "connectivity_technology": {
+      "aliases": [
+        "connectivity technology"
+      ],
+      "examples": [
+        "Wired"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "depth_us": {
+      "aliases": [
+        "depth us"
+      ],
+      "examples": [
+        "3.15in",
+        "12.75 in"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "dimensions_wxhxd": {
+      "aliases": [
+        "dimensions wxhxd"
+      ],
+      "examples": [
+        "17.5 in x 3.4 in x 25.7 in",
+        "17.5 x 5.3 x 28.4 in (44.5x13.4x72 cm)"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "disk_size": {
+      "aliases": [
+        "disk size"
+      ],
+      "examples": [
+        "5.75 inches x 4.0 inches x 1.0 inch"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "ean_list": {
+      "aliases": [
+        "ean list"
+      ],
+      "examples": [
+        "0841667103037",
+        "0848719062854",
+        "0841667103389"
+      ],
+      "origin": "learned",
+      "role": "identifier",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "form_factor_height": {
+      "aliases": [
+        "form factor height"
+      ],
+      "examples": [
+        "Half-Height"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "graphics_card": {
+      "aliases": [
+        "graphics card"
+      ],
+      "examples": [
+        "Intel Iris Graphics",
+        "Intel HD Graphics",
+        "Radeon Pro 555"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "height_us": {
+      "aliases": [
+        "height us"
+      ],
+      "examples": [
+        "0.09in",
+        "13 in"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "included_network_card": {
+      "aliases": [
+        "included network card"
+      ],
+      "examples": [
+        "Ethernet (10/100 Mbps)",
+        "Ethernet, Fast Ethernet,Gigabit Ethernet"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "internal_storage": {
+      "aliases": [
+        "internal storage"
+      ],
+      "examples": [
+        "Hot Plug SATA - 4.5TB maximum",
+        "Max. 293.6GB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "item_dimensions": {
+      "aliases": [
+        "item dimensions"
+      ],
+      "examples": [
+        "0 x 7 x 0 x 4",
+        "0 x 8 x 0 x 5"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "label": {
+      "aliases": [
+        "label"
+      ],
+      "examples": [
+        "Amazon"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "material": {
+      "aliases": [
+        "material"
+      ],
+      "examples": [
+        "Plastic Rubber",
+        "Polyester",
+        "Steel, Plastic"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "max_resolution_dp": {
+      "aliases": [
+        "max resolution dp"
+      ],
+      "examples": [
+        "[email protected]"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "max_resolution_edp_integrated_flat_panel": {
+      "aliases": [
+        "max resolution edp integrated flat panel"
+      ],
+      "examples": [
+        "[email protected]"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "max_resolution_hdmi_1_4": {
+      "aliases": [
+        "max resolution hdmi 1 4"
+      ],
+      "examples": [
+        "[email protected]"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "maximum_capacity": {
+      "aliases": [
+        "maximum capacity"
+      ],
+      "examples": [
+        "8.7TB",
+        "1.3TB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "maximum_number_of_processors": {
+      "aliases": [
+        "maximum number of processors",
+        "processor capacity"
+      ],
+      "examples": [
+        "1",
+        "4",
+        "2",
+        "1 to 4"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 10,
+      "added_in_version": 2
+    },
+    "maximum_system_memory": {
+      "aliases": [
+        "maximum system memory"
+      ],
+      "examples": [
+        "24GB",
+        "128 GB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "media_type_supported": {
+      "aliases": [
+        "media type supported"
+      ],
+      "examples": [
+        "Twisted Pair"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "memory_socket": {
+      "aliases": [
+        "memory socket"
+      ],
+      "examples": [
+        "DIMM 240-pin",
+        "FB-DIMM 240-pin"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "network_rj_45": {
+      "aliases": [
+        "network rj 45"
+      ],
+      "examples": [
+        "Yes"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "overclocking_speed": {
+      "aliases": [
+        "overclocking speed"
+      ],
+      "examples": [
+        "3.80 GHz",
+        "3.90 GHz",
+        "4 GHz"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "package_dimensions": {
+      "aliases": [
+        "package dimensions"
+      ],
+      "examples": [
+        "1 x 10 x 1 x 6",
+        "1 x 9 x 0 x 5",
+        "1 x 10 x 1 x 5"
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "power": {
+      "aliases": [
+        "power"
+      ],
+      "examples": [
+        "2.0 (maximum start current, DC)",
+        "180 Watts per supply (load)",
+        "AC 110/230 V (50/60Hz)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "power_draw": {
+      "aliases": [
+        "power draw"
+      ],
+      "examples": [
+        ".23A",
+        ".18A",
+        ".08A"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "processor_manufacturer": {
+      "aliases": [
+        "processor manufacturer"
+      ],
+      "examples": [
+        "AMD",
+        "Intel"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "product_group": {
+      "aliases": [
+        "product group"
+      ],
+      "examples": [
+        "Amazon Tablets"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "publisher": {
+      "aliases": [
+        "publisher"
+      ],
+      "examples": [
+        "Amazon"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "redundant_fans": {
+      "aliases": [
+        "redundant fans"
+      ],
+      "examples": [
+        "Six Hot Plug Redundant Fans Standard",
+        "Optional"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "release_date": {
+      "aliases": [
+        "release date"
+      ],
+      "examples": [
+        "2016-09-21",
+        "2015-09-30",
+        "2016-03-31"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "remote_management": {
+      "aliases": [
+        "manageability",
+        "remote management"
+      ],
+      "examples": [
+        "Integrated Lights-Out",
+        "Integrated Lights Out",
+        "Integrated Lights Out (iLO)",
+        "Integrated Lights-Out (iLO)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "scsi_signaling_type": {
+      "aliases": [
+        "scsi signaling type"
+      ],
+      "examples": [
+        "Low Voltage Differential (LVD)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "specs_van_de_fabrikant": {
+      "aliases": [
+        "specs van de fabrikant"
+      ],
+      "examples": [
+        "Productinformatie"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "static_pressure": {
+      "aliases": [
+        "static pressure"
+      ],
+      "examples": [
+        ".80 mm/H2O",
+        "3.1 mm/H2O",
+        "1.29 mm/H2O"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "studio": {
+      "aliases": [
+        "studio"
+      ],
+      "examples": [
+        "Amazon"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "system_chipset": {
+      "aliases": [
+        "system chipset"
+      ],
+      "examples": [
+        "Intel 5500",
+        "Intel 7300"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "system_memory_ram": {
+      "aliases": [
+        "system memory ram"
+      ],
+      "examples": [
+        "4GB",
+        "16GB",
+        "8GB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "tape_format": {
+      "aliases": [
+        "tape format"
+      ],
+      "examples": [
+        "Tape - Digital Linear Tape (DLT)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "title": {
+      "aliases": [
+        "title"
+      ],
+      "examples": [
+        "All-New Fire HD 8 Tablet, 8\" HD Display, Wi-Fi, 16 GB - Incl",
+        "Fire, 7\" Display, Wi-Fi, 8 GB - Includes Special Offers, Bla",
+        "Fire Kids Edition, 7\" Display, Wi-Fi, 16 GB, Blue Kid-Proof "
+      ],
+      "origin": "learned",
+      "role": "descriptive",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "warranty_types": {
+      "aliases": [
+        "warranty types"
+      ],
+      "examples": [
+        "1 Year - CRU",
+        "Customer Replaceable Unit"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "weight_us": {
+      "aliases": [
+        "weight us"
+      ],
+      "examples": [
+        "0.02 lbs",
+        "1.17 lbs"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "cooling": {
+      "aliases": [
+        "cooling"
+      ],
+      "examples": [
+        "Active Fan",
+        "Passive"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "ecc": {
+      "aliases": [
+        "ecc"
+      ],
+      "examples": [
+        "Non",
+        "NON-ECC",
+        "-"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "graphics_output": {
+      "aliases": [
+        "graphics output"
+      ],
+      "examples": [
+        "eDP/DP/HDMI/DVI"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "installed_l2_cache_memory": {
+      "aliases": [
+        "installed l2 cache memory"
+      ],
+      "examples": [
+        "2 MB",
+        "1 MB"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "max_resolution_intel_widi": {
+      "aliases": [
+        "max resolution intel widi"
+      ],
+      "examples": [
+        "1080p"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "max_resolution_vga": {
+      "aliases": [
+        "max resolution vga"
+      ],
+      "examples": [
+        "N/A"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "maximum_sustained_transfer_rate": {
+      "aliases": [
+        "maximum sustained transfer rate",
+        "maximum transfer rate"
+      ],
+      "examples": [
+        "140MB/s",
+        "160MBytes/sec",
+        "320MB/s"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 9,
+      "added_in_version": 2
+    },
+    "memory_voltage": {
+      "aliases": [
+        "memory voltage"
+      ],
+      "examples": [
+        "1.50 V",
+        "- V"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "network_rj_45_ports": {
+      "aliases": [
+        "network rj 45 ports",
+        "number of network rj 45 ports"
+      ],
+      "examples": [
+        "4",
+        "1",
+        "4"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "noise_level": {
+      "aliases": [
+        "noise level"
+      ],
+      "examples": [
+        "25.5 dBA",
+        "35 dBA",
+        "23 dBA"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "of_qpi_links": {
+      "aliases": [
+        "of qpi links"
+      ],
+      "examples": [
+        "0"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "processor_base_frequency": {
+      "aliases": [
+        "processor base frequency"
+      ],
+      "examples": [
+        "4.20 GHz",
+        "3.60 GHz",
+        "3.40 GHz"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "protocol_supported": {
+      "aliases": [
+        "protocol supported"
+      ],
+      "examples": [
+        "3GB SAS / 1.5GB SATA",
+        "3Gb/s SAS 1.5Gb/s SATA"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "serie": {
+      "aliases": [
+        "serie"
+      ],
+      "examples": [
+        "Core i7",
+        "HyperX Predator",
+        "840"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "thermal_specification": {
+      "aliases": [
+        "thermal specification"
+      ],
+      "examples": [
+        "158°F (70°C)",
+        "153.3°F (67.4°C)",
+        "165.2°F (74°C)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "transfer_rate": {
+      "aliases": [
+        "transfer rate"
+      ],
+      "examples": [
+        "3GB/s",
+        "6Gb/sec (compatible 3Gb/sec)"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "validated_compatible_with": {
+      "aliases": [
+        "validated compatible with"
+      ],
+      "examples": [
+        "AMD X399"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 5,
+      "added_in_version": 2
+    },
+    "voltage_rating": {
+      "aliases": [
+        "operating voltage",
+        "voltage rating"
+      ],
+      "examples": [
+        "7V – 12V",
+        "7V-12V",
+        "7V – 12V"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 7,
+      "added_in_version": 2
+    },
+    "maximum_number_of_devices_supported": {
+      "aliases": [
+        "maximum number of devices supported",
+        "maximum supported devices"
+      ],
+      "examples": [
+        "32",
+        "6",
+        "30"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 8,
+      "added_in_version": 2
+    },
+    "screen_size_inches": {
+      "aliases": [
+        "screen size diagonal",
+        "screen size inches"
+      ],
+      "examples": [
+        "13.3",
+        "15.4",
+        "13.3 inches",
+        "15.4 inches"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    },
+    "number_of_pci_express_slots": {
+      "aliases": [
+        "number of pci express slots",
+        "number of pci express x8 slots"
+      ],
+      "examples": [
+        "1",
+        "4"
+      ],
+      "origin": "learned",
+      "role": "spec",
+      "support": 6,
+      "added_in_version": 2
+    }
+  },
+  "changelog": [
+    {
+      "at": "2026-10-21T16:22:14+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "brand",
+      "alias": "merk"
+    },
+    {
+      "at": "2026-10-21T16:22:14+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "memory_type",
+      "alias": "technology"
+    },
+    {
+      "at": "2026-10-21T16:22:14+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "speed",
+      "alias": "bus speed"
+    },
+    {
+      "at": "2026-10-21T16:22:16+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "size"
+    },
+    {
+      "at": "2026-10-21T16:22:16+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "memory_type",
+      "alias": "memory"
+    },
+    {
+      "at": "2026-10-21T16:22:16+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "compressed capacity"
+    },
+    {
+      "at": "2026-10-21T16:22:16+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "native capacity"
+    },
+    {
+      "at": "2026-10-21T16:22:16+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "warranty",
+      "alias": "limited warranty"
+    },
+    {
+      "at": "2026-10-21T16:22:16+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "speed",
+      "alias": "tested speed"
+    },
+    {
+      "at": "2026-10-21T16:22:18+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "memory_type",
+      "alias": "ram technology"
+    },
+    {
+      "at": "2026-10-21T16:22:18+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "model",
+      "alias": "mfg part"
+    },
+    {
+      "at": "2026-10-21T16:22:18+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "speed",
+      "alias": "processor speed"
+    },
+    {
+      "at": "2026-10-21T16:22:18+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "model",
+      "alias": "manufacturer part"
+    },
+    {
+      "at": "2026-10-21T16:22:18+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "memory_type",
+      "alias": "memory types"
+    },
+    {
+      "at": "2026-10-21T16:22:18+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "weight",
+      "alias": "weight kg"
+    },
+    {
+      "at": "2026-10-21T16:22:19+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "form_factor",
+      "alias": "form factor width"
+    },
+    {
+      "at": "2026-10-21T16:22:19+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "hard drive capacity"
+    },
+    {
+      "at": "2026-10-21T16:22:19+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "hard drive size"
+    },
+    {
+      "at": "2026-10-21T16:22:19+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "speed",
+      "alias": "supported ram speeds"
+    },
+    {
+      "at": "2026-10-21T16:22:19+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "formatted capacity"
+    },
+    {
+      "at": "2026-10-21T16:22:21+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "speed",
+      "alias": "fr quence de la m moire"
+    },
+    {
+      "at": "2026-10-21T16:22:21+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "speed",
+      "alias": "memory clock"
+    },
+    {
+      "at": "2026-10-21T16:22:22+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "model",
+      "alias": "part"
+    },
+    {
+      "at": "2026-10-21T16:22:22+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "storage"
+    },
+    {
+      "at": "2026-10-21T16:22:50+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "total storage capacity"
+    },
+    {
+      "at": "2026-10-21T16:22:59+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "memory_type",
+      "alias": "internal memory type"
+    },
+    {
+      "at": "2026-10-21T16:23:03+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "max capacity"
+    },
+    {
+      "at": "2026-10-21T16:23:03+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "speed",
+      "alias": "memory clock speed"
+    },
+    {
+      "at": "2026-10-21T16:23:06+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "capacity",
+      "alias": "storage size"
+    },
+    {
+      "at": "2026-10-21T16:23:07+00:00",
+      "version": 1,
+      "action": "alias_added",
+      "attribute": "memory_type",
+      "alias": "tipos de memoria que admite el procesador"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "category",
+      "aliases": [
+        "category"
+      ],
+      "support": 687,
+      "reason": "1 name(s), support 687 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "sub_category",
+      "aliases": [
+        "sub category"
+      ],
+      "support": 685,
+      "reason": "1 name(s), support 685 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "generation",
+      "aliases": [
+        "generation"
+      ],
+      "support": 668,
+      "reason": "1 name(s), support 668 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "products_id",
+      "aliases": [
+        "products id"
+      ],
+      "support": 643,
+      "reason": "1 name(s), support 643 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "interface_type",
+      "aliases": [
+        "interface type"
+      ],
+      "support": 229,
+      "reason": "1 name(s), support 229 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "ean",
+      "aliases": [
+        "ean"
+      ],
+      "support": 223,
+      "reason": "1 name(s), support 223 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "spindle_speed",
+      "aliases": [
+        "rotational speed",
+        "spindle speed"
+      ],
+      "support": 289,
+      "reason": "2 name(s), support 289 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "type",
+      "aliases": [
+        "type"
+      ],
+      "support": 212,
+      "reason": "1 name(s), support 212 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "categorie",
+      "aliases": [
+        "categorie"
+      ],
+      "support": 205,
+      "reason": "1 name(s), support 205 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "product",
+      "aliases": [
+        "product"
+      ],
+      "support": 205,
+      "reason": "1 name(s), support 205 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "sku",
+      "aliases": [
+        "sku"
+      ],
+      "support": 205,
+      "reason": "1 name(s), support 205 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "tweakers_id",
+      "aliases": [
+        "tweakers id"
+      ],
+      "support": 205,
+      "reason": "1 name(s), support 205 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "uitvoering",
+      "aliases": [
+        "uitvoering"
+      ],
+      "support": 205,
+      "reason": "1 name(s), support 205 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "data_transfer_rate",
+      "aliases": [
+        "data transfer rate"
+      ],
+      "support": 203,
+      "reason": "1 name(s), support 203 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "pre_failure_warranty",
+      "aliases": [
+        "pre failure warranty"
+      ],
+      "support": 158,
+      "reason": "1 name(s), support 158 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "product_type",
+      "aliases": [
+        "product type"
+      ],
+      "support": 132,
+      "reason": "1 name(s), support 132 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "compatibility",
+      "aliases": [
+        "compatibility"
+      ],
+      "support": 120,
+      "reason": "1 name(s), support 120 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor_type",
+      "aliases": [
+        "processor type"
+      ],
+      "support": 114,
+      "reason": "1 name(s), support 114 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "process_technology",
+      "aliases": [
+        "process technology"
+      ],
+      "support": 112,
+      "reason": "1 name(s), support 112 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "thermal_design_power",
+      "aliases": [
+        "thermal design power"
+      ],
+      "support": 112,
+      "reason": "1 name(s), support 112 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor_core",
+      "aliases": [
+        "processor core"
+      ],
+      "support": 110,
+      "reason": "1 name(s), support 110 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor_socket",
+      "aliases": [
+        "processor socket"
+      ],
+      "support": 110,
+      "reason": "1 name(s), support 110 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "productserie",
+      "aliases": [
+        "productserie"
+      ],
+      "support": 108,
+      "reason": "1 name(s), support 108 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "l2_cache",
+      "aliases": [
+        "cache l2",
+        "l2 cache"
+      ],
+      "support": 111,
+      "reason": "2 name(s), support 111 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "64_bit_processing",
+      "aliases": [
+        "64 bit processing"
+      ],
+      "support": 102,
+      "reason": "1 name(s), support 102 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor_qty",
+      "aliases": [
+        "processor qty",
+        "processors qty"
+      ],
+      "support": 113,
+      "reason": "2 name(s), support 113 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "application",
+      "aliases": [
+        "application"
+      ],
+      "support": 98,
+      "reason": "1 name(s), support 98 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "hot_swap_tray",
+      "aliases": [
+        "hot swap tray"
+      ],
+      "support": 94,
+      "reason": "1 name(s), support 94 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "guaranteed_genuine_hp",
+      "aliases": [
+        "guaranteed genuine hp"
+      ],
+      "support": 92,
+      "reason": "1 name(s), support 92 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "hp_logo",
+      "aliases": [
+        "hp logo"
+      ],
+      "support": 92,
+      "reason": "1 name(s), support 92 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "hp_serial_number",
+      "aliases": [
+        "hp serial number"
+      ],
+      "support": 92,
+      "reason": "1 name(s), support 92 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "server_model",
+      "aliases": [
+        "server model"
+      ],
+      "support": 92,
+      "reason": "1 name(s), support 92 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "enclosure",
+      "aliases": [
+        "enclosure",
+        "enclosure type"
+      ],
+      "support": 119,
+      "reason": "2 name(s), support 119 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "pins",
+      "aliases": [
+        "number of pins",
+        "pin configuration",
+        "pins"
+      ],
+      "support": 97,
+      "reason": "3 name(s), support 97 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "seek_time",
+      "aliases": [
+        "seek time"
+      ],
+      "support": 74,
+      "reason": "1 name(s), support 74 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "drive_dimensions",
+      "aliases": [
+        "drive dimensions"
+      ],
+      "support": 65,
+      "reason": "1 name(s), support 65 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "l3_cache",
+      "aliases": [
+        "cache l3",
+        "l3 cache"
+      ],
+      "support": 71,
+      "reason": "2 name(s), support 71 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "hotswap",
+      "aliases": [
+        "hot swap",
+        "hotswap"
+      ],
+      "support": 71,
+      "reason": "2 name(s), support 71 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cache",
+      "aliases": [
+        "cache",
+        "cache size"
+      ],
+      "support": 61,
+      "reason": "2 name(s), support 61 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "ports",
+      "aliases": [
+        "ports"
+      ],
+      "support": 54,
+      "reason": "1 name(s), support 54 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "external_data_transfer",
+      "aliases": [
+        "external data transfer",
+        "external data transfer rate"
+      ],
+      "support": 61,
+      "reason": "2 name(s), support 61 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "average_seek_time",
+      "aliases": [
+        "average seek time"
+      ],
+      "support": 49,
+      "reason": "1 name(s), support 49 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "quickpath_interconnect",
+      "aliases": [
+        "quickpath interconnect"
+      ],
+      "support": 48,
+      "reason": "1 name(s), support 48 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "connector",
+      "aliases": [
+        "connector"
+      ],
+      "support": 47,
+      "reason": "1 name(s), support 47 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "product_id",
+      "aliases": [
+        "product id"
+      ],
+      "support": 45,
+      "reason": "1 name(s), support 45 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "height",
+      "aliases": [
+        "height"
+      ],
+      "support": 43,
+      "reason": "1 name(s), support 43 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cas_latency",
+      "aliases": [
+        "cas latency"
+      ],
+      "support": 37,
+      "reason": "1 name(s), support 37 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "platform",
+      "aliases": [
+        "platform"
+      ],
+      "support": 36,
+      "reason": "1 name(s), support 36 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "productid",
+      "aliases": [
+        "productid"
+      ],
+      "support": 35,
+      "reason": "1 name(s), support 35 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "upc",
+      "aliases": [
+        "upc",
+        "upc list"
+      ],
+      "support": 38,
+      "reason": "2 name(s), support 38 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "voltage",
+      "aliases": [
+        "voltage"
+      ],
+      "support": 32,
+      "reason": "1 name(s), support 32 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "width",
+      "aliases": [
+        "width",
+        "width us"
+      ],
+      "support": 38,
+      "reason": "2 name(s), support 38 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor_number",
+      "aliases": [
+        "processor number"
+      ],
+      "support": 30,
+      "reason": "1 name(s), support 30 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "dimensions_hxwxd",
+      "aliases": [
+        "dimensions hxwxd"
+      ],
+      "support": 29,
+      "reason": "1 name(s), support 29 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "error_checking",
+      "aliases": [
+        "error checking"
+      ],
+      "support": 29,
+      "reason": "1 name(s), support 29 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_model",
+      "aliases": [
+        "memory model"
+      ],
+      "support": 28,
+      "reason": "1 name(s), support 28 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_type_ecc",
+      "aliases": [
+        "memory type ecc"
+      ],
+      "support": 28,
+      "reason": "1 name(s), support 28 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_type_r_u",
+      "aliases": [
+        "memory type r u"
+      ],
+      "support": 28,
+      "reason": "1 name(s), support 28 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "package_qty",
+      "aliases": [
+        "package qty"
+      ],
+      "support": 28,
+      "reason": "1 name(s), support 28 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "architecture",
+      "aliases": [
+        "architecture"
+      ],
+      "support": 27,
+      "reason": "1 name(s), support 27 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "device_type",
+      "aliases": [
+        "device type"
+      ],
+      "support": 27,
+      "reason": "1 name(s), support 27 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "large_form_factor",
+      "aliases": [
+        "large form factor"
+      ],
+      "support": 27,
+      "reason": "1 name(s), support 27 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "bus_clock",
+      "aliases": [
+        "bus clock"
+      ],
+      "support": 26,
+      "reason": "1 name(s), support 26 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "depth",
+      "aliases": [
+        "depth"
+      ],
+      "support": 26,
+      "reason": "1 name(s), support 26 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "drive_interface_standard",
+      "aliases": [
+        "drive interface standard"
+      ],
+      "support": 26,
+      "reason": "1 name(s), support 26 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "tape_type",
+      "aliases": [
+        "tape type"
+      ],
+      "support": 26,
+      "reason": "1 name(s), support 26 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "item_code",
+      "aliases": [
+        "item code"
+      ],
+      "support": 25,
+      "reason": "1 name(s), support 25 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor",
+      "aliases": [
+        "processor"
+      ],
+      "support": 25,
+      "reason": "1 name(s), support 25 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "bytes_sector",
+      "aliases": [
+        "bytes sector"
+      ],
+      "support": 24,
+      "reason": "1 name(s), support 24 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "features",
+      "aliases": [
+        "features"
+      ],
+      "support": 24,
+      "reason": "1 name(s), support 24 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "native_command_queuing",
+      "aliases": [
+        "native command queuing"
+      ],
+      "support": 24,
+      "reason": "1 name(s), support 24 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_memory_channels_provided_by_kit",
+      "aliases": [
+        "max memory channels provided by kit"
+      ],
+      "support": 23,
+      "reason": "1 name(s), support 23 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_features",
+      "aliases": [
+        "memory features"
+      ],
+      "support": 23,
+      "reason": "1 name(s), support 23 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "registered_unbuffered",
+      "aliases": [
+        "registered unbuffered"
+      ],
+      "support": 23,
+      "reason": "1 name(s), support 23 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "tested_latency",
+      "aliases": [
+        "tested latency"
+      ],
+      "support": 23,
+      "reason": "1 name(s), support 23 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "tested_voltage",
+      "aliases": [
+        "tested voltage"
+      ],
+      "support": 23,
+      "reason": "1 name(s), support 23 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cooler",
+      "aliases": [
+        "cooler"
+      ],
+      "support": 22,
+      "reason": "1 name(s), support 22 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cache_memory",
+      "aliases": [
+        "cache memory"
+      ],
+      "support": 21,
+      "reason": "1 name(s), support 21 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "installed_memory",
+      "aliases": [
+        "installed memory",
+        "installed ram",
+        "ram installed"
+      ],
+      "support": 41,
+      "reason": "3 name(s), support 41 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "upgrade_type",
+      "aliases": [
+        "upgrade type"
+      ],
+      "support": 21,
+      "reason": "1 name(s), support 21 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "l1_cache",
+      "aliases": [
+        "l1 cache"
+      ],
+      "support": 20,
+      "reason": "1 name(s), support 20 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "network_controller",
+      "aliases": [
+        "network controller"
+      ],
+      "support": 20,
+      "reason": "1 name(s), support 20 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "network_technology",
+      "aliases": [
+        "network technology"
+      ],
+      "support": 20,
+      "reason": "1 name(s), support 20 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "native_data_transfer_rate",
+      "aliases": [
+        "native data transfer rate"
+      ],
+      "support": 19,
+      "reason": "1 name(s), support 19 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "weight_approximate",
+      "aliases": [
+        "weight approximate"
+      ],
+      "support": 19,
+      "reason": "1 name(s), support 19 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "buffer_size",
+      "aliases": [
+        "buffer",
+        "buffer size"
+      ],
+      "support": 27,
+      "reason": "2 name(s), support 27 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cache_memory_installed",
+      "aliases": [
+        "cache memory installed",
+        "installed cache memory"
+      ],
+      "support": 22,
+      "reason": "2 name(s), support 22 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "dimensions",
+      "aliases": [
+        "dimension",
+        "dimensiones",
+        "dimensions",
+        "item size"
+      ],
+      "support": 40,
+      "reason": "4 name(s), support 40 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "networking_protocol",
+      "aliases": [
+        "data link protocol",
+        "networking protocol"
+      ],
+      "support": 33,
+      "reason": "2 name(s), support 33 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "ram_maximum",
+      "aliases": [
+        "maximum ram",
+        "ram maximum"
+      ],
+      "support": 22,
+      "reason": "2 name(s), support 22 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "socket",
+      "aliases": [
+        "socket",
+        "socket de procesador"
+      ],
+      "support": 20,
+      "reason": "2 name(s), support 20 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "description",
+      "aliases": [
+        "description"
+      ],
+      "support": 17,
+      "reason": "1 name(s), support 17 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "raid_level",
+      "aliases": [
+        "raid level"
+      ],
+      "support": 17,
+      "reason": "1 name(s), support 17 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "tdp",
+      "aliases": [
+        "tdp"
+      ],
+      "support": 17,
+      "reason": "1 name(s), support 17 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "raid_support",
+      "aliases": [
+        "drive array support",
+        "raid support"
+      ],
+      "support": 20,
+      "reason": "2 name(s), support 20 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "rank",
+      "aliases": [
+        "rank"
+      ],
+      "support": 16,
+      "reason": "1 name(s), support 16 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "catalog_no",
+      "aliases": [
+        "catalog no"
+      ],
+      "support": 15,
+      "reason": "1 name(s), support 15 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "controller_interface_type",
+      "aliases": [
+        "controller interface type"
+      ],
+      "support": 15,
+      "reason": "1 name(s), support 15 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cores",
+      "aliases": [
+        "cores",
+        "number of cores",
+        "of cores"
+      ],
+      "support": 33,
+      "reason": "3 name(s), support 33 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "official_release_date",
+      "aliases": [
+        "official release date"
+      ],
+      "support": 15,
+      "reason": "1 name(s), support 15 >= 5, values look like 'date', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "package_size",
+      "aliases": [
+        "package size"
+      ],
+      "support": 15,
+      "reason": "1 name(s), support 15 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "pax_code",
+      "aliases": [
+        "pax code"
+      ],
+      "support": 15,
+      "reason": "1 name(s), support 15 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "ecc_registered",
+      "aliases": [
+        "ecc registered"
+      ],
+      "support": 14,
+      "reason": "1 name(s), support 14 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "heatsink_included",
+      "aliases": [
+        "heatsink included"
+      ],
+      "support": 14,
+      "reason": "1 name(s), support 14 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_turbo_frequency",
+      "aliases": [
+        "max turbo frequency",
+        "turbo clock speed"
+      ],
+      "support": 17,
+      "reason": "2 name(s), support 17 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_size",
+      "aliases": [
+        "memory size"
+      ],
+      "support": 14,
+      "reason": "1 name(s), support 14 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "average_latency",
+      "aliases": [
+        "average latency",
+        "average latency ms"
+      ],
+      "support": 15,
+      "reason": "2 name(s), support 15 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "controller_type",
+      "aliases": [
+        "controller type"
+      ],
+      "support": 13,
+      "reason": "1 name(s), support 13 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "data_storage_device_type",
+      "aliases": [
+        "data storage device type"
+      ],
+      "support": 13,
+      "reason": "1 name(s), support 13 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "data_transfer_rate_compressed",
+      "aliases": [
+        "data transfer rate compressed"
+      ],
+      "support": 13,
+      "reason": "1 name(s), support 13 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "hard_drive_device_type",
+      "aliases": [
+        "hard drive device type"
+      ],
+      "support": 13,
+      "reason": "1 name(s), support 13 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "lithography",
+      "aliases": [
+        "lithography"
+      ],
+      "support": 13,
+      "reason": "1 name(s), support 13 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "number_of_threads",
+      "aliases": [
+        "number of threads",
+        "of threads"
+      ],
+      "support": 18,
+      "reason": "2 name(s), support 18 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "storage_controller",
+      "aliases": [
+        "storage controller"
+      ],
+      "support": 13,
+      "reason": "1 name(s), support 13 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "system_type",
+      "aliases": [
+        "system type"
+      ],
+      "support": 13,
+      "reason": "1 name(s), support 13 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "dimensions_wxdxh",
+      "aliases": [
+        "dimensions wxdxh"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "drive_interface",
+      "aliases": [
+        "drive interface"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "drive_type",
+      "aliases": [
+        "drive type"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "graphics_base_frequency",
+      "aliases": [
+        "graphics base frequency"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "graphics_max_dynamic_frequency",
+      "aliases": [
+        "graphics max dynamic frequency"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "intel_intru_3d_technology",
+      "aliases": [
+        "intel intru 3d technology"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "intel_quick_sync_video",
+      "aliases": [
+        "intel quick sync video"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "networking",
+      "aliases": [
+        "netoworking",
+        "networking"
+      ],
+      "support": 14,
+      "reason": "2 name(s), support 14 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "package_weight",
+      "aliases": [
+        "package weight"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor_graphics",
+      "aliases": [
+        "processor graphics"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "product_measures",
+      "aliases": [
+        "product measures"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "units_in_package",
+      "aliases": [
+        "units in package"
+      ],
+      "support": 12,
+      "reason": "1 name(s), support 12 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "chassis_form_factor",
+      "aliases": [
+        "chassis form",
+        "chassis form factor"
+      ],
+      "support": 18,
+      "reason": "2 name(s), support 18 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "controller_raid_level",
+      "aliases": [
+        "controller raid level",
+        "storage controller raid",
+        "storage controller raid level"
+      ],
+      "support": 18,
+      "reason": "3 name(s), support 18 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "drive_support",
+      "aliases": [
+        "drive support"
+      ],
+      "support": 11,
+      "reason": "1 name(s), support 11 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "drive_width",
+      "aliases": [
+        "drive width"
+      ],
+      "support": 11,
+      "reason": "1 name(s), support 11 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "ecc_memory_supported",
+      "aliases": [
+        "ecc memory supported"
+      ],
+      "support": 11,
+      "reason": "1 name(s), support 11 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "intel_clear_video_hd_technology",
+      "aliases": [
+        "intel clear video hd technology",
+        "intel clear video technology"
+      ],
+      "support": 19,
+      "reason": "2 name(s), support 19 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_tdp",
+      "aliases": [
+        "max tdp"
+      ],
+      "support": 11,
+      "reason": "1 name(s), support 11 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "device_supported",
+      "aliases": [
+        "device supported"
+      ],
+      "support": 10,
+      "reason": "1 name(s), support 10 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "embedded_options_available",
+      "aliases": [
+        "embedded options available"
+      ],
+      "support": 10,
+      "reason": "1 name(s), support 10 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "expansion_slots",
+      "aliases": [
+        "expansion slots"
+      ],
+      "support": 10,
+      "reason": "1 name(s), support 10 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "genre",
+      "aliases": [
+        "genre"
+      ],
+      "support": 10,
+      "reason": "1 name(s), support 10 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "instruction_set",
+      "aliases": [
+        "instruction set"
+      ],
+      "support": 10,
+      "reason": "1 name(s), support 10 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "instruction_set_extensions",
+      "aliases": [
+        "instruction set extensions"
+      ],
+      "support": 10,
+      "reason": "1 name(s), support 10 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "item",
+      "aliases": [
+        "item"
+      ],
+      "support": 10,
+      "reason": "1 name(s), support 10 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "number_of_modules",
+      "aliases": [
+        "number of modules"
+      ],
+      "support": 10,
+      "reason": "1 name(s), support 10 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cabling_type",
+      "aliases": [
+        "cabling type"
+      ],
+      "support": 9,
+      "reason": "1 name(s), support 9 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cache_per_processor",
+      "aliases": [
+        "cache per processor"
+      ],
+      "support": 9,
+      "reason": "1 name(s), support 9 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "intel_insider",
+      "aliases": [
+        "intel insider"
+      ],
+      "support": 9,
+      "reason": "1 name(s), support 9 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "intel_smart_cache",
+      "aliases": [
+        "intel smart cache"
+      ],
+      "support": 9,
+      "reason": "1 name(s), support 9 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "intel_wireless_display",
+      "aliases": [
+        "intel wireless display"
+      ],
+      "support": 9,
+      "reason": "1 name(s), support 9 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_memory_bandwidth",
+      "aliases": [
+        "max memory bandwidth"
+      ],
+      "support": 9,
+      "reason": "1 name(s), support 9 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_memory_size_dependant_on_memory_type",
+      "aliases": [
+        "max memory size",
+        "max memory size dependant on memory type"
+      ],
+      "support": 11,
+      "reason": "2 name(s), support 11 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "networking_type",
+      "aliases": [
+        "networking type"
+      ],
+      "support": 9,
+      "reason": "1 name(s), support 9 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "number_of_memory_channels",
+      "aliases": [
+        "max of memory channels",
+        "number of memory channels"
+      ],
+      "support": 11,
+      "reason": "2 name(s), support 11 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "ram",
+      "aliases": [
+        "ram"
+      ],
+      "support": 9,
+      "reason": "1 name(s), support 9 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "4k_support",
+      "aliases": [
+        "4k support"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "air_flow",
+      "aliases": [
+        "air flow"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "blt_item",
+      "aliases": [
+        "blt item"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "bus_type",
+      "aliases": [
+        "bus type"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "condition",
+      "aliases": [
+        "condition",
+        "item condition"
+      ],
+      "support": 9,
+      "reason": "2 name(s), support 9 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "directx_support",
+      "aliases": [
+        "directx",
+        "directx support"
+      ],
+      "support": 10,
+      "reason": "2 name(s), support 10 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "diskette_drive",
+      "aliases": [
+        "diskette drive"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "graphics",
+      "aliases": [
+        "graphics"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "green_compliance_certificate_authority",
+      "aliases": [
+        "green compliance certificate authority"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "green_compliant",
+      "aliases": [
+        "green compliant"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "manufacturer_s_website",
+      "aliases": [
+        "manufacturer s website"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_controller",
+      "aliases": [
+        "memory controller"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_standard",
+      "aliases": [
+        "memory standard"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "of_displays_supported",
+      "aliases": [
+        "number of displays supported",
+        "number of monitors supported",
+        "of displays supported"
+      ],
+      "support": 13,
+      "reason": "3 name(s), support 13 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "opengl_support",
+      "aliases": [
+        "opengl",
+        "opengl support"
+      ],
+      "support": 10,
+      "reason": "2 name(s), support 10 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "operating_system",
+      "aliases": [
+        "operating system"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "optical_drive",
+      "aliases": [
+        "optical drive"
+      ],
+      "support": 8,
+      "reason": "1 name(s), support 8 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "access_time",
+      "aliases": [
+        "access time"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "graphics_video_max_memory",
+      "aliases": [
+        "graphics video max memory",
+        "max video memory"
+      ],
+      "support": 8,
+      "reason": "2 name(s), support 8 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "hard_drive",
+      "aliases": [
+        "hard drive"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "hdd_form_factor",
+      "aliases": [
+        "hdd form factor"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_memory",
+      "aliases": [
+        "max memory"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "other",
+      "aliases": [
+        "other"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "package_contents",
+      "aliases": [
+        "package contents"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "power_supply",
+      "aliases": [
+        "power supply"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "signal_processing",
+      "aliases": [
+        "signal processing"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "storage_controller_type",
+      "aliases": [
+        "storage controller type"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "video_ram_installed",
+      "aliases": [
+        "video ram installed"
+      ],
+      "support": 7,
+      "reason": "1 name(s), support 7 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "backward_compatability",
+      "aliases": [
+        "backward compatability"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "binding",
+      "aliases": [
+        "binding"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "boost_clock_speed",
+      "aliases": [
+        "boost clock speed"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "bytes_sec",
+      "aliases": [
+        "bytes sec"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "chipset",
+      "aliases": [
+        "chipset"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "composant_pour",
+      "aliases": [
+        "composant pour"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "connectivity_technology",
+      "aliases": [
+        "connectivity technology"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "depth_us",
+      "aliases": [
+        "depth us"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "dimensions_wxhxd",
+      "aliases": [
+        "dimensions wxhxd"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "disk_size",
+      "aliases": [
+        "disk size"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "ean_list",
+      "aliases": [
+        "ean list"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'identifier', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "form_factor_height",
+      "aliases": [
+        "form factor height"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "graphics_card",
+      "aliases": [
+        "graphics card"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "height_us",
+      "aliases": [
+        "height us"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "included_network_card",
+      "aliases": [
+        "included network card"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "internal_storage",
+      "aliases": [
+        "internal storage"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "item_dimensions",
+      "aliases": [
+        "item dimensions"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "label",
+      "aliases": [
+        "label"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "material",
+      "aliases": [
+        "material"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_resolution_dp",
+      "aliases": [
+        "max resolution dp"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_resolution_edp_integrated_flat_panel",
+      "aliases": [
+        "max resolution edp integrated flat panel"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_resolution_hdmi_1_4",
+      "aliases": [
+        "max resolution hdmi 1 4"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "maximum_capacity",
+      "aliases": [
+        "maximum capacity"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "maximum_number_of_processors",
+      "aliases": [
+        "maximum number of processors",
+        "processor capacity"
+      ],
+      "support": 10,
+      "reason": "2 name(s), support 10 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "maximum_system_memory",
+      "aliases": [
+        "maximum system memory"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "media_type_supported",
+      "aliases": [
+        "media type supported"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_socket",
+      "aliases": [
+        "memory socket"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "network_rj_45",
+      "aliases": [
+        "network rj 45"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'boolean', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "overclocking_speed",
+      "aliases": [
+        "overclocking speed"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "package_dimensions",
+      "aliases": [
+        "package dimensions"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "power",
+      "aliases": [
+        "power"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "power_draw",
+      "aliases": [
+        "power draw"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor_manufacturer",
+      "aliases": [
+        "processor manufacturer"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "product_group",
+      "aliases": [
+        "product group"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "publisher",
+      "aliases": [
+        "publisher"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "redundant_fans",
+      "aliases": [
+        "redundant fans"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "release_date",
+      "aliases": [
+        "release date"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'date', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "remote_management",
+      "aliases": [
+        "manageability",
+        "remote management"
+      ],
+      "support": 9,
+      "reason": "2 name(s), support 9 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "scsi_signaling_type",
+      "aliases": [
+        "scsi signaling type"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "specs_van_de_fabrikant",
+      "aliases": [
+        "specs van de fabrikant"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "static_pressure",
+      "aliases": [
+        "static pressure"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "studio",
+      "aliases": [
+        "studio"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "system_chipset",
+      "aliases": [
+        "system chipset"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "system_memory_ram",
+      "aliases": [
+        "system memory ram"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "tape_format",
+      "aliases": [
+        "tape format"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "title",
+      "aliases": [
+        "title"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'free_text', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "warranty_types",
+      "aliases": [
+        "warranty types"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "weight_us",
+      "aliases": [
+        "weight us"
+      ],
+      "support": 6,
+      "reason": "1 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "cooling",
+      "aliases": [
+        "cooling"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "ecc",
+      "aliases": [
+        "ecc"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "graphics_output",
+      "aliases": [
+        "graphics output"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "installed_l2_cache_memory",
+      "aliases": [
+        "installed l2 cache memory"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_resolution_intel_widi",
+      "aliases": [
+        "max resolution intel widi"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "max_resolution_vga",
+      "aliases": [
+        "max resolution vga"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "maximum_sustained_transfer_rate",
+      "aliases": [
+        "maximum sustained transfer rate",
+        "maximum transfer rate"
+      ],
+      "support": 9,
+      "reason": "2 name(s), support 9 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "memory_voltage",
+      "aliases": [
+        "memory voltage"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "network_rj_45_ports",
+      "aliases": [
+        "network rj 45 ports",
+        "number of network rj 45 ports"
+      ],
+      "support": 8,
+      "reason": "2 name(s), support 8 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "noise_level",
+      "aliases": [
+        "noise level"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "of_qpi_links",
+      "aliases": [
+        "of qpi links"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "processor_base_frequency",
+      "aliases": [
+        "processor base frequency"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "protocol_supported",
+      "aliases": [
+        "protocol supported"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "serie",
+      "aliases": [
+        "serie"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "thermal_specification",
+      "aliases": [
+        "thermal specification"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "transfer_rate",
+      "aliases": [
+        "transfer rate"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "validated_compatible_with",
+      "aliases": [
+        "validated compatible with"
+      ],
+      "support": 5,
+      "reason": "1 name(s), support 5 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "voltage_rating",
+      "aliases": [
+        "operating voltage",
+        "voltage rating"
+      ],
+      "support": 7,
+      "reason": "2 name(s), support 7 >= 5, values look like 'categorical', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "maximum_number_of_devices_supported",
+      "aliases": [
+        "maximum number of devices supported",
+        "maximum supported devices"
+      ],
+      "support": 8,
+      "reason": "2 name(s), support 8 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:09+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "screen_size_inches",
+      "aliases": [
+        "screen size diagonal",
+        "screen size inches"
+      ],
+      "support": 6,
+      "reason": "2 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    },
+    {
+      "at": "2026-10-21T16:23:10+00:00",
+      "version": 2,
+      "action": "attribute_added",
+      "attribute": "number_of_pci_express_slots",
+      "aliases": [
+        "number of pci express slots",
+        "number of pci express x8 slots"
+      ],
+      "support": 6,
+      "reason": "2 name(s), support 6 >= 5, values look like 'numeric_unit', no canonical attribute above similarity 0.55"
+    }
+  ]
+}
