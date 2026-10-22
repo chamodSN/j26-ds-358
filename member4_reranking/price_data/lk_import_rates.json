@@ -1,0 +1,24 @@
+{
+  "country": "LKA",
+  "currency": "LKR",
+  "as_of": "2026-05-17",
+  "status": "From secondary 2026 guides that cite Sri Lanka Customs / IRD / TRCSL. VERIFY against the official Sri Lanka Customs tariff guide before final use.",
+  "sources": [
+    "https://induwara.lk/tools/sri-lanka-mobile-phone-import-tax-calculator (updated 2026-05-16; cites Sri Lanka Customs Tariff Guide HS 8517.13/8517.14, IRD VAT, IRD SSCL, TRCSL MDRS)",
+    "https://tariff.lk/guides/how-to-calculate-import-duty-sri-lanka (2026 guide; layer order and bases)"
+  ],
+  "order": "CID, PAL and CESS on CIF; SSCL on CIF+CID+PAL+CESS; VAT on CIF+CID+PAL+CESS+SSCL; fixed fees added last",
+  "cif_note": "CIF = item price + shipping (insurance ignored), converted to LKR with the snapshot exchange rate (Customs uses the CBSL rate of the entry date).",
+  "categories": {
+    "phones": {
+      "hs": "8517.13 / 8517.14",
+      "cid": 0.0,
+      "pal": 0.10,
+      "cess": 0.25,
+      "sscl": 0.025,
+      "vat": 0.18,
+      "fixed_fee_lkr": 236,
+      "fixed_fee_note": "TRCSL MDRS registration Rs 200 + 18% VAT per IMEI (single-SIM; skipped if already allow-listed)"
+    }
+  }
+}

@@ -53,8 +53,12 @@ def main():
             if cur is None:
                 continue                                    # no price -> cannot show Novelty 2 for it
             attrs = {k: str(getattr(r, k)).strip() for k in ("brand", "color", "features") if str(getattr(r, k)).strip()}
-            products.append({"canonical_id": r.listing_id, "canonical_title": r.title, "platforms": ["esci"],
-                             "prices": [{"platform": "esci", "price": parse_price(r.price_text), "currency": cur}],
+            plat = str(r.platform).lower().strip()
+            plat = plat if plat in ("ebay", "aliexpress") else "esci"          # team enum; other shops -> 'esci' stand-in
+            if plat == "esci":
+                attrs["location"] = "LK"           # pilot non-eBay/AliExpress listings are Sri Lankan shops/Daraz.lk
+            products.append({"canonical_id": r.listing_id, "canonical_title": r.title, "platforms": [plat],
+                             "prices": [{"platform": plat, "price": parse_price(r.price_text), "currency": cur}],
                              "harmonized_attributes": attrs, "retrieval_score": 0.5,
                              "source_product_ids": [r.listing_id]})
         req = {"query_id": qid, "query": g["query"].iloc[0], "products": products,
@@ -67,12 +71,17 @@ def main():
         print("=" * 112)
         print(f"{qid}  {COUNTRY_NAME[a.country]} user searches: {req['query']!r}")
         print(f"order = Novelty 1 (relevance) | price, PPP price, tier = Novelty 2 (display only) | rates as of {b.get('rates_as_of')}")
-        print(f"{'#':>2} {'match':<6} {'title':<46} {'price (' + cur + ')':>15} {'PPP int$':>9}  tier ({COUNTRY_NAME[a.country]} market)")
+        pay = "payable" if a.country == "LKA" else "price"
+        print(f"{'#':>2} {'match':<6} {'platform':<10} {'title':<40} {'listed':>10} {pay + ' (' + cur + ')':>16} {'PPP int$':>9}  tier ({COUNTRY_NAME[a.country]})  notes")
         for x in b["results"]:
             u = x.get("user_view") or {}
             tier = u.get("price_tier") or ("-" if u.get("tier_category") else "- (not a phone)")
-            print(f"{x['rank']:>2} {x['match_label']:<6} {x['canonical_title'][:46]:<46} "
-                  f"{u.get('price', 0):>15,.0f} {u.get('ppp_intl_dollars', 0):>9,.0f}  {tier}")
+            bd = u.get("payable_breakdown") or {}
+            tax = sum(bd.get(k, 0) for k in ("cid", "pal", "cess", "sscl", "vat", "fees"))
+            note = (f"import taxes {tax:,.0f}; " if tax else "") + ", ".join(u.get("price_flags") or [])
+            print(f"{x['rank']:>2} {x['match_label']:<6} {x['platform']:<10} {x['canonical_title'][:40]:<40} "
+                  f"{u.get('listed_price', 0):>10,.0f} {u.get('price', 0):>16,.0f} {u.get('ppp_intl_dollars', 0):>9,.0f}  "
+                  f"{tier:<18} {note}")
 
 
 if __name__ == "__main__":

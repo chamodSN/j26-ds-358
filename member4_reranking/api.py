@@ -10,6 +10,8 @@ Novelty 1 decides the ORDER (relevance). Novelty 2 (PPP part) is DISPLAY ONLY, i
   - for the country of the user who searched (user_country: LKA or PAK): real price (live exchange rate),
     PPP-normalized price (international $ = ppp_adjusted_price_usd) and category tier Budget/Mid-range/Premium
     compared with THAT country's own market (price_data/phone_reference_v1.csv; phones only for now).
+  - Sri Lankan user: estimated PAYABLE price (item + shipping + import taxes if shipped from abroad;
+    rates in price_data/lk_import_rates.json, phones only for now) with a breakdown; PPP price and tier use it.
   - rates from price_data/rates_snapshot.json; if a file is missing, PPP fields stay empty (ranking still works).
   - best offer = first listed price until the payable-price step (taxes, shipping) is added.
 """
@@ -26,6 +28,7 @@ from shared.schemas import FinalResponse, HarmonizationResult, Platform, QueryTy
 
 from member4_reranking.src.reranker import DEFAULT_MODEL_DIR, Reranker
 from member4_reranking.src import ppp as P
+from member4_reranking.src import payable as PY
 
 app = FastAPI(title="Member 4 - Re-ranking Service", version="0.2.0")
 
@@ -34,7 +37,20 @@ LKR_PER_USD = float(os.environ.get("M4_LKR_PER_USD", "300"))   # placeholder unt
 _state = {"reranker": None, "error": None}
 SNAPSHOT_PATH = os.environ.get("M4_RATES_SNAPSHOT", P.DEFAULT_SNAPSHOT)
 REFERENCE_PATH = os.environ.get("M4_TIER_REFERENCE", P.DEFAULT_REFERENCE)
-_rates = {"snap": None, "error": None, "ref": None}
+IMPORT_RATES_PATH = os.environ.get("M4_IMPORT_RATES", PY.DEFAULT_RATES)
+_rates = {"snap": None, "error": None, "ref": None, "lk": None}
+
+
+def get_import_rates():
+    if _rates["lk"] is None:
+        try:
+            _rates["lk"] = PY.load_rates(IMPORT_RATES_PATH)
+        except Exception:                          # no tax table -> payable = price + shipping, flagged
+            _rates["lk"] = {"categories": {}}
+    return _rates["lk"]
+
+
+FX_AUTO_REFRESH = os.environ.get("M4_FX_AUTO_REFRESH", "1") == "1"   # daily exchange-rate refresh (live)
 
 
 def get_snapshot():
@@ -43,6 +59,8 @@ def get_snapshot():
             _rates["snap"] = P.load_snapshot(SNAPSHOT_PATH)
         except Exception as e:                     # no snapshot -> ranking still works, PPP fields empty
             _rates["error"] = f"{type(e).__name__}: {e}"
+    if _rates["snap"] is not None and FX_AUTO_REFRESH:
+        P.refresh_fx(_rates["snap"], max_age_hours=24)      # cheap check; fetches at most once a day
     return _rates["snap"]
 
 
@@ -76,11 +94,14 @@ class RerankRequest(HarmonizationResult):
 class CountryView(BaseModel):
     country: str
     currency: str
-    price: float                                   # real price in that country's currency (live exchange rate)
+    price: float                                   # price the user pays: payable (LK) or listed price (other countries)
     ppp_intl_dollars: float                        # PPP-normalized price
     price_tier: Optional[str] = None               # Budget / Mid-range / Premium vs this country's market
     tier_category: Optional[str] = None            # category used for the tier (stand-in: phones)
     tier_reference_n: int = 0                      # how many reference prices the tier is based on
+    listed_price: Optional[float] = None           # listing price in the user's currency (before shipping/taxes)
+    payable_breakdown: Optional[dict] = None       # item, shipping, cid, pal, cess, sscl, vat, fees (LKR)
+    price_flags: List[str] = []                    # shipping_unknown, origin_assumed, tax_rate_missing, ...
 
 
 class M4RankedResult(RankedResult):
@@ -131,12 +152,26 @@ def rerank(request: RerankRequest):
         if country is None or not p.prices:
             return None
         cat = P.tier_category(p.canonical_title, p.harmonized_attributes)
-        v = P.price_view(p.prices[0].price, p.prices[0].currency, country, snap, ref, cat)
-        if v is None:
+        user_cur = snap["countries"][country]["currency"]
+        listed = P.convert(p.prices[0].price, p.prices[0].currency, user_cur, snap)
+        if listed is None:
             return None
+        price, breakdown, flags = listed, None, []
+        if country == "LKA":                       # payable price: Sri Lanka only (for now)
+            a = p.harmonized_attributes or {}
+            sh = PY.parse_shipping(a.get("shipping"))
+            ship_lkr = (P.convert(sh["amount"], sh["currency"] or p.prices[0].currency, "LKR", snap)
+                        if sh["amount"] is not None else None)
+            platform = (p.prices[0].platform.value if hasattr(p.prices[0].platform, "value") else str(p.prices[0].platform))
+            res = PY.payable_lkr(listed, platform, cat, get_import_rates(), shipping_lkr=ship_lkr,
+                                 shipping_included=sh["included"], tax_included=bool(a.get("tax_included", False)),
+                                 item_country=a.get("item_country") or a.get("location"))
+            price, breakdown, flags = res["payable"], res["breakdown"], res["flags"]
+        v = P.price_view(price, user_cur, country, snap, ref, cat)
         return CountryView(country=country, currency=v["currency"], price=round(v["price"], 2),
                            ppp_intl_dollars=round(v["ppp_intl_dollars"], 2), price_tier=v["tier"],
-                           tier_category=cat, tier_reference_n=v["tier_reference_n"])
+                           tier_category=cat, tier_reference_n=v["tier_reference_n"],
+                           listed_price=round(listed, 2), payable_breakdown=breakdown, price_flags=flags)
 
     results = []
     for rank, it in enumerate(out["items"][: request.max_results], start=1):

@@ -123,3 +123,33 @@ def price_view(amount: float, currency: str, user_iso: str, snap: Dict, ref: Opt
         out["tier"] = TIERS[0] if real <= r["q1"] else (TIERS[1] if real <= r["q2"] else TIERS[2])
         out["tier_reference_n"] = r["n"]
     return out
+
+
+# ------------------------------------------------------------------ automatic exchange-rate refresh
+FX_URL = "https://open.er-api.com/v6/latest/USD"     # same source as the team backend (backend/app/services/fx.py)
+
+
+def refresh_fx(snap: Dict, max_age_hours: float = 24.0, timeout: float = 5.0) -> bool:
+    """Update the exchange rates inside `snap` if they are older than max_age_hours.
+    PPP / CPI / income stay from the World Bank snapshot (they change yearly; run refresh_rates.py monthly).
+    Any network problem -> keep the old rates (returns False). Never raises."""
+    import datetime
+    import httpx
+    now = datetime.datetime.now(datetime.timezone.utc)
+    last = snap.get("fx_fetched_at") or snap.get("created_at")
+    try:
+        if last and (now - datetime.datetime.fromisoformat(last)).total_seconds() < max_age_hours * 3600:
+            return False
+        data = httpx.get(FX_URL, timeout=timeout).json()
+        if data.get("result") != "success":
+            return False
+        for c in snap["countries"].values():
+            new = data["rates"].get(c["currency"])
+            if new:
+                c["fx_per_usd_now"] = float(new)
+                c["price_level_ratio"] = round(c["ppp_updated"] / float(new), 4)
+        snap["fx_as_of"] = data.get("time_last_update_utc")
+        snap["fx_fetched_at"] = now.isoformat(timespec="seconds")
+        return True
+    except Exception:
+        return False

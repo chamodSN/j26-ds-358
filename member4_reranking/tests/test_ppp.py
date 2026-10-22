@@ -63,12 +63,13 @@ def test_load_reference(tmp_path):
 
 
 @pytest.fixture
-def client():
+def client(monkeypatch):
+    monkeypatch.setattr(api, "FX_AUTO_REFRESH", False)
     api._state.update(reranker=Reranker(scorer=fake_scorer, config=CFG), error=None)
-    api._rates.update(snap=SNAP, error=None, ref=REF)
+    api._rates.update(snap=SNAP, error=None, ref=REF, lk={"categories": {}})
     yield TestClient(api.app)
     api._state.update(reranker=None, error=None)
-    api._rates.update(snap=None, error=None, ref=None)
+    api._rates.update(snap=None, error=None, ref=None, lk=None)
 
 
 def test_api_display_only_and_per_country(client):
@@ -86,7 +87,8 @@ def test_api_display_only_and_per_country(client):
     assert case["user_view"]["price_tier"] is None
 
 
-def test_api_works_without_snapshot():
+def test_api_works_without_snapshot(monkeypatch):
+    monkeypatch.setattr(api, "FX_AUTO_REFRESH", False)
     api._state.update(reranker=Reranker(scorer=fake_scorer, config=CFG), error=None)
     api._rates.update(snap=None, error="FileNotFoundError", ref={})
     body = TestClient(api.app).post("/rerank", json=ebay_like_request()).json()
