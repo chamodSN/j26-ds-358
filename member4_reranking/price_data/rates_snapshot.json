@@ -1,10 +1,11 @@
 {
-  "created_at": "2026-10-22T06:13:56+00:00",
+  "created_at": "2026-10-22T09:47:58+00:00",
   "method": "PPP_now = PPP_base * (CPI_c(t)/CPI_c(base)) / (CPI_US(t)/CPI_US(base))",
   "sources": {
     "ppp_private": "https://api.worldbank.org/v2/country/LKA;PAK;USA/indicator/PA.NUS.PRVT.PP?format=json&date=2015:2026&per_page=100&source=2",
     "cpi": "https://api.worldbank.org/v2/country/LKA;PAK;USA/indicator/FP.CPI.TOTL?format=json&date=2015:2026&per_page=100&source=2",
-    "fx": "https://open.er-api.com/v6/latest/USD"
+    "fx": "https://open.er-api.com/v6/latest/USD",
+    "gni_pc_ppp": "https://api.worldbank.org/v2/country/LKA;PAK;USA/indicator/NY.GNP.PCAP.PP.CD?format=json&date=2015:2026&per_page=100&source=2"
   },
   "fx_as_of": "Thu, 22 Oct 2026 00:02:31 +0000",
   "countries": {
@@ -21,7 +22,10 @@
       "price_level_ratio": 0.2446,
       "ppp_gdp_latest": {
         "2025": 88.2137716979226
-      }
+      },
+      "gni_pc_ppp_year": 2025,
+      "gni_pc_ppp": 16750.0,
+      "monthly_income_ppp": 1395.8
     },
     "PAK": {
       "ppp_base_year": 2025,
@@ -36,7 +40,10 @@
       "price_level_ratio": 0.2361,
       "ppp_gdp_latest": {
         "2025": 67.8368115155746
-      }
+      },
+      "gni_pc_ppp_year": 2025,
+      "gni_pc_ppp": 6430.0,
+      "monthly_income_ppp": 535.8
     }
   }
 }

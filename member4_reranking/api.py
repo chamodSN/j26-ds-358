@@ -6,8 +6,12 @@ POST /rerank  - input : M2's HarmonizationResult + max_results (exactly what bac
                         + optional taxonomy_path (M3) and price_constraint_text (M1) when the team adds them
                 output: the team's FinalResponse (+ extra M4 fields that older callers simply ignore)
 
-S12 = relevance only. Price fields are placeholders until Novelty 2:
-  - best offer = first listed price, ppp_adjusted_price_usd = exchange-rate placeholder (USD as is, LKR / M4_LKR_PER_USD).
+Novelty 1 decides the ORDER (relevance). Novelty 2 (PPP part) is DISPLAY ONLY, it never changes the order:
+  - for the country of the user who searched (user_country: LKA or PAK): real price (live exchange rate),
+    PPP-normalized price (international $ = ppp_adjusted_price_usd) and category tier Budget/Mid-range/Premium
+    compared with THAT country's own market (price_data/phone_reference_v1.csv; phones only for now).
+  - rates from price_data/rates_snapshot.json; if a file is missing, PPP fields stay empty (ranking still works).
+  - best offer = first listed price until the payable-price step (taxes, shipping) is added.
 """
 import os
 import sys
@@ -17,15 +21,38 @@ from typing import List, Optional
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 from shared.schemas import FinalResponse, HarmonizationResult, Platform, QueryType, RankedResult
 
 from member4_reranking.src.reranker import DEFAULT_MODEL_DIR, Reranker
+from member4_reranking.src import ppp as P
 
 app = FastAPI(title="Member 4 - Re-ranking Service", version="0.2.0")
 
 MODEL_DIR = os.environ.get("M4_MODEL_DIR", DEFAULT_MODEL_DIR)
 LKR_PER_USD = float(os.environ.get("M4_LKR_PER_USD", "300"))   # placeholder until Novelty 2
 _state = {"reranker": None, "error": None}
+SNAPSHOT_PATH = os.environ.get("M4_RATES_SNAPSHOT", P.DEFAULT_SNAPSHOT)
+REFERENCE_PATH = os.environ.get("M4_TIER_REFERENCE", P.DEFAULT_REFERENCE)
+_rates = {"snap": None, "error": None, "ref": None}
+
+
+def get_snapshot():
+    if _rates["snap"] is None and _rates["error"] is None:
+        try:
+            _rates["snap"] = P.load_snapshot(SNAPSHOT_PATH)
+        except Exception as e:                     # no snapshot -> ranking still works, PPP fields empty
+            _rates["error"] = f"{type(e).__name__}: {e}"
+    return _rates["snap"]
+
+
+def get_reference():
+    if _rates["ref"] is None:
+        try:
+            _rates["ref"] = P.load_reference(REFERENCE_PATH)
+        except Exception:                          # no reference list -> prices shown, tiers empty
+            _rates["ref"] = {}
+    return _rates["ref"]
 
 
 def get_reranker() -> Reranker:
@@ -43,18 +70,31 @@ class RerankRequest(HarmonizationResult):
     max_results: int = 10
     taxonomy_path: Optional[str] = None            # [ADD-M3] category context (optional for now)
     price_constraint_text: Optional[str] = None    # [ADD-M1] exact price span to remove (optional)
+    user_country: str = "LKA"                      # country of the user who searched (World Bank code)
+
+
+class CountryView(BaseModel):
+    country: str
+    currency: str
+    price: float                                   # real price in that country's currency (live exchange rate)
+    ppp_intl_dollars: float                        # PPP-normalized price
+    price_tier: Optional[str] = None               # Budget / Mid-range / Premium vs this country's market
+    tier_category: Optional[str] = None            # category used for the tier (stand-in: phones)
+    tier_reference_n: int = 0                      # how many reference prices the tier is based on
 
 
 class M4RankedResult(RankedResult):
     p_exact: float                                 # calibrated P(product is Exact)
     match_label: str                               # great / good / fair
     low_confidence: bool                           # listing too incomplete to score reliably
+    user_view: Optional[CountryView] = None        # Novelty 2 for the user's country (display only)
 
 
 class M4FinalResponse(FinalResponse):
     focused_query: str                             # what the cross-encoder actually read
     results: List[M4RankedResult]
     m4_latency_ms: float
+    rates_as_of: Optional[str] = None
 
 
 @app.get("/health")
@@ -82,18 +122,41 @@ def rerank(request: RerankRequest):
     out = rr.rerank(request.query, items, price_span=request.price_constraint_text,
                     category=request.taxonomy_path)
 
+    # ---- Novelty 2 (display only): price, PPP price and tier for the user's own country
+    snap, ref = get_snapshot(), get_reference()
+    country = request.user_country if (snap is not None and request.user_country in snap["countries"]) else None
+
+    def cview(i):
+        p = request.products[i]
+        if country is None or not p.prices:
+            return None
+        cat = P.tier_category(p.canonical_title, p.harmonized_attributes)
+        v = P.price_view(p.prices[0].price, p.prices[0].currency, country, snap, ref, cat)
+        if v is None:
+            return None
+        return CountryView(country=country, currency=v["currency"], price=round(v["price"], 2),
+                           ppp_intl_dollars=round(v["ppp_intl_dollars"], 2), price_tier=v["tier"],
+                           tier_category=cat, tier_reference_n=v["tier_reference_n"])
+
     results = []
     for rank, it in enumerate(out["items"][: request.max_results], start=1):
         prod = request.products[it["index"]]
         price = prod.prices[0] if prod.prices else None
         platform = prod.platforms[0] if prod.platforms else (price.platform if price else Platform.EBAY)
         amount, currency = (price.price, price.currency) if price else (0.0, "USD")
+        uv = cview(it["index"])
         results.append(M4RankedResult(
             rank=rank, canonical_id=prod.canonical_id, canonical_title=prod.canonical_title,
             platform=platform, original_price=amount, currency=currency,
-            ppp_adjusted_price_usd=_usd_placeholder(amount, currency),
-            relevance_score=round(it["p"], 6), harmonized_attributes=prod.harmonized_attributes,
-            p_exact=round(it["p_exact"], 4), match_label=it["match"], low_confidence=it["low_conf"]))
+            ppp_adjusted_price_usd=uv.ppp_intl_dollars if uv else _usd_placeholder(amount, currency),
+            relevance_score=round(it["p"], 6),
+            # M2's attributes are copied unchanged; M4 only ADDS its own keys (the UI reads product.attributes,
+            # the same channel the frontend already reserves for M4's budget_tier). M2's object is not modified.
+            harmonized_attributes={**prod.harmonized_attributes, "m4_match_label": it["match"],
+                                   "m4_low_confidence": it["low_conf"], "m4_p_exact": round(it["p_exact"], 4),
+                                   "m4_price_tier": uv.price_tier if uv else None},
+            p_exact=round(it["p_exact"], 4), match_label=it["match"], low_confidence=it["low_conf"],
+            user_view=uv))
 
     return M4FinalResponse(
         query_id=request.query_id, query=request.query,
@@ -104,4 +167,5 @@ def rerank(request: RerankRequest):
         total_unique_products=len(request.products),
         platforms_queried=sorted({pl for prod in request.products for pl in prod.platforms}, key=lambda x: x.value),
         focused_query=out["focused_query"],
-        m4_latency_ms=round((time.perf_counter() - t0) * 1000, 1))
+        m4_latency_ms=round((time.perf_counter() - t0) * 1000, 1),
+        rates_as_of=(snap or {}).get("fx_as_of"))
